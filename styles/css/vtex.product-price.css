@@ -1,0 +1,43 @@
+.listPrice {
+  color: #727273;
+  margin-bottom: .25rem;
+  font-size: 1rem;
+}
+
+.sellingPrice {
+  color: #292929;
+  font: 500 20px "padrao";
+} /* Preço do produto -- shelf de produtos */
+
+.listPrice--summary {
+  font-size: 12px;
+  color: #848d9c;
+  margin:0;
+}
+
+.installments--summary {
+  font-size: 13px;
+  color:#000;
+  text-align:center;
+}
+
+.savingsPercentage{font-size: 12px;}
+
+.savings--summary{
+  background:#292929;
+  padding:0.25rem 0.5rem;
+  color:#fff;
+  border-radius:0;
+  font:400 10px/1 "padrao", sans-serif;
+  display:block;
+  width:fit-content !important;
+  text-align:center;
+}
+
+/* MOBILE */
+@media screen and (max-width: 1025px) {
+  .installments--summary{font-size:12px;}
+  .savings--summary, .savings--summary .savingsPercentage{font-size: 12px;}
+  .listPrice--summary{text-align: left;}
+  .sellingPrice--summary{text-align:center;}
+}

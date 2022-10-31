@@ -1,0 +1,10 @@
+.expandIcon {
+  color: #727273;
+}
+.cartIcon{
+  display:none;
+}
+.cartIcon--minicart-empty-state{
+  width:64px;
+  height:64px;
+}

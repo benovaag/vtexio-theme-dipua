@@ -1,0 +1,22 @@
+{
+    "stack": "nodejs",
+    "memory": 1536,
+    "ttl": 43200,
+    "timeout": 7,
+    "minReplicas": 30,
+    "maxReplicas": 100,
+    "workers": 4,
+    "cpu": 30,
+    "routes": {
+        "GiftBag": {
+            "path": "/giftbagapi/id:id",
+            "public": true,
+            "policies": [
+                {
+                    "effect": "allow",
+                    "actions": ["GET"]
+                }
+            ]
+        }
+    }
+}

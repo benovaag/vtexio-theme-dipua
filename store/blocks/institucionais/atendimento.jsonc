@@ -1,0 +1,100 @@
+{
+    "store.custom#atendimento": {
+      "blocks": [
+        "flex-layout.row#banner-institucional-atendimento",
+        "flex-layout.row#atendimento",
+        "flex-layout.row#footer-1-desktop",
+        "flex-layout.row#footer-2-desktop-pdp-inst"
+      ]
+    },
+    "flex-layout.row#banner-institucional-atendimento":{
+      "children":[
+        "flex-layout.col#image-banner",
+        "flex-layout.col#breadcrumb-banner"
+      ],
+      "props":{
+        "blockClass": "row-banner-inst",
+        "fullWidth": true,
+        "colSizing": "auto"
+      }
+    },
+    "flex-layout.col#image-banner":{
+      "children":[
+        "image#banner-institucional"
+      ],
+      "props":{
+        "blockClass": "col-image-banner-inst"
+      }
+    },
+    "image#banner-institucional":{
+      "props":{
+        "src": "assets/imgs/banner-inst.png",
+        "blockClass": "image-banner-inst"
+      }
+    },
+    "flex-layout.col#breadcrumb-banner":{
+      "children":[
+        "rich-text#breadcrumb-institucional-atendimento"
+      ],
+      "props":{
+        "blockClass": "col-text-banner-inst"
+      }
+    },
+    "rich-text#breadcrumb-institucional-atendimento":{
+      "props":{
+        "text":"[Página inicial](/)  **Atendimento**",
+        "blockClass": "breadcrumb-institucionais"
+      }
+    },
+  
+    "flex-layout.row#atendimento": {
+      "props":{
+        "blockClass":"content-institucional"
+      },
+      "children": [
+        "flex-layout.col#atendimento-1",
+        "flex-layout.col#atendimento-2"
+      ],
+      "title": "Página Atendimento"
+    },
+    "flex-layout.col#atendimento-1":{
+    "props":{
+        "width":"27%",
+        "blockClass":"menu-institucional"
+      },
+      "children":[
+        "rich-text#menu-ajuda-1-active",
+        "rich-text#menu-ajuda-2",
+        "rich-text#menu-ajuda-3",
+        "rich-text#menu-ajuda-4",
+        "rich-text#menu-ajuda-5"
+      ],
+      "title": "Menu"
+    },
+    "flex-layout.col#atendimento-2":{
+      "props":{
+        "width":"73%",
+        "blockClass":"content-institucional"
+      },
+      "children":[
+        "rich-text#titulo-atendimento",
+        "rich-text#conteudo-atendimento"
+      ],
+      "title": "Conteúdo"
+    },
+    "rich-text#titulo-atendimento":{
+      "props":{
+        "blockClass":"title-content-institucional",
+        "text":"## Fale conosco"
+      },
+      "title":"Título"
+    },
+    "rich-text#conteudo-atendimento":{
+      "props":{
+        "blockClass":"content-institucional",
+        "text":"E-mail: <sac@dipua.com.br>"
+      },
+      "title": "Texto"
+    }
+  }
+  

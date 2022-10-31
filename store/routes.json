@@ -1,0 +1,35 @@
+{
+  "store.custom#atendimento": {
+    "path": "/atendimento"
+  },
+  "store.custom#trocas-e-devolucoes": {
+    "path": "/trocas-e-devolucoes"
+  },
+  "store.custom#trabalhe-aqui": {
+    "path": "/trabalhe-aqui"
+  },
+  "store.custom#troque-facil": {
+    "path": "/troque-facil"
+  },
+  "store.custom#cuidados-e-materiais": {
+    "path": "/cuidados-e-materiais"
+  },
+  "store.custom#entrega": {
+    "path": "/entrega"
+  },
+  "store.custom#nossas-lojas": {
+    "path": "/nossas-lojas"
+  },
+  "store.custom#sobre-dipua": {
+    "path": "/sobre-dipua"
+  },
+  "store.custom#processo-criativo": {
+    "path": "/processo-criativo"
+  },
+  "store.custom#campanhas": {
+    "path": "/campanhas"
+  },
+  "store.custom#collabs": {
+    "path": "/collabs"
+  }
+}

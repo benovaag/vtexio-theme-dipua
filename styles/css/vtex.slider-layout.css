@@ -1,0 +1,141 @@
+.sliderLayoutContainer {
+  justify-content: center;
+}
+.paginationDotsContainer {
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+}
+
+.layoutContainer--shelf {
+  margin-top:0;
+  margin-bottom:0;
+}
+.paginationDotsContainer--banner-principal{
+  align-items:center;
+  margin-top:0;
+  margin-bottom:0;
+  bottom:30px;
+}
+.paginationDot--banner-principal,
+.paginationDot--banner-principal:hover{
+  background:#fff;
+  width: 8px !important;
+  height: 8px !important;
+  transform: scale(1) !important;
+}
+.paginationDot--banner-principal--isActive,
+.paginationDot--banner-principal--isActive:hover{
+  background:url(assets/dots.png) no-repeat transparent;
+  width: 20px !important;
+  height: 20px !important;
+  transform: scale(1) !important;
+}
+
+/* Banner Principal */
+.infoCardContainer--banner-principal{
+  height: 430px;
+  justify-content: center;
+}
+.infoCardTextContainer--banner-principal{width: 75%;}
+.infoCardHeadline--banner-principal{
+  font: 400 96px "alternative", sans-serif;
+  color: #466d5b;
+  margin-top: 0;
+}
+.infoCardSubhead--banner-principal{
+  color: #FFF;
+  font-size: 15px;
+  margin-top: 30px;
+  max-width: 270px;
+  line-height: 25px;
+}
+.infoCardCallActionContainer--banner-principal :global(.vtex-button){
+  background: transparent;
+  border: 1px solid #FFF;
+  border-radius: 30px;
+  text-transform: none;
+}
+.infoCardCallActionContainer--banner-principal :global(.vtex-button):hover{
+  background: #466d5b;
+  border: 1px solid #466d5b;
+}
+.infoCardCallActionContainer--banner-principal :global(.vtex-button__label){padding: 3px 29px 0 !important;}
+.infoCardCallActionContainer--banner-principal{margin-top: 31px;}
+.slide--shelf, 
+.slide--related-shelf {
+  margin-bottom: 85px;
+  padding: 0 10px;
+}
+.sliderTrack--banners-dpto-home{
+  gap:20px;
+  margin:100px 0;
+}
+
+.sliderArrows--shelf{
+  top:31%;
+  padding:0;
+  margin:0;
+  border-radius:0;
+  background:#FFF !important;
+  border:0;
+} /* Container das flechas, direita e esquerda -- shelf de produtos */
+.caretIcon--shelf{
+  width: 18px;
+  height: 18px;
+  color: #000;
+} /* Flechas -- shelf de produtos */
+.sliderLeftArrow--shelf{left:0;}
+.sliderRightArrow--shelf{right:0;}
+.paginationDot--shelf{
+  width:10px !important;
+  height:10px !important;
+  background: #fff;
+  border-radius:50%;
+  padding:0;
+  border:0;
+  border:1px solid #000;
+} /* <= Dot de página -- shelf de produtos */
+.paginationDot--shelf--isActive{
+  background:#000;
+  border-color:transparent;
+} /* <= Dot de página ativa -- shelf de produtos */
+.paginationDotsContainer--shelf{
+  margin-top:30px;
+  margin-bottom:51px;
+}
+.imageElementLink--banner-principal{width:100%;}
+.imageElement--banner-principal{
+  display:block;
+  max-height: 100% !important;
+}
+.sliderLayoutContainer--shelf{padding: 0 20px !important;} /* <= Shelf -- shelf de produtos */
+
+/* MOBILE */
+@media screen and (max-width: 1025px) {
+  .slide--shelf{
+    margin-bottom:50px;
+    padding: 0;
+  }
+  .paginationDotsContainer--shelf{margin-bottom:20px;}
+  .paginationDotsContainer--banner-principal{bottom:20px;}
+  .sliderLayoutContainer--shelf{ 
+    padding-left:0 !important;
+    padding-right:0 !important;
+  } /* <= Shelf -- shelf de produtos mobile */
+  .infoCardHeadline--banner-principal{font-size: 46px;}
+  .infoCardContainer--banner-principal{
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .infoCardTextContainer--banner-principal{margin: 13px 0 0 25px;}
+  .infoCardSubhead--banner-principal{
+    margin-top: 0;
+    font-size: 13px;
+  }
+  .infoCardCallActionContainer--banner-principal :global(.vtex-button__label){font-size: 12px;}
+  .infoCardCallActionContainer--banner-principal{margin-top: 10px;}
+  .sliderTrack--banners-dpto-home{
+    gap:10px;
+    margin:50px 0;
+  }
+}

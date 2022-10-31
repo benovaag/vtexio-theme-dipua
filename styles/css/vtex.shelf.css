@@ -1,0 +1,46 @@
+.title--related-shelf{display:none;}
+.relatedProducts--related-shelf{
+    margin-bottom:30px;
+}
+.arrow{
+  top:38%;
+  padding:0;
+  margin:0;
+  border-radius:0;
+  background: #FFF;
+  border:0;
+}
+.slide--related-shelf{padding: 0 10px;}
+.caretIcon--shelf{
+  width: 18px;
+  height: 18px;
+  color: #000;
+}
+.dot{
+  width:10px !important;
+  height:10px !important;
+  background:#fff;
+  border-radius:50%;
+  padding:0;
+  border:0;
+  border: 1px solid #000;
+}
+.dot--isActive--shelf{
+  background:#000;
+  border-color:transparent;
+}
+.arrowLeft--related-shelf{left:-10px;}
+.arrowRight--related-shelf{right:-10px;}
+.sliderContainer--similars-shelf :global(.vtex-slider-0-x-sliderFrame){justify-content:flex-start;}
+
+/* MOBILE */
+@media screen and (max-width: 1025px) {
+  .slide--related-shelf{padding: 0;}
+  .arrow{
+    padding: 10px;
+    background:transparent
+  }
+  .arrowLeft--related-shelf{left: -10px;}
+  .arrowRight--related-shelf{right: -10px;}
+  .relatedProducts--similars-shelf{margin-bottom:0;}
+}

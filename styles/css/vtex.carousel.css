@@ -1,0 +1,9 @@
+.containerImg {
+  background-color: #F0F0F0;
+}
+
+.containerImg .img {
+  width: 100%;
+  max-width: 1280px;
+  padding:0 max(1rem,min(.3785rem + 2.6519vw,2.5rem));
+}

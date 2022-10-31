@@ -1,0 +1,219 @@
+{
+  "vtex.menu@2.x:menu#institucional": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "footer-menu"
+    },
+    "children": [
+      "menu-item#footer-inst-1",
+      "menu-item#footer-inst-2",
+      "menu-item#footer-inst-3",
+      "menu-item#footer-inst-4",
+      "menu-item#footer-inst-5",
+      "menu-item#footer-inst-6"
+    ],
+    "title": "Menu Footer Coluna 1"
+  },
+  "menu-item#footer-inst-1": {
+    "props": {
+      "id": "menu-item-footer-inst-1",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "footer-menu",
+      "itemProps": {
+        "type": "internal",
+        "href": "/nossas-lojas",
+        "noFollow": false,
+        "tagTitle": "Nossas Lojas",
+        "text": "Nossas Lojas"
+      }
+    },
+    "title": "Menu Footer Item 1"
+  },
+  "menu-item#footer-inst-2": {
+    "props": {
+      "id": "menu-item-footer-inst-2",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "footer-menu",
+      "itemProps": {
+        "type": "internal",
+        "href": "/sobre-dipua",
+        "noFollow": false,
+        "tagTitle": "Sobre a Dipua",
+        "text": "Sobre a Dipua"
+      }
+    },
+    "title": "Menu Footer Item 2"
+  },
+  "menu-item#footer-inst-3": {
+    "props": {
+      "id": "menu-item-footer-inst-3",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "footer-menu",
+      "itemProps": {
+        "type": "internal",
+        "href": "/processo-criativo",
+        "noFollow": false,
+        "tagTitle": "Processo Criativo",
+        "text": "Processo Criativo"
+      }
+    },
+    "title": "Menu Footer Item 3"
+  },
+  "menu-item#footer-inst-4": {
+    "props": {
+      "id": "menu-item-footer-inst-4",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "footer-menu",
+      "itemProps": {
+        "type": "internal",
+        "href": "/cuidados-e-materiais",
+        "noFollow": false,
+        "tagTitle": "Cuidados & Materiais",
+        "text": "Cuidados & Materiais"
+      }
+    },
+    "title": "Menu Footer Item 4"
+  },
+  "menu-item#footer-inst-5": {
+    "props": {
+      "id": "menu-item-footer-inst-5",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "footer-menu",
+      "itemProps": {
+        "type": "internal",
+        "href": "/campanhas",
+        "noFollow": false,
+        "tagTitle": "Campanhas",
+        "text": "Campanhas"
+      }
+    },
+    "title": "Menu Footer Item 5"
+  },
+  "menu-item#footer-inst-6": {
+    "props": {
+      "id": "menu-item-footer-inst-6",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "footer-menu",
+      "itemProps": {
+        "type": "internal",
+        "href": "/collabs",
+        "noFollow": false,
+        "tagTitle": "Collabs",
+        "text": "Collabs"
+      }
+    },
+    "title": "Menu Footer Item 6"
+  },
+
+  "vtex.menu@2.x:menu#ajuda": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "footer-menu"
+    },
+    "children": [
+      "menu-item#footer-ajuda-1",
+      "menu-item#footer-ajuda-2",
+      "menu-item#footer-ajuda-3",
+      "menu-item#footer-ajuda-4",
+      "menu-item#footer-ajuda-5"
+    ],
+    "title": "Menu Footer Coluna 2"
+  },
+  "menu-item#footer-ajuda-1": {
+    "props": {
+      "id": "menu-item-footer-ajuda-1",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "footer-menu",
+      "itemProps": {
+        "type": "internal",
+        "href": "/atendimento",
+        "noFollow": false,
+        "tagTitle": "Atendimento",
+        "text": "Atendimento"
+      }
+    },
+    "title": "Menu Footer Ajuda 1"
+  },
+  "menu-item#footer-ajuda-2": {
+    "props": {
+      "id": "menu-item-footer-ajuda-2",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "footer-menu",
+      "itemProps": {
+        "type": "internal",
+        "href": "/troque-facil",
+        "noFollow": false,
+        "tagTitle": "Troque Fácil",
+        "text": "Troque Fácil"
+      }
+    },
+    "title": "Menu Footer Ajuda 2"
+  },
+  "menu-item#footer-ajuda-3": {
+    "props": {
+      "id": "menu-item-footer-ajuda-3",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "footer-menu",
+      "itemProps": {
+        "type": "internal",
+        "href": "/trocas-e-devolucoes",
+        "noFollow": false,
+        "tagTitle": "Política de Trocas e Devoluções",
+        "text": "Política de Trocas e Devoluções"
+      }
+    },
+    "title": "Menu Footer Ajuda 3"
+  },
+  "menu-item#footer-ajuda-4": {
+    "props": {
+      "id": "menu-item-footer-ajuda-4",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "footer-menu",
+      "itemProps": {
+        "type": "internal",
+        "href": "/entrega",
+        "noFollow": false,
+        "tagTitle": "Entrega",
+        "text": "Entrega"
+      }
+    },
+    "title": "Menu Footer Ajuda 4"
+  },
+  "menu-item#footer-ajuda-5": {
+    "props": {
+      "id": "menu-item-footer-ajuda-5",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "footer-menu",
+      "itemProps": {
+        "type": "internal",
+        "href": "/trabalhe-aqui",
+        "noFollow": false,
+        "tagTitle": "Trabalhe Aqui",
+        "text": "Trabalhe Aqui"
+      }
+    },
+    "title": "Menu Footer Ajuda 5"
+  }
+}

@@ -1,0 +1,498 @@
+{
+  "footer": {
+    "blocks": ["footer-layout.desktop", "footer-layout.mobile"]
+  },
+
+  // PARTE DO RODAPÉ QUE PODE VARIAR EM CADA PÁGINA
+  "flex-layout.row#footer-1-desktop":{
+    "children":[
+      "flex-layout.col#footer-1-1-desktop",
+      "flex-layout.col#footer-1-2-desktop"
+    ],
+    "props":{
+      "blockClass":"newsletter",
+      "horizontalAlign":"center",
+      "verticalAlign":"center",
+      "fullWidth":false,
+      "colSizing": "auto"
+    },
+    "title":"Newsletter"
+  },
+  "flex-layout.col#footer-1-1-desktop":{
+    "children":[
+      "image#newsletter-img"
+    ],
+    "props":{
+      "horizontalAlign":"center"
+    },
+    "title": "Imagem Newsletter"
+  },
+  "image#newsletter-img":{
+    "props": {
+      "src": "assets/imgs/newsletter.jpg",
+      "alt": "Newsletter",
+      "blockClass":"newsletter-img"
+    },
+    "title": "Imagem Newsletter"
+  },
+  "flex-layout.col#footer-1-2-desktop":{
+    "children":[
+      "rich-text#newsletter-title",
+      "rich-text#newsletter-text",
+      "newsletter-form"
+    ],
+    "props":{
+      "horizontalAlign":"center",
+      "blockClass":"newsletter-form"
+    },
+    "title": "Form Newsletter"
+  },
+  "rich-text#newsletter-title":{
+    "props": {
+      "text": "### Newsletter",
+      "blockClass":"title-newsletter"
+    },
+    "title": "Título Newsletter"
+  },
+  "rich-text#newsletter-text":{
+    "props": {
+      "text": "Assine e receba ofertas exclusivas por e-mail",
+      "blockClass":"text-newsletter"
+    },
+    "title": "Texto Newsletter"
+  },
+  "newsletter-form": {
+    "children": [
+      "newsletter-input-email",
+      "newsletter-submit"
+    ],
+    "title": "Form Newsletter"
+  },
+  "newsletter-input-email":{
+    "props":{
+      "placeholderText":"Digite seu e-mail"
+    },
+    "title": "Campo Newsletter"
+  },
+  "newsletter-submit":{
+    "props":{
+      "submitButtonLabel":""
+    },
+    "title": "Botão Newsletter"
+  },
+
+  // PADRÂO DA HOME
+  "flex-layout.row#footer-2-desktop-home":{
+    "children":[
+      "flex-layout.col#footer-2-1-desktop-home",
+      "flex-layout.col#footer-2-2-desktop"
+    ],
+    "props":{
+      "blockClass":"texto-footer",
+      "horizontalAlign":"center",
+      "verticalAlign":"center",
+      "fullWidth":true
+    },
+    "title": "Texto Footer"
+  },
+  "flex-layout.col#footer-2-1-desktop-home":{
+    "children":[
+      "rich-text#title-text-footer-home",
+      "rich-text#text-footer-home"
+    ],
+    "props":{
+      "horizontalAlign":"center",
+      "blockClass":"text-footer"
+    },
+    "title": "Texto Footer"
+  },
+  "rich-text#title-text-footer-home":{
+    "props": {
+      "text": "Semijoias Dipua",
+      "blockClass":"title-text-footer"
+    },
+    "title": "Texto Footer - Título"
+  },
+  "rich-text#text-footer-home":{
+    "props":{
+      "blockClass":"text-footer",
+      "text":"Quem tem estilo sabe o quanto a qualidade dos acessórios é importante. Peças banhadas a ouro e prata elevam o visual a outro nível. Além de contar com um design arrojado, **as semijoias** são elaboradas com a utilização de técnicas de joalheria artesanal. Por isso, os modelos se destacam! <br><br> As semijoias dão um toque especial ao look e ressaltam a personalidade de quem usa os acessórios. Atualmente, encontramos peças de vários estilos. Tantos, que é difícil listar todos! Entretanto, podemos reunir os principais tipos. Assim, trouxemos um pequeno guia para você escolher os seus modelos preferidos. Confira! <br><br>  #### Tipos de semijoias <br>Os modelos de semijoias são bem variados e complementam produções de todos os estilos. O visual pode ser moderno, clássico, esportivo, social... Não importa! Sempre haverá um acessório que combina com ele. <br><br> Para facilitar a vida na hora de escolher as peças, podemos listar os principais **tipos de semijoias.** Dessa forma, você fará uma escolha certeira na hora de compor o visual. Vamos lá! <br><br> #### Semijoias banhadas a ouro <br> As **semijoias banhadas a ouro** nunca saem de moda. Elas são perfeitas para criar produções refinadas, já que transmitem a ideia de sofisticação. Peças que recebem o banho de ouro 18K são resistentes e trazem o brilho inconfundível do metal. <br><br> A cor dourada também valoriza o look. Nada melhor do que um belo acessório banhado a ouro para realçar a cor da roupa. Isso porque o ouro é um complemento magnífico para cores quentes, como vermelho e amarelo. Dessa forma, invista em peças com esse banho, [como colares banhados a ouro](https://www.dipua.com.br/shop/colares-e-gargantilhas/banho-ouro?initialMap=c%2Cc&initialQuery=shop%2Fcolares-e-gargantilhas&map=category-1%2Ccategory-2%2Cmaterial&O=OrderByScoreDESC), para criar produções coloridas e alegres. Outra forma de usar esses acessórios magníficos é adicioná-los às produções noturnas, como vestidos de festa. Eles adicionam charme e imprimem um certo requinte, trazido pelo brilho do ouro. <br><br> #### Semijoias em prata <br> Por outro lado, as **semijoias em prata** nos remetem ao futuro e à vanguarda, resultando em produções modernas e arrojadas. As peças banhadas a prata trazem a mesma qualidade das banhadas a ouro, oferecendo alta durabilidade.<br> Muitas vezes, encontramos o mesmo modelo em ouro e prata. A escolha da peça deve considerar, é claro, o estilo pessoal de cada um, aliado ao visual almejado. Uma produção futurista, por exemplo, pode ficar incrível com [brincos banhados a prata](https://www.dipua.com.br/brinco-georgia-prata-11823/p?O=OrderByScoreDESC). <br> O brilho sutil do metal prateado também é uma excelente escolha para compor looks discretos, quando simplesmente não queremos ser o centro das atenções. Para ilustrar, na hora de elaborar a produção para um evento social ou uma reunião de trabalho, você pode apostar nos modelos prateados. <br><br> #### Semijoias com pedras naturais <br> Até agora, falamos bastante dos metais. No entanto, as semijoias não precisam ser lisas. As pedras estão super em alta e ficam magníficas com os acessórios. Elas podem adornar anéis, colares, brincos e pulseiras. Seja com o metal dourado ou o prateado, a combinação é bem estilosa. As **semijoias com pedras naturais** se destacam pelo formato e lapidação de cada peça. Opções pirita, apatita e água-marinha formam complementos deslumbrantes aos modelos feitos em metal banhado. <br> Trazendo o design como diferencial, as peças com pedras naturais são **acessórios da moda**. Elas são ótimas para criar produções autênticas, uma espécie de marca registrada que transmite a personalidade de quem as utiliza. Afinal, pedras podem representar signo, sorte, ambições e até recordações.<br><br> ### As melhores semijoias estão na Dipua! <br>As semijoias são parte essencial da composição do look e realçam todos os estilos. Elas podem ser simples e discretas ou exuberantes e sofisticadas, mas, certamente, combinam com qualquer visual. Com tantos modelos, é difícil não se identificar com vários, não é? Então, você já escolheu as suas peças preferidas? <br> Na Dipua, você encontra modelos banhados a ouro e prata, além de pedras naturais lapidadas exclusivamente para a marca. Com um estilo único e marcante, os nossos acessórios são para quem quer sair do óbvio e criar um visual autêntico e inovador. Dê só uma olhada no que [preparamos para você!](https://www.dipua.com.br/shop?O=OrderByScoreDESC)"
+    },
+    "title": "Texto Footer"
+  },
+  "flex-layout.col#footer-2-2-desktop":{
+    "children":[
+      "image#text-footer-img"
+    ],
+    "props":{
+      "horizontalAlign":"center",
+      "blockClass":"image-footer"
+    },
+    "title": "Imagem do Texto Footer"
+  },
+  "image#text-footer-img":{
+    "props": {
+      "src": "assets/imgs/texto-home.jpg",
+      "alt": "Texto footer",
+      "blockClass":"text-footer-img"
+    },
+    "title": "Imagem do Texto Footer"
+  },
+
+  // PADRÃO INSTITUCIONAIS E PDP
+  "flex-layout.row#footer-2-desktop-pdp-inst":{
+    "children":[
+      "flex-layout.col#footer-2-1-desktop-pdp-inst",
+      "flex-layout.col#footer-2-2-desktop"
+    ],
+    "props":{
+      "blockClass":"texto-footer",
+      "horizontalAlign":"center",
+      "verticalAlign":"center",
+      "fullWidth":true
+    },
+    "title": "Texto Footer"
+  },
+  "flex-layout.col#footer-2-1-desktop-pdp-inst":{
+    "children":[
+      "rich-text#title-text-footer-pdp-inst",
+      "rich-text#text-footer-pdp-inst"
+    ],
+    "props":{
+      "horizontalAlign":"center",
+      "blockClass":"text-footer"
+    },
+    "title": "Texto Footer"
+  },
+  "rich-text#title-text-footer-pdp-inst":{
+    "props": {
+      "text": "Sobre a Dipua",
+      "blockClass":"title-text-footer"
+    },
+    "title": "Texto Footer - Título"
+  },
+  "rich-text#text-footer-pdp-inst":{
+    "props":{
+      "blockClass":"text-footer",
+      "text":"Aos 17 anos de idade a designer Mariana Sgarbi inaugurou sua trajetória. Desde 2009 com uma curiosidade incansável e uma eterna busca pelo novo, veio conquistando muita experiência, conhecimento de materiais e de técnicas inovadoras.<br> A empresa iniciou suas atividades como fornecedora para o mercado atacadista e depois de anos trabalhando com grandes marcas resolveu dar saltos mais desafiadores e posicionar seu nome no varejo através de uma identidade própria. Essa decisão gerou uma repercussão muito positiva, levando ao sucesso de sua loja online e à criação de sua primeira loja física, logo no primeiro ano de experiência no varejo.<br> Diversidade (de formas, materiais, design) e autenticidade são as diretrizes que guiam seu caminho. Sua inspiração sempre prioriza desenhos atemporais, com um toque de flexibilidade e sem prazo de validade para suas criações. A DIPUA não se deixa restringir a um determinado estilo e evita a classificação de seu público segundo o critério de faixa etária, pois se considera uma marca flexível em termos de idade, estilo, gênero e personalidade.<br> Hoje a marca, que tem base no Rio de Janeiro e em São Paulo, expande seus horizontes e divide sua operação entre o site (e-commerce) e suas duas lojas físicas (no Shopping Leblon e no Shopping Tijuca). Com uma forte presença nas mídias sociais e um olhar atento para a inovação dos meios de comunicação, a marca aposta na estética e na narrativa para desenhar mais que produtos, como também os meios e momentos em que serão inseridos."
+    },
+    "title": "Texto Footer"
+  },
+
+  // RODAPÉ PARA TODAS AS PÁGINAS
+  "footer-layout.desktop": {
+    "children": [
+      "flex-layout.row#footer-3-desktop"
+    ],
+    "title":"Rodapé"
+  },
+
+  "flex-layout.row#footer-3-desktop": {
+    "children": [
+      "flex-layout.col#footer-3-desktop-1",
+      "flex-layout.col#footer-3-desktop-2",
+      "flex-layout.col#footer-3-desktop-3",
+      "flex-layout.col#footer-3-desktop-4"
+    ],
+    "props": {
+      "blockClass": "footer",
+      "fullWidth":false,
+      "colSizing": "auto"
+    },
+    "title": "Rodapé"
+  },
+  "flex-layout.col#footer-3-desktop-1":{
+    "children":[
+      "image#logo-footer",
+      "flex-layout.row#social-media"
+    ],
+    "props": {
+      "blockClass": "footer-col1"
+    },
+    "title": "Rodapé Coluna 1"
+  },
+  "image#logo-footer":{
+    "props": {
+      "src": "assets/imgs/logo.png",
+      "alt": "Dipua",
+      "blockClass":"logo-footer"
+    },
+    "title": "Logo Rodapé"
+  },
+  "flex-layout.row#social-media":{
+    "children":[
+      "image#facebook-footer",
+      "image#instagram-footer",
+      "image#pinterest-footer",
+      "image#youtube-footer"
+    ],
+    "props":{
+      "blockClass": "socialmedia-container",
+      "colSizing": "auto"
+    },
+    "title": "Rodapé Redes Sociais"
+  },
+  "image#facebook-footer":{
+    "props":{
+      "alt":"Link do Facebook",
+      "src": "assets/imgs/facebook.png", 
+      "blockClass":"socialmedia-footer",
+      "title": "Facebook Link",
+      "link":{
+        "newTab": true,
+        "url": "https://www.facebook.com/dipuaoficial/"
+      }
+    },
+    "title": "Facebook Link"
+  },
+  "image#instagram-footer":{
+    "props":{
+      "alt":"Link do Instagram",
+      "src": "assets/imgs/instagram.png", 
+      "blockClass":"socialmedia-footer",
+      "title":"Instagram Link",
+      "link":{
+        "newTab": true,
+        "url": "https://www.instagram.com/dipua_/"
+      }
+    },
+    "title": "Instagram Link"
+  },
+  "image#pinterest-footer":{
+    "props":{
+      "alt":"Link do Pinterest",
+      "src": "assets/imgs/pinterest.png", 
+      "blockClass":"socialmedia-footer",
+      "title":"Pinterest Link",
+      "link":{
+        "newTab": true,
+        "url": "https://br.pinterest.com/dipua_/_shop/"
+      }
+    },
+    "title": "Pinterest Link"
+  },
+  "image#youtube-footer":{
+    "props":{
+      "alt":"Link do YouTube",
+      "src": "assets/imgs/youtube.png", 
+      "blockClass":"socialmedia-footer",
+      "title":"YouTube Link",
+      "link":{
+        "newTab": true,
+        "url": "https://www.youtube.com/channel/UCK-N9orqVlDpEN4Jad-MyJQ"
+      }
+    },
+    "title": "YouTube Link"
+  },
+
+  "flex-layout.col#footer-3-desktop-2":{
+    "children":[
+      "rich-text#footer-title-1",
+      "vtex.menu@2.x:menu#institucional"
+    ],
+    "props": {
+      "blockClass": "footer-col2"
+    },
+    "title": "Rodapé Coluna 2"
+  },
+  "rich-text#footer-title-1":{
+    "props":{
+      "text":"#### Institucional",
+      "blockClass":"title-footer"
+    },
+    "title": "Menu Institucional"
+  },
+
+  "flex-layout.col#footer-3-desktop-3":{
+    "children":[
+      "rich-text#footer-title-2",
+      "vtex.menu@2.x:menu#ajuda"
+    ],
+    "props": {
+      "blockClass": "footer-col3"
+    },
+    "title": "Rodapé Coluna 3"
+  },
+  "rich-text#footer-title-2":{
+    "props":{
+      "text":"#### Precisa de ajuda?",
+      "blockClass":"title-footer"
+    },
+    "title": "Menu Ajuda"
+  },
+  
+  "flex-layout.col#footer-3-desktop-4":{
+    "children":[
+      "rich-text#footer-title-4",
+      "flex-layout.row#footer-bandeiras",
+      "flex-layout.row#footer-developed",
+      "rich-text#copyright"
+    ],
+    "props": {
+      "blockClass": "footer-col4"
+    },
+    "title": "Rodapé Coluna 4"
+  },
+  "rich-text#footer-title-4":{
+    "props":{
+      "text":"#### Formas de Pagamento",
+      "blockClass":"title-footer"
+    },
+    "title": "Formas de Pagamento"
+  },
+  "flex-layout.row#footer-bandeiras":{
+    "children":[
+      "list-context.image-list#payment-footer"
+    ],
+    "props": {
+      "blockClass": "footer-bandeiras"
+    },
+    "title": "Bandeiras de Pagamento"
+  },
+  "list-context.image-list#payment-footer":{
+    "children":["list-context-renderer#payment-footer"],
+    "props":{
+      "images":[
+        {
+          "src":"assets/imgs/visa.png",
+          "alt":"Visa",
+          "title": "Visa"
+        },
+        {
+          "src":"assets/imgs/master.png",
+          "alt":"Master",
+          "title": "Master"
+        },
+        {
+          "src":"assets/imgs/amex.png",
+          "alt":"AMEX",
+          "title": "AMEX"
+        },
+        {
+          "src":"assets/imgs/elo.png",
+          "alt":"Elo",
+          "title": "Elo"
+        },
+        {
+          "src":"assets/imgs/maestro.png",
+          "alt":"Maestro",
+          "title": "Maestro"
+        },
+        {
+          "src":"assets/imgs/cabal.png",
+          "alt":"Cabal",
+          "title": "Cabal"
+        },
+        {
+          "src":"assets/imgs/diners.png",
+          "alt":"Diners",
+          "title": "Diners"
+        },
+        {
+          "src":"assets/imgs/banrisul.png",
+          "alt":"Banrisul",
+          "title": "Banrisul"
+        },
+        {
+          "src":"assets/imgs/jcb.png",
+          "alt":"JCB",
+          "title": "JCB"
+        },
+        {
+          "src":"assets/imgs/visa-electron.png",
+          "alt":"Visa Electron",
+          "title": "Visa Electron"
+        },
+        {
+          "src":"assets/imgs/pix.png",
+          "alt":"PIX",
+          "title": "PIX"
+        }
+      ],
+      "blockClass":"payment-footer-list"
+    },
+    "title": "Formas de Pagamento"
+  },
+  "list-context-renderer#payment-footer": {
+    "props": {
+      "listElement": "ul",
+      "itemElement": "li",
+      "blockClass": "formas-de-pgto"
+    },
+    "title": "Bandeiras de Pagamento"
+  },
+
+  "flex-layout.row#footer-developed":{
+    "children": [
+      "rich-text#developed-1",
+      "image#developed-1",
+      "rich-text#developed-2",
+      "image#developed-2"
+    ],
+    "props": {
+      "blockClass": "footer-developed",
+      "colSizing": "auto"
+    },
+    "title": "footer developed"
+  },
+  "rich-text#developed-1":{
+    "props": {
+      "text": "Powered By",
+      "blockClass": "footer-developed"
+    },
+    "title": "Powered By"
+  },
+  "image#developed-1":{
+    "props": {
+      "src": "assets/svgs/vtex.svg",
+      "alt": "VTEX",
+      "blockClass": "footer-developed",
+      "link": {
+        "openNewTab": true,
+        "url": "https://vtex.com/br-pt/"
+      }
+    },
+    "title": "Powered By"
+  },
+  "rich-text#developed-2":{
+    "props": {
+      "text": "Developed By",
+      "blockClass": "footer-developed"
+    },
+    "title": "Developed By"
+  },
+  "image#developed-2":{
+    "props": {
+      "src": "assets/imgs/benova.png",
+      "alt": "Benova",
+      "blockClass": "footer-developed",
+      "link": {
+        "openNewTab": true,
+        "url": "https://www.benova.ag/"
+      }
+    },
+    "title": "Developed By"
+  },
+  
+  "rich-text#copyright":{
+    "props": {
+      "text": "® 2022 Dipua. Todos os direitos reservados.",
+      "blockClass":"copyright"
+    },
+    "title": "Copyright"
+  },
+
+  "footer-layout.mobile": {
+    "children": [
+      "flex-layout.row#footer-3-desktop"
+    ],
+    "title": "Footer Mobile"
+  },
+
+  "back-to-top-button":{
+    "props":{
+      "display":"caret-icon"
+    },
+    "title": "Voltar ao topo - Mobile"
+  }
+}

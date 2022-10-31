@@ -1,0 +1,105 @@
+{
+  "store.custom#trabalhe-aqui": {
+    "blocks": [
+      "flex-layout.row#banner-institucional-trabalhe-aqui",
+      "flex-layout.row#trabalhe-aqui",
+      "flex-layout.row#footer-1-desktop",
+      "flex-layout.row#footer-2-desktop-pdp-inst"
+    ]
+  },
+  "flex-layout.row#banner-institucional-trabalhe-aqui":{
+    "children":[
+      "flex-layout.col#image-banner",
+      "flex-layout.col#breadcrumb-banner-trabalhe-aqui"
+    ],
+    "props":{
+      "blockClass": "row-banner-inst",
+      "fullWidth": true,
+      "colSizing": "auto"
+    }
+  },
+  "flex-layout.col#breadcrumb-banner-trabalhe-aqui":{
+    "children":[
+      "rich-text#breadcrumb-institucional-trabalhe-aqui"
+    ],
+    "props":{
+      "blockClass": "col-text-banner-inst"
+    }
+  },
+  "rich-text#breadcrumb-institucional-trabalhe-aqui":{
+    "props":{
+      "text":"[Página inicial](/)  **Trabalhe aqui**",
+      "blockClass": "breadcrumb-institucionais"
+    }
+  },
+
+  "flex-layout.row#trabalhe-aqui": {
+    "props":{
+      "blockClass":"content-institucional"
+    },
+    "children": [
+      "flex-layout.col#trabalhe-aqui-1",
+      "flex-layout.col#trabalhe-aqui-2"
+    ],
+    "title": "Página Trabalhe Aqui"
+  },
+  "flex-layout.col#trabalhe-aqui-1":{
+    "props":{
+      "width":"27%",
+      "blockClass":"menu-institucional"
+    },
+    "children":[
+      "rich-text#menu-ajuda-1",
+      "rich-text#menu-ajuda-2",
+      "rich-text#menu-ajuda-3",
+      "rich-text#menu-ajuda-4",
+      "rich-text#menu-ajuda-5-active"
+    ],
+    "title": "Menu"
+  },
+
+  "flex-layout.col#trabalhe-aqui-2":{
+    "props":{
+      "width":"73%",
+      "blockClass":"content-institucional"
+    },
+    "children":[
+      "rich-text#titulo-trabalhe-aqui",
+      "rich-text#sub-titulo-trabalhe-aqui",
+      "rich-text#conteudo-trabalhe-aqui",
+      "link#linkedin-institucional"
+    ],
+    "title": "Conteúdo"
+  },
+  "rich-text#titulo-trabalhe-aqui":{
+    "props":{
+      "blockClass":"title-content-institucional",
+      "text":"## Trabalhe Aqui"
+    },
+    "title": "Título"
+  },
+  "rich-text#sub-titulo-trabalhe-aqui":{
+    "props":{
+      "blockClass":"sub-title-content-institucional",
+      "text":"#### Olá! Seja bem vinda(o)!"
+    },
+    "title": "Sub Título"
+  },
+  
+  "rich-text#conteudo-trabalhe-aqui":{
+    "props":{
+      "blockClass":"content-institucional",
+      "text":"Se identifica com a DIPUA e quer fazer parte do nosso time? <br> Confira em nosso perfil no Linkedin as vagas disponíveis e envie seu currículo! <br><br> Link para linkedin >> <br>"
+    },
+    "title": "Texto"
+  },
+  "link#linkedin-institucional":{
+    "props":{
+      "label": "https://br.linkedin.com/company/dipua",
+      "href": "https://br.linkedin.com/company/dipua",
+      "target": "_blank",
+      "blockClass": "content-institucional"
+    }
+   
+  }
+}

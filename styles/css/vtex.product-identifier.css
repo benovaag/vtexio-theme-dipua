@@ -1,0 +1,14 @@
+.product-identifier--productReference {
+  margin-bottom: 20px;
+  display: block;
+}
+.product-identifier__label,
+.product-identifier__separator{display:none;}
+.product-identifier__value{
+  color: #848d9c;
+  font-size:18px;
+}
+.product-identifier__value::before{
+  content: 'Código :';
+  padding-right: 3px;
+}

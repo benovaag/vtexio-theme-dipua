@@ -1,0 +1,12 @@
+@font-face {
+    font-family: "padrao";
+    src: url(assets/fonts/IvyMode-Regular.woff2), 
+         url(assets/fonts/IvyMode-Regular.ttf);
+    font-display: swap;
+}
+@font-face {
+    font-family: "alternative";
+    src: url(assets/fonts/Rubik-Regular.woff2), 
+         url(assets/fonts/Rubik-Regular.ttf);
+    font-display: swap;
+}

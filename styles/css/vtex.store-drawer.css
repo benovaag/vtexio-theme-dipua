@@ -1,0 +1,50 @@
+.menuIcon{
+    width:24px;
+    height:24px;
+}
+.openIconContainer{padding: 0;}
+/* .openIconContainer{
+    padding:10px 30px 10px 15px;
+} */
+.drawerHeader{
+    position: absolute;
+    right: 14px;
+    top:0;
+    height: 100%;
+    align-items: flex-start;
+}
+.closeIconButton{
+    padding:15px;
+    font-size:20px;
+    color:#fff;
+    height: 100%;
+    align-items: flex-start;
+    display: flex;
+}
+.drawerContent{
+    height:100%;
+    width:85%;
+    background-color:#fff;
+}
+.drawer{
+    width:100% !important;
+    background-color:transparent;
+}
+.closeIconButton--keep-buying{
+    background: transparent;
+    font:400 14px/18px "alternative";
+    color: #000;
+    padding: 10px;
+    text-transform: uppercase;
+    border: 1px solid #466d5b;
+    border-radius: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 48px;
+    margin: 0 16px 8px;
+    text-decoration: none;
+    width: -webkit-fill-available;
+    width: -moz-available;
+}
+    

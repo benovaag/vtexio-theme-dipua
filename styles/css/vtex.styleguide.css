@@ -1,0 +1,5 @@
+.dropdown .container{
+    height: 29px;
+    border-width: 1px;
+}
+.dropdown .container :global(.vtex-dropdown__button){padding: 4px 12px 0 15px;}

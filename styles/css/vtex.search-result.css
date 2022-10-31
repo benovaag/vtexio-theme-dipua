@@ -1,0 +1,269 @@
+.galleryTitle--layout{
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 40px;
+  color: #000;
+  text-transform: capitalize;
+  margin: 6px 0 0;
+} /* Título -- listagens */
+.filter__container--title{display:none;}
+.filter{
+  font-weight: 400;
+  font-size: 14px;
+  color: #848d9c;
+  text-transform: uppercase;
+  padding:15px 0;
+}
+.filterItem :global(.vtex-checkbox__line-container){
+  align-items:flex-start;
+}
+.filterItem :global(.vtex-checkbox__label){
+  color: #848d9c;
+  text-transform: capitalize;
+  font: 15px "alternative";
+  margin: 3px 0 3px 10px;
+}
+.filterItem :global(.vtex-checkbox__inner-container){
+  border:0;
+  border-radius: 0;
+  background:#fff;
+}
+.filterItem :global(.vtex__icon-check){
+  border:0;
+  background: #848d9c!important;
+  color: #848d9c;
+  border-radius: 0;
+  display: block;
+  height: 12px;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  width: 12px;
+}
+
+.filterItem :global(.vtex-checkbox__box-wrapper){
+  border: 1px solid #848d9c;
+  border-radius: 0;
+  width: 1.563rem;
+  height: 1.563rem;
+}
+.totalProducts--layout{
+  padding:37px 0 23px 19px;
+  font-size:13px;
+  color:#000;
+  text-transform:none;
+}
+.totalProductsMessage{color: #000;}
+.totalProducts--layout::after{
+  content:"encontrado(s)";
+  display:inline-block;
+  margin-left:4px;
+  font-size:13px;
+  color:#000;
+}
+.orderByDropdown{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: height 2s linear;
+  border: 1px solid #848d9c;
+  padding:0;
+}
+.orderByButton{
+  border: 0;
+  justify-content: center;
+  position: relative;
+  height: 48px;
+  padding: 15px 0;
+}
+.filterPopupTitle{font-size:0;}
+.orderByText{
+  font: 14px "alternative";
+  color: #979899;
+  text-transform: uppercase;
+}
+.filters--layout{
+  padding: 30px 10px 30px 0;
+}
+.filterPopupArrowIcon{color: #466d5b;}
+
+.gallery--grid{
+  padding-left:0;
+  margin:0;
+  justify-content:left;
+}
+.galleryItem--grid{
+  padding:0 0 20px 18px;
+  margin-bottom: 32px;
+}
+:global(.vtex-store-components-3-x-container).searchResultContainer{
+  margin-bottom:60px;
+  padding:0;
+  max-width:100%;
+}
+.orderByOptionsContainer{
+  z-index: 99;
+  top: 48px;
+  border: 1px solid #848d9c;
+  border-top:0;
+  width: 221px;
+  right: -1px;
+}
+.orderByOptionItem{
+  font: 14px "alternative";
+  line-height: 17.82px;
+  color: #848d9c;
+  text-align: center;
+}
+.notFound--layout{
+  width: 100%;
+  max-width: 1280px;
+  padding:0;
+  margin:0 auto;
+}
+.filter__container{border-color:#848d9c;}
+.filterTitleSpan{
+  font-weight: 400;
+  font-size: 14px;
+  color: #848d9c;
+  text-transform: uppercase;
+}
+.filterTemplateOverflow{
+  max-height:fit-content !important;
+}
+.filterBreadcrumbsItem{padding:0;}
+.searchNotFoundInfo{color: #000;}
+.searchNotFoundOops, 
+.searchNotFoundWhatDoIDo,
+.searchNotFoundWhatToDoDotsContainer{color: #466d5b;}
+.filter__container--selectedFilters{display:none;}
+.filterItem{margin-top:5px}
+.filterItem:first-child{margin-top: 0;}
+.buttonShowMore :global(.vtex-button){
+  border: 1px solid #466d5b;
+  border-radius: 0;
+  background: #FFF;
+  color: #000;
+  padding: 7px 0;
+  transition: ease all .3s;
+  margin:20px 0;
+}
+.buttonShowMore :global(.vtex-button):hover{
+  color: #FFF;
+  background: #466d5b;
+}
+.filter__container--brand{display:none;}
+.filterIcon--filterCol{padding-right:0;}
+.gallery{padding-left:10px;}
+.galleryItem{padding-right:0;}
+
+/* MOBILE */
+@media screen and (max-width: 1025px) {
+  .filters--layout{
+    padding: 20px 0 30px;
+  }
+  .galleryItem{padding:0;}
+  .accordionFilterContainer--marca{display:none;}
+  .notFound--layout{
+    max-width:100%;
+    margin-bottom:40px;
+  }
+  .searchNotFoundInfo{
+    padding-left:20px;
+    padding-right: 20px;
+  }
+  .filterPopupTitle,
+  .orderByOptionItem{font:14px "alternative";}
+  .filter__container--priceRange{padding: 20px;}
+  .galleryItem--grid{padding:10px 5px;}
+  .galleryItem--grid :global(.vtex-product-summary-2-x-container){max-width:100% !important;}
+  .gallery--grid{margin-top: 19px;} 
+  .totalProducts--layout{
+    padding:16px 0 16px 10px;
+    text-align:left;
+  }
+  .orderByButton{padding:10px 0;}
+  .galleryTitle--layout{
+    margin:12px 0 13px 12px;
+  }
+  .filterPopupButton{
+    padding:10px 17px 9px;
+    border: 1px solid #848d9c !important;
+    border-radius:0;
+    width: 100%;
+  }
+  .filterPopupButton .filterPopupTitle{
+    color:#466d5b;
+    margin: 0;
+  }
+  .orderByText{
+    font-weight: 400;
+    color: #466d5b;
+    display: inline-block;
+  }
+  .filterApplyButtonWrapper :global(.vtex-button){
+    background: #466d5b;
+    color: #fff;
+    padding: 10px 0;
+  }
+  .filterApplyButtonWrapper{padding-right: 0;}
+  .orderByOptionsContainer{
+    width: 100%;
+    right: -1px;
+    top: 38px;
+  }
+  .filterPopupButton .filterPopupTitle::before{
+    display:none;
+  }
+  .filterPopupArrowIcon{display:none;}
+  .filterAccordionBreadcrumbs{
+    background: #466d5b;
+    height:fit-content;
+    padding:18px 20px;
+  }
+  .filterBreadcrumbsText,
+  .filterBreadcrumbsItemName{
+    font-weight: 600;
+    font-size: 15px;
+    color: #FFF;
+  }
+  .filterBreadcrumbsItem .caretIcon{
+    margin-left:10px;
+    color: #FFF;
+  }
+  .filterBreadcrumbsContent{padding:0;}
+  .accordionFilterItemTitle{
+    font-size: 15px;
+    color: #000;
+    font-weight:400;
+  }
+  .accordionFilterContainer{padding-left:0;}
+  .accordionFilterItem{
+    padding-top:0;
+    padding-bottom:0;
+  }
+  .accordionFilterContent{padding:0;}
+  .accordionFilterItemOptions{padding:0;}
+  .filterAccordionItemBox{
+    min-height:fit-content;
+    padding:15px;
+  }
+  .filterAccordionItemBox :global(.vtex-checkbox__label){
+    font-size: 13px;
+    color: #000;
+    padding:0 0 0 5px;
+  }
+  .filterAccordionItemBox :global(.vtex-checkbox__inner-container){
+    border-radius: 5px;
+    border: 1px solid #000;
+  }
+  .searchResultContainer{padding: 0 !important;}
+  .gallery--grid{padding:0 7px;}
+  .galleryItem--grid{padding:10px 5px;}
+  .closeIconButton{
+    padding: 12px 6px 0 0;
+    color: #fff;
+  }
+}

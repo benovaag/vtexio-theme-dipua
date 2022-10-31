@@ -1,0 +1,15 @@
+.summarySmallDisclaimer{display:none;}
+.price{color: #466d5b;}
+.summaryItemContainer{
+        font:16px "alternative";
+        margin-top:5px;
+        padding:0;
+        text-transform:uppercase;
+}
+.summarySmallContent .summaryItemContainer:last-child{
+        font:20px "alternative";
+}
+.summaryItemLabel{
+        font-weight: 400 !important;
+        display: block;
+}

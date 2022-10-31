@@ -1,0 +1,213 @@
+{
+  "store.home": {
+    "blocks": [
+      "flex-layout.row#banner-principal",
+      "flex-layout.row#banners-dpto-home",
+      "rich-text#shelf-title",
+      "flex-layout.row#shelf",
+      "flex-layout.row#banner-middle-home",
+      "flex-layout.row#footer-1-desktop",
+      "flex-layout.row#footer-2-desktop-home"
+    ]
+  },
+
+  "flex-layout.row#banner-principal":{
+    "children": [
+      "list-context.image-list#banner-principal"
+    ],
+    "props": {
+      "horizontalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true,
+      "blockClass": "banner-principal"
+    },
+    "title": "Banner Principal"
+  },
+  "list-context.image-list#banner-principal": {
+    "children": ["slider-layout#banner-principal"],
+    "props": {
+      "height": 615,
+      "preload": true,
+      "fullWidth": true,
+      "images": [
+        {
+          "image": "assets/imgs/banner-prisma.jpg",
+          "mobileImage": "assets/imgs/banner-mobile-1.jpg"
+        },
+        {
+          "image": "assets/imgs/banner-off.jpg",
+          "mobileImage": "assets/imgs/banner-mobile-2.jpg"
+        }
+      ]
+    },
+    "title": "Banner Principal"
+  },
+  "slider-layout#banner-principal": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "fullWidth": true,
+      "autoplay":{
+        "timeout":"5000"
+      },
+      "showPaginationDots": "always",
+      "showNavigationArrows": "never",
+      "blockClass": "banner-principal"
+    },
+    "title": "Banner Principal"
+  },
+
+  "flex-layout.row#banners-dpto-home":{
+    "children": [
+      "slider-layout#banners-dpto-home"
+    ],
+    "props": {
+      "horizontalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true,
+      "blockClass": "banners-dpto-home"
+    },
+    "title": "Banners Departamento Home"
+  },
+  "slider-layout#banners-dpto-home": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 3,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "fullWidth": true,
+      "showPaginationDots": "mobileOnly",
+      "showNavigationArrows": "never",
+      "blockClass": "banners-dpto-home"
+    },
+    "children": [
+      "image#banner-dpto-home-1",
+      "image#banner-dpto-home-2",
+      "image#banner-dpto-home-3"
+    ],
+    "title": "Banners Secundários"
+  },
+  "image#banner-dpto-home-1":{
+    "props": {
+      "src": "assets/imgs/flume.jpg",
+      "alt": "Flume",
+      "link": {
+        "url": "/colecao-flume"
+      },
+      "blockClass":"banners-dpto-home"
+    },
+    "title": "Banner Departamento 1"
+  },
+  "image#banner-dpto-home-2":{
+    "props": {
+      "src": "assets/imgs/prisma.jpg",
+      "alt": "Prisma",
+      "link": {
+        "url": "/colecao-prisma"
+      },
+      "blockClass":"banners-dpto-home"
+    },
+    "title": "Banner Departamento 2"
+  },
+  "image#banner-dpto-home-3":{
+    "props": {
+      "src": "assets/imgs/best-sellers.jpg",
+      "alt": "Best Sellers",
+      "link": {
+        "url": "/maisvendidos"
+      },
+      "blockClass":"banners-dpto-home"
+    },
+    "title": "Banner Departamento 3"
+  },
+
+  "rich-text#shelf-title": {
+    "props": {
+      "text": "## Mais Vendidos",
+      "blockClass": "shelfTitle"
+    },
+    "title": "Prateleira - Título"
+  },
+  "flex-layout.row#shelf": {
+    "children": ["list-context.product-list#shelf"],
+    "title": "Prateleira",
+    "props":{
+      "blockClass": "shelf-row"
+    }
+  },
+  "list-context.product-list#shelf": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#shelf"],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC"
+    },
+    "title": "Prateleira"
+  },
+  "slider-layout#shelf": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 3,
+        "phone": 2
+      },
+      "infinite": true,
+      "fullWidth": false,
+      "blockClass": "shelf",
+      "showNavigationArrows": "desktopOnly",
+      "showPaginationDots": "always"
+    },
+    "title": "Prateleira"
+  },
+  "flex-layout.row#banner-middle-home":{
+    "children": [
+      "responsive-layout.desktop#banner-middle-home",
+      "responsive-layout.mobile#banner-middle-home"
+      ],
+    "title": "Banner Meio Home",
+    "props":{
+      "blockClass": "banner-middle-home",
+      "fullWidth": true,
+      "colSizing": "auto"
+    }
+  },
+  "responsive-layout.desktop#banner-middle-home":{
+    "children": ["image#banner-middle-home-desktop"],
+    "title": "Desktop - Banner Meio Home"
+  },
+  "responsive-layout.mobile#banner-middle-home":{
+    "children": ["image#banner-middle-home-mobile"],
+    "title": "Mobile - Banner Meio Home"
+  },
+  "image#banner-middle-home-desktop":{
+    "props":{
+      "src": "assets/imgs/off.jpg",
+      "blockClass":"banner-middle-home-desktop",
+      "alt": "OFF",
+      "link": {
+        "url": "/off",
+        "title": "Banner OFF"
+      }
+    },
+    "title": "Desktop - Banner Meio Home"
+  },
+  "image#banner-middle-home-mobile":{
+    "props":{
+      "src": "assets/imgs/off-mobile.jpg",
+      "blockClass":"banner-middle-home-mobile",
+      "alt": "OFF",
+      "link": {
+        "url": "/off",
+        "title": "Banner OFF"
+      }
+    },
+    "title": "Mobile - Banner Meio Home"
+  }
+}

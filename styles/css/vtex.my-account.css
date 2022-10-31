@@ -1,0 +1,379 @@
+/* RESET */
+*,
+*:hover,
+*:focus{
+    /* transition:.5s ease all; */
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -moz-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+:focus{outline:0;}
+body,html{touch-action:pan-y;}
+html{scroll-behavior:smooth;}
+:global(.vtex-spinner_circle){color:#466d5b;}
+:global(input):focus-visible{outline:0;}
+
+body,
+:global(.t-body), 
+:global(.t-heading-6), 
+:global(.t-action), 
+:global(.t-action--small){font-family: "padrao", sans-serif;}
+
+/* MINHA CONTA */
+:global(.vtex-account) > div{
+    width: 100%;
+    max-width: 1280px;
+    padding:0 max(1rem,min(.3785rem + 2.6519vw,2.5rem));
+    margin-top:30px;
+    margin-bottom:40px;
+}
+.userImage{display:none;}
+.menu{
+    padding:0;
+    background:#F6F5F4;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.16);
+    width: 22%;
+    height: fit-content;
+}
+:global(.vtex-account__page){
+    width:75%;
+    margin-left:3%
+}
+:global(.vtex-pageHeader__container){padding:0;}
+:global(.vtex-pageHeader__container) > div{margin:0 0 23px;}
+:global(.vtex-account__page-body){padding:0;}
+:global(.vtex-pageHeader__title){
+    font-size: 28px;
+    line-height: 1;
+    color: #466d5b;
+    font-weight:400;
+}
+.boxContainer{
+    border-radius:0;
+    border:0;
+    filter: drop-shadow(0 0 0 transparent);
+}
+.boxContainerBody,
+:global(.vtex-my-authentication-1-x-box_container){
+    padding:24px;
+    border: 1px solid #D7D7D7;
+    filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.16));
+    font-size:14px;
+    color:#466d5b;
+    font-weight:400;
+}
+.dataEntryLabel,
+.boxContainerBody :global(.vtex-input__label),
+:global(.vtex-my-authentication-1-x-maskedPassword_title),
+:global(.vtex-my-authentication-1-x-loginSessionsBox_title){
+    font:400 14px "alternative";
+    color:#000;
+}
+.dataEntryChildren,
+:global(.vtex-my-authentication-1-x-maskedPassword_content),
+:global(.vtex-my-authentication-1-x-loginSessionsBox_content){
+    font:700 14px "alternative";
+    color:#466d5b;
+    text-shadow: 0 0 0 transparent;
+}
+.boxContainerFooter{
+    margin-top:31px;
+    padding:0;
+}
+.passwordBox :global(.vtex-checkbox__label){font:14px "alternative";}
+:global(.vtex-profile-form-3-x-profileContainer) :global(.vtex-button){margin-top:10px;}
+.boxContainerFooter :global(.vtex-button),
+.boxContainerFooter :global(.vtex-button):hover,
+:global(.vtex-profile-form-3-x-profileContainer) :global(.vtex-button),
+:global(.vtex-profile-form-3-x-profileContainer) :global(.vtex-button):hover,
+.boxContainerBody :global(.vtex-button),
+.boxContainerBody :global(.vtex-button):hover,
+:global(.vtex-pageHeader__children) :global(.vtex-button),
+:global(.vtex-pageHeader__children) :global(.vtex-button):hover,
+:global(.vtex-my-authentication-1-x-box_footer) :global(.vtex-button),
+:global(.vtex-my-authentication-1-x-box_footer) :global(.vtex-button):hover{
+    background: #466d5b;
+    border: 1px solid #466d5b;
+    border-radius: 0;
+    min-height: 37px;
+    text-transform:uppercase;
+}
+.boxContainerFooter :global(.vtex-button__label),
+:global(.vtex-profile-form-3-x-profileContainer) :global(.vtex-button__label),
+.boxContainerBody :global(.vtex-button__label),
+.boxContainerBody :global(.vtex-button__label):hover,
+:global(.vtex-pageHeader__children) :global(.vtex-button__label),
+:global(.vtex-pageHeader__children) :global(.vtex-button__label):hover,
+:global(.vtex-my-authentication-1-x-box_footer) :global(.vtex-button__label),
+:global(.vtex-my-authentication-1-x-box_footer) :global(.vtex-button__label):hover{
+    color:#fff;
+    font-size: 14px;
+    padding:10px 30px;
+    line-height: 1;
+    height: fit-content;
+}
+:global(.vtex-profile-form-3-x-styleguideInput){padding-bottom:15px;}
+:global(.vtex-profile-form-3-x-styleguideInput) input,
+:global(.vtex-profile-form-3-x-styleguideInput) input:hover,
+:global(.vtex-profile-form-3-x-styleguideInput) input:active,
+:global(.vtex-profile-form-3-x-styleguideInput) input:focus,
+:global(.vtex-profile-form-3-x-styleguideInput) :global(.vtex-dropdown) label > div,
+.passwordBoxContainer :global(.vtex-input-prefix__group),
+.boxContainerBody input,
+.boxContainerBody input:hover,
+.boxContainerBody input:active,
+.boxContainerBody input:focus,
+.boxContainerBody :global(.vtex-dropdown__container),
+:global(.vtex-my-authentication-1-x-currPassInput_container) :global(.vtex-input-prefix__group),
+:global(.vtex-my-authentication-1-x-newPassInput_container) :global(.vtex-input-prefix__group){
+    box-shadow:0 0 0 transparent;
+    border: 1px solid #466d5b;
+    border-radius: 0;
+    color:#466d5b;
+    font-size: 13px;
+    font-weight:500;
+    padding: 15px 10px;
+    background:#fff;
+    height:fit-content;
+}
+:global(.vtex-my-authentication-1-x-currPassInput_container) :global(.vtex-styleguide-9-x-input),
+:global(.vtex-my-authentication-1-x-newPassInput_container) :global(.vtex-styleguide-9-x-input){
+    background-color:transparent !important;
+    padding:0;
+}
+.passwordBoxContainer :global(.vtex-input-prefix__group){padding:0;}
+:global(.vtex-profile-form-3-x-styleguideInput) input::placeholder,
+:global(.vtex-profile-form-3-x-styleguideInput) option{color:#466d5b;}
+:global(.vtex-profile-form-3-x-styleguideInput) :global(.vtex-dropdown__button){padding:0;}
+:global(.vtex-dropdown__arrow) svg g{fill:#466d5b;}
+:global(.vtex-profile-form-3-x-toggleBusinessButtonWrapper),
+.newsletterContainerMessage{display:none;}
+.passwordBoxContainer :global(.vtex-styleguide-9-x-input),
+.passwordBoxContainer :global(.vtex-styleguide-9-x-input):active,
+.passwordBoxContainer :global(.vtex-styleguide-9-x-input):focus,
+.passwordBoxContainer :global(.vtex-styleguide-9-x-input):hover{
+    box-shadow:0 0 0 transparent;
+    border:0;
+    border-radius: 0;
+    color:#466d5b !important;
+    font-size: 13px;
+    font-weight:500;
+    padding: 0 10px;
+    font-family: 'semibold';
+    background:#fff;
+}
+.newsletterContainerTitle{
+    margin-bottom:10px;
+    color:#466d5b;
+    font-size:16px;
+}
+.userGreeting,
+.userName{
+    font-weight: 300;
+    font-size: 22px;
+    color: #000;
+    margin:0;
+    display:inline-block;
+}
+.userName{margin-left:4px;}
+.userInfo{
+    padding:17px 27px 21px;
+    margin:0;
+}
+.menuLinks :global(.vtex-account_menu-link),
+.menuLink{
+    margin:0 0 5px;
+    padding:12px 0 12px 23px;
+    font:500 13px "alternative";
+    color: #000;
+}
+.menuLinks :global(.b--action-primary){
+    border-left:5px solid #466d5b;
+    background:#fff;
+}
+.menuLink{
+    border-top: 1px solid #DFDFDF;
+    margin:5px 0 0;
+}
+.menuLink::before,
+.menuLinks :global(.vtex-account_menu-link)[href="#/profile"]::before,
+.menuLinks :global(.vtex-account_menu-link)[href="#/addresses"]::before,
+.menuLinks :global(.vtex-account_menu-link)[href="#/orders"]::before,
+.menuLinks :global(.vtex-account_menu-link)[href="#/cards"]::before,
+.menuLinks :global(.vtex-account_menu-link)[href="#/authentication"]::before{
+    content:"";
+    width:20px;
+    height:20px;
+    display:inline-block;
+    vertical-align:middle;
+    margin:0 15px 0 0;
+    filter: grayscale(1);
+}
+.menuLinks :global(.vtex-account_menu-link)[href="#/profile"]::before{background:url(assets/account-conta.png) no-repeat center transparent}
+.menuLinks :global(.vtex-account_menu-link)[href="#/addresses"]::before{background:url(assets/account-enderecos.png) no-repeat center transparent}
+.menuLinks :global(.vtex-account_menu-link)[href="#/orders"]::before{background:url(assets/account-pedidos.png) no-repeat center transparent}
+.menuLinks :global(.vtex-account_menu-link)[href="#/cards"]::before{background:url(assets/account-cartoes.png) no-repeat center transparent}
+.menuLinks :global(.vtex-account_menu-link)[href="#/authentication"]::before{background:url(assets/account-conta.png) no-repeat center transparent}
+.menuLink::before{background:url(assets/account-sair.png) no-repeat center transparent}
+.addressList{margin-top:20px;}
+.boxContainerBody :global(.vtex-input-prefix__group),
+.boxContainerBody :global(.vtex-input__suffix){
+    height:fit-content;
+    border:0;
+    box-shadow:0 0 0 transparent;
+}
+:global(.vtex-my-orders-app-3-x-orderHeader){
+    background-color:transparent;
+    border:0;
+    padding:0 10px;
+}
+:global(.vtex-my-orders-app-3-x-orderCard){
+    border:0;
+    border-left:5px solid #466d5b;
+}
+:global(.vtex-my-orders-app-3-x-orderHeaderLabel){
+    text-transform:none;
+    font-weight: 400;
+    font-size: 14px;
+    color: #466d5b;
+}
+:global(.vtex-my-orders-app-3-x-orderHeaderValue),
+:global(.vtex-my-orders-app-3-x-orderId){
+    font-weight: bold;
+    font-size: 14px;
+    color: #466d5b;
+}
+:global(.vtex-my-orders-app-3-x-orderProduct) img{
+    width:85px;
+    height:85px;
+}
+:global(.vtex-my-orders-app-3-x-orderProductName),
+:global(.vtex-my-orders-app-3-x-orderProductShipping),
+:global(.vtex-my-orders-app-3-x-orderProductQuantityValue){
+    font-weight: 400;
+    font-size: 14px;
+    color: #466d5b;
+}
+:global(.vtex-my-orders-app-3-x-orderBody){
+    padding:20px 0 0 10px;
+}
+:global(.vtex-my-orders-app-3-x-detailsBtn){
+    background-color:transparent;
+    border: 1px solid #466d5b;
+    border-radius:30px;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+    color: #466d5b;
+    margin-top:0;
+}
+:global(.vtex-my-orders-app-3-x-reorderBtn),
+:global(.vtex-my-orders-app-3-x-cancelBtn){margin-bottom:5px;}
+:global(.vtex-my-orders-app-3-x-productName){color:#466d5b;}
+:global(.vtex-my-orders-app-3-x-sellerName){display:none;}
+:global(.vtex-my-authentication-1-x-authenticationScreen_container){padding-left:0;}
+:global(.vtex-my-authentication-1-x-box_content){padding:0;}
+:global(.vtex-my-authentication-1-x-box_footer){
+    text-align:right;
+    padding: 0;
+}
+
+/* TOPO */
+:global(.vtex-store-components-3-x-portalWrapper) > div,
+:global(.vtex-store-components-3-x-portalWrapper) > div > div{position:static !important;}
+
+:global(.vtex-menu-2-x-styledLink--submenu-row-itens):hover > :global(.vtex-menu-2-x-styledLinkContent--submenu-row-itens){color: #466d5b;}
+
+/* HOME */
+:global(.vtex-flex-layout-0-x-flexRowContent--banner-principal) > div,
+:global(.vtex-flex-layout-0-x-flexRowContent--banners-dpto-home) > div{width:100% !important;}
+:global(.vtex-store-newsletter-1-x-nameInputContainer--invalid) :global(.vtex-input__error),:global(.vtex-store-newsletter-1-x-emailInputContainer) :global(.vtex-input__error){
+    padding-left: 8px;
+}
+:global(.vtex-similar-products-variants-0-x-var-wrap) > a{
+    display:block;
+}
+
+/* PRODUTO */
+:global(.vtex-store-components-3-x-productDescriptionText) p{margin:0;}
+:global(.vtex-address-form__postalCode-forgottenURL) a{
+  color:#000;
+  font:13px "alternative";
+  text-decoration:underline;
+}
+:global(.vtex-numeric-stepper__minus-button), :global(.vtex-numeric-stepper__plus-button){
+    padding: 4px 7px;
+    background: #CA7D62;
+    color: #F6EBE1;
+    opacity: .7;
+    border: 1px solid #CA7D62;
+}
+:global(.vtex-numeric-stepper__input){
+    background: #F6EBE1;
+    color: #CA7D62;
+    font: 700 16px "bold",sans-serif;
+    border: 1px solid #CA7D62;
+}
+
+/* LOGIN */
+:global(.vtex-login-2-x-button) :global(.t-action--small),
+:global(.vtex-login-2-x-accountOptions) :global(.t-action--small){
+    color:#000;
+    font:500 13px "alternative";
+    text-transform:capitalize;
+}
+:global(.vtex-login-2-x-accountOptions) :global(.b--muted-4),
+:global(.vtex-login-2-x-accountOptions) :global(.t-action--small){
+    margin:0;
+    line-height:1;
+    min-height:fit-content;
+    border:0;
+}
+.freebirdFormviewerViewCenteredContent{margin: initial;}
+:global(.vtex-store-components-3-x-portalWrapper)>div{margin-top: 5px;} 
+
+/* INSTITUCIONAL */
+:global(.vtex-flex-layout-0-x-flexRowContent--row-banner-inst) > :global(.vtex-flex-layout-0-x-stretchChildrenWidth):first-child{width: 100% !important;}
+
+/* MOBILE */
+@media screen and (max-width: 1025px) {
+    .menu{width:100%;}
+    :global(.vtex-account){margin-bottom:40px;}
+    :global(.vtex-account) > div{
+        max-width:100%;
+        padding:20px;
+    }
+    :global(.vtex-account__page){
+        width:100%;
+        margin-left:0;
+    }
+    :global(.vtex-search-result-3-x-accordionFilter) :global(.pl8){padding-left:10px;}
+    :global(.vtex-pageHeader__title){margin-bottom:20px;}
+    :global(.vtex-pageHeader__children){margin:0 auto;}
+    :global(.vtex-styleguide-9-x-scrollBar){padding:0;}
+    :global(.vtex-modal__overlay) :global(.vtex-modal__close-icon){padding-top:0;}
+    :global(.vtex-profile-form-3-x-styleguideInput) input,
+    :global(.vtex-profile-form-3-x-styleguideInput) input:hover,
+    :global(.vtex-profile-form-3-x-styleguideInput) input:active,
+    :global(.vtex-profile-form-3-x-styleguideInput) input:focus,
+    :global(.vtex-profile-form-3-x-styleguideInput) :global(.vtex-dropdown) label > div,
+    .passwordBoxContainer :global(.vtex-input-prefix__group),
+    .boxContainerBody input,
+    .boxContainerBody input:hover,
+    .boxContainerBody input:active,
+    .boxContainerBody input:focus,
+    .boxContainerBody :global(.vtex-dropdown__container),
+    :global(.vtex-my-authentication-1-x-currPassInput_container) :global(.vtex-input-prefix__group),
+    :global(.vtex-my-authentication-1-x-newPassInput_container) :global(.vtex-input-prefix__group){font-size: 16px;}
+    .boxContainer :global(.vtex-address-form__postalCode-forgottenURL){
+        width:100%;
+        margin-top:10px;
+        margin-left:0;
+    }
+    .addressBox{flex-direction:column;}
+    :global(.myo-progress-bar) :global(.myo-progress-bar__text){
+        display: block;
+        font-size: 10px;
+    }
+    :global(.vtex-my-orders-app-3-x-productInfo){display:flex;}
+    :global(.vtex-flex-layout-0-x-flexRowContent--main-header-mobile-2) > :global(.pr0.items-stretch.flex){width:100% !important;}
+}

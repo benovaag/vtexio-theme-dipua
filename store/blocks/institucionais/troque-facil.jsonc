@@ -1,0 +1,97 @@
+{
+  "store.custom#troque-facil": {
+    "blocks": [
+      "flex-layout.row#banner-institucional-troque-facil",
+      "flex-layout.row#troque-facil",
+      "flex-layout.row#footer-1-desktop",
+      "flex-layout.row#footer-2-desktop-pdp-inst"
+    ]
+  },
+  "flex-layout.row#banner-institucional-troque-facil":{
+    "children":[
+      "flex-layout.col#image-banner",
+      "flex-layout.col#breadcrumb-banner-troque-facil"
+    ],
+    "props":{
+      "blockClass": "row-banner-inst",
+      "fullWidth": true,
+      "colSizing": "auto"
+    }
+  },
+  "flex-layout.col#breadcrumb-banner-troque-facil":{
+    "children":[
+      "rich-text#breadcrumb-institucional-troque-facil"
+    ],
+    "props":{
+      "blockClass": "col-text-banner-inst"
+    }
+  },
+  "rich-text#breadcrumb-institucional-troque-facil":{
+    "props":{
+      "text":"[Página inicial](/)  **Troque fácil**",
+      "blockClass": "breadcrumb-institucionais"
+    }
+  },
+
+  "flex-layout.row#troque-facil": {
+    "props":{
+      "blockClass":"content-institucional"
+    },
+    "children": [
+      "flex-layout.col#troque-facil-1",
+      "flex-layout.col#troque-facil-2"
+    ],
+    "title": "Página Trabalhe Aqui"
+  },
+  "flex-layout.col#troque-facil-1":{
+    "props":{
+      "width":"27%",
+      "blockClass":"menu-institucional"
+    },
+    "children":[
+      "rich-text#menu-ajuda-1",
+      "rich-text#menu-ajuda-2-active",
+      "rich-text#menu-ajuda-3",
+      "rich-text#menu-ajuda-4",
+      "rich-text#menu-ajuda-5"
+    ],
+    "title": "Menu"
+  },
+
+  "flex-layout.col#troque-facil-2":{
+    "props":{
+      "width":"73%",
+      "blockClass":["content-institucional", "content-institucional-troque-facil"]
+    },
+    "children":[
+      "rich-text#titulo-troque-facil",
+      "rich-text#sub-titulo-troque-facil",
+      "link#btn-troque-facil"
+      
+    ],
+    "title": "Conteúdo"
+  },
+  "rich-text#titulo-troque-facil":{
+    "props":{
+      "blockClass":"title-content-institucional",
+      "text":"## Troque fácil"
+    },
+    "title": "Título"
+  },
+  "rich-text#sub-titulo-troque-facil":{
+    "props":{
+      "blockClass":"sub-title-content-institucional",
+      "text":"Deseja realizar uma troca?"
+    },
+    "title": "Sub Título"
+  },
+  "link#btn-troque-facil":{
+    "props":{
+      "label": "Clique aqui",
+      "href": "https://dipua.troquefacil.com.br/",
+      "target":"_blank",
+      "displayMode": "button",
+      "blockClass": "btn-troque-facil"
+    }
+  }
+}

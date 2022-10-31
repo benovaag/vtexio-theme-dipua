@@ -1,0 +1,89 @@
+.nameContainer {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  align-items: center;
+} /* <= Container do nome do produto -- shelf de produtos */
+.brandName {
+  font: 500 16px "padrao", sans-serif;
+  color: #000;
+  display:block;
+  overflow:hidden;
+  line-height: 19px;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  height: 38px;
+} /* <= Nome do produto -- shelf de produtos */
+.container {
+  text-align: start;
+  border-radius:0;
+  margin:0;
+  max-width:100% !important;
+}
+.imageContainer {
+  text-align: center;
+  width:100%;
+  display:block;
+}
+.element{
+  padding-top:0;
+  padding-bottom:0;
+}
+.imageNormal{
+  height: fit-content !important;
+}
+/* .imageNormal{
+  max-width:100% !important;
+  height: 100%!important;
+  max-height: 100% !important;
+  object-fit:none !important;
+} */
+.image{
+  z-index:998;
+  max-height:100% !important;
+  height:100% !important;
+}
+.element :global(.vtex-button){
+  border:0;
+  background-color:transparent;
+  border-radius:0;
+  min-height:fit-content;
+  margin-top:5px;
+}
+.element :global(.vtex-button__label){padding:0 !important}
+.buyButtonText{
+  text-decoration: underline;
+  color: #466d5b;
+  font:500 14px "alternative";
+  text-transform:none;
+}
+.element--img-similars{width:fit-content;}
+.buyButtonContainer :global(.vtex-button){
+  background: none;
+  border: none;
+}
+.buyButton {text-align: center;}
+:global(.vtex-search-2-x-tileListList) .imageNormal{
+  width: -webkit-fill-available;
+  object-fit: cover;
+  max-height: 21rem;
+}
+:global(.vtex-search-2-x-tileListItem) .priceContainer{
+  text-align: center;
+  padding-top: 5px;
+}
+/* MOBILE */
+@media screen and (max-width: 1025px) {
+  .nameContainer{
+    padding-top:8px;
+    text-align: center;
+    padding-bottom: 0;
+  } /* <= Container do nome do produto -- shelf de produtos mobile */
+  .element{margin:0 0 20px;}
+  .element :global(.vtex-rich-text-0-x-container--add-to-cart-button){padding:10px;}
+  .element:hover :global(.vtex-stack-layout-0-x-stackItem):last-child{display:none;}
+  .element :global(.vtex-rich-text-0-x-paragraph--add-to-cart-button){font-size:12px;}
+  .imageContainer--img-similars .imageNormal{
+    height: 30px !important;
+    width: 30px !important;
+  }
+}

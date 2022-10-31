@@ -1,0 +1,11 @@
+.title{display:none;}
+.var-wrap{
+        display:flex;
+        justify-content:center;
+        height:34px;
+}
+.img{
+        margin:0;
+        width:30px;
+        height:30px;
+}

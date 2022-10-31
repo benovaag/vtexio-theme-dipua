@@ -1,0 +1,54 @@
+{
+  "product-specification-group#table": {
+    "children": [
+      "flex-layout.row#specification"
+    ]
+  },
+  "flex-layout.row#specification": {
+    "props":{
+      "blockClass":"product-specification"
+    },
+    "children": [
+      "flex-layout.col#specification"
+    ]
+  },
+  "flex-layout.col#specification": {
+    "children": [
+      "product-specification"
+    ]
+  },
+  "product-specification": {
+    "children": [
+      "disclosure-layout#specification"
+    ]
+  },
+  "disclosure-layout#specification": {
+    "props": {
+      "blockClass":"product-specification",
+      "animated": true
+    },
+    "children": [
+      "disclosure-trigger#specification",
+      "disclosure-content#specification"
+    ]
+  },
+  "disclosure-trigger#specification": {
+    "children": ["product-specification-text#specification"]
+  },
+  "disclosure-content#specification": {
+    "children": ["product-specification-values"]
+  },
+  "product-specification-values": {
+    "children": ["product-specification-text#value"]
+  },
+  "product-specification-text#specification": {
+    "props": {
+      "message": "{specificationName}"
+    }
+  },
+  "product-specification-text#value": {
+    "props": {
+      "message": "{specificationValue}"
+    }
+  }
+}

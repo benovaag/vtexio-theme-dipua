@@ -1,0 +1,39 @@
+{
+  "flex-layout.col#selling-price": {
+    "props": {
+      "preserveLayoutOnMobile": true,
+      "preventHorizontalStretch": true,
+      "blockClass":"selling-price"
+    },
+    "children": [
+      "flex-layout.row#savings",
+      "flex-layout.row#price-and-installments"
+    ]
+  },
+  "flex-layout.row#price-and-installments":{
+    "children":[
+      "product-selling-price",
+      "product-installments"
+    ],
+    "props":{
+      "blockClass": "price-and-installments"
+    }
+  },
+  "flex-layout.row#savings":{
+    "children":["product-list-price#summary"],
+    "props":{
+      "blockClass": "savings-container"
+    }
+  },
+  "product-installments": {
+    "props": {
+      "blockClass": "summary",
+      "message":"{hasMoreThanOne, select, true {em {installmentsNumber}X de {installmentValue} sem juros} false { }}"
+    }
+  },
+  "product-price-savings":{
+    "props":{
+      "message": "-{savingsPercentage}"
+    }
+  }
+}

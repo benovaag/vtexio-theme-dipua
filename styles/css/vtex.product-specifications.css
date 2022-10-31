@@ -1,0 +1,11 @@
+.specificationName{
+  margin:0;
+  font:14px "alternative";
+  line-height: 16px;
+  color: #000;
+  font-weight:400 !important;
+  width:100%;
+  text-transform:uppercase;
+  text-align:left;
+  letter-spacing: 0;
+}

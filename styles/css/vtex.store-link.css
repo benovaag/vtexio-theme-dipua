@@ -1,0 +1,78 @@
+/* HEADER */
+.link--whatsapp,
+.link--product-whatsapp{
+    text-decoration:none;
+    color:#000;
+    display: block;
+    line-height: 1;
+}
+
+.link--shelfTitle{
+    color:#000;
+    font:400 28px "regular", sans-serif;
+    text-decoration:none;
+    text-align:center;
+}
+.link--whatsapp-product{
+    display:block;
+    width:16px !important;
+    height:17px;
+    background:url(assets/whatsapp-product.png) no-repeat transparent
+}
+.link--facebook-product{
+    display:block;
+    width:9px !important;
+    height:17px;
+    background:url(assets/facebook-product.png) no-repeat transparent
+}
+.link--twitter-product{
+    display:block;
+    width:16px !important;
+    height:14px;
+    background:url(assets/twitter-product.png) no-repeat transparent
+}
+.link--designby{
+    display: flex;
+    align-items: center;
+    margin-left: 3px;
+    text-decoration: none;
+    font: 700 16px "bold", sans-serif;
+}
+.label--designby{
+    color: #CA7D62;
+}
+.link--keep-buying{
+    background: transparent;
+    font:400 14px/18px "alternative";
+    color: #000;
+    padding: 10px;
+    text-transform: uppercase;
+    border: 1px solid #466d5b;
+    border-radius: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 48px;
+    margin: 0 16px 8px;
+    text-decoration: none;
+}
+.label--keep-buying{display:block;}
+.buttonLink--btn-troque-facil{
+    border-radius: 0;
+    padding: 14px 0;
+    margin-top: 44px;
+}
+.label--content-institucional,.link--content-institucional{
+    font: 400 14px "alternative", sans-serif;
+    line-height: 17px;
+    color: #848d9c;
+    margin:0 0 16px;
+    text-decoration: none;
+    display: block;
+}
+/* MOBILE */
+@media screen and (max-width: 1025px) {
+    .link--shelfTitle{
+        font-size:25px;
+    }
+}

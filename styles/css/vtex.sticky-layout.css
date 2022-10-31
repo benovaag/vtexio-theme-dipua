@@ -1,0 +1,19 @@
+.wrapper--main-header-mobile--stuck,
+.wrapper--sticky-header{
+    height:fit-content !important;
+}
+.container--main-header-mobile{
+    background: #FFF;
+    padding: 0 max(1rem,min(0.3785rem + 2.6519vw,2.5rem));
+}
+.container--sticky-header{
+    background: hsla(0,0%,100%,.93)!important;
+    box-shadow: 0 4px 8px rgb(70 109 91 / 20%);
+}
+
+/* MOBILE */
+@media screen and (max-width: 1025px) {
+    .wrapper--main-header-mobile--stuck .container--main-header-mobile{
+        background: hsla(0,0%,100%,.93);
+    }
+}

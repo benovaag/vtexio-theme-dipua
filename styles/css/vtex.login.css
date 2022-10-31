@@ -1,0 +1,164 @@
+.button,
+.container :global(.vtex-button),
+.container :global(.vtex-button):hover,
+.container :global(.vtex-button):active,
+.container :global(.vtex-button__label),
+.container :global(.vtex-button__label):hover,
+.container :global(.vtex-button__label):active{
+    background-color:transparent;
+    border:0;
+    padding-top:0 !important;
+}
+.button{
+    padding:0 0 10px;
+}
+.label,
+.profile{
+    text-transform:none;
+    color: #000;
+    font-size:12px;
+    padding-left:6px;
+    padding-top:7px;
+    padding-bottom:4px;
+}/* <= Texto do Login */
+.profileIcon{
+    width:17px;
+    height:17px;
+    overflow:visible !important;
+}
+.loginOptionsContainer{width:100%;}
+.loginOptionsContainer :global(.vtex-button){
+    background-color:transparent;
+    text-transform:none;
+    font:13px "alternative";
+    border: 1px solid #466d5b;
+    border-radius: 0;
+    min-height:46px;
+}
+.box{
+    right:auto !important;
+    left:-138px;
+}
+.box::before{
+    content:"";
+    width:0;
+    height:0;
+    display:block;
+    position:absolute;
+    top:0;
+    left:50%;
+    transform:translate(0,-50%);
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 12px solid #466d5b;
+}
+.content{
+    padding:20px;
+    text-align:center;
+    margin-bottom:20px;
+    justify-content:space-between;
+}
+.contentContainer{
+    background: #F7F5F4;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.16);
+}
+.arrowUp{display:none;}
+.contentForm{
+    min-width:100%;
+    padding:0;
+    width:100%;
+}
+.accountOptions :global(.vtex-button),
+.accountOptions :global(.vtex-button):hover{background-color:transparent !important;}
+.accountOptions :global(.vtex-button__label){padding:10px 0 0 !important;}
+.options .formTitle{font-family:"alternative";}
+.formTitle{
+    font: 500 13px "alternative";
+    line-height: 30px;
+    color: #000;
+    margin:0 0 11px;
+    padding:0;
+}
+.optionsList,
+.optionsListItem{margin:0;}
+.options{min-width:100%;}
+.accessCodeOptionBtn :global(.vtex-button__label){padding:0 !important;}
+.box :global(.vtex-input-prefix__group),
+.inputContainer :global(.vtex-input-prefix__group){
+    border:1px solid #466d5b;
+    border-radius:8px;
+    background:#fff;
+}
+.box :global(.vtex-styleguide-9-x-input),
+.box :global(.vtex-styleguide-9-x-input)::placeholder,
+.inputContainer :global(.vtex-styleguide-9-x-input),
+.inputContainer :global(.vtex-styleguide-9-x-input)::placeholder{
+    color: #466d5b !important;
+    font-size: 13px;
+    background-color:#fff !important;
+}
+.sendButton :global(.vtex-button),
+.sendButton :global(.vtex-button):hover,
+.sendButton :global(.vtex-button):focus{
+    background-color:#466d5b;
+    font-size: 14px;
+    line-height: 17px;
+    color: #fff;
+    border: 1px solid #466d5b;
+    border-radius: 30px;
+    padding: 5px 14px;
+}
+.box :global(.vtex-button):hover{
+    background-color:#FFF;
+    color: #466d5b;
+}
+.formFooter{
+    border-top-width:0;
+    align-items:center;
+}
+.forgotPasswordLink{
+    font-size: 11px;
+    text-decoration-line: underline;
+    color: #000;
+}
+.formLinkContainer{
+    margin-top:25px;
+    padding-top:21px;
+    border-top:1px solid #DFDFDF;
+}
+.dontHaveAccount{
+    border: 1px solid #466d5b;
+    border-radius: 8px;
+    color:#000;
+    font-size:13px;
+    display:block;
+    padding:8px;
+    width:100%;
+    line-height:30px;
+}
+.dontHaveAccount:hover{opacity:1;}
+.loginOptionsContainer,
+.contentForm{
+    width:45%;
+    min-width:45%;
+}
+.contentContainer .loginOptionsContainer,
+.contentContainer .contentForm{
+    width:100%;
+    min-width:100%;
+}
+
+/* MOBILE */
+@media screen and (max-width: 1025px) {
+    .container :global(.vtex-button__label){
+        padding:0 15px 10px !important;
+    }
+    .loginOptionsContainer{margin:10px 0 30px;}
+    .buttonLink :global(.vtex-button){min-height:44px;}
+    .loginOptionsContainer,
+    .contentForm{
+        width:100%;
+        min-width:100%;
+    }
+    .inputContainer :global(.vtex-styleguide-9-x-input){font-size: 16px;}
+}

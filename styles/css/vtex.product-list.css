@@ -1,0 +1,70 @@
+.productVariationsContainer,
+.productBrandName,
+.unitPriceContainer{
+    display:none;
+}
+.productImage{
+    display: block;
+}
+.productImageContainer{
+    width:100% !important;
+    height:100%;
+}
+.productName{
+    color:#000;
+    font: 400 16px "padrao", sans-serif;
+    margin:0;
+    height:42px;
+    overflow:hidden;
+}
+.deleteIcon{color:#466d5b;}
+.price{
+    font: 600 16px "padrao", sans-serif;
+    color: #000;
+    margin-right: 30px;
+}
+.inputContainer{
+    height: 100%;
+    background: transparent;
+    border-color: #848d9c;
+    font:400 16px "padrao";
+    color: #000;
+    width: 42px !important;
+    padding: 0;
+    outline: none!important;
+}
+.inputContainer:hover{
+    border-color:#848d9c;
+}
+.quantityDropdownContainer--minicart-quantity :global(.vtex-dropdown__button){padding: 4px 12px 0 15px;}
+.quantitySelectorButton,
+.quantitySelectorButton:hover{
+    background: transparent;
+    width: 32px;
+    height: 100%;
+    border: 1px solid #848d9c;
+    border-radius: 0;
+    position: relative;
+    padding:0;
+}
+.quantitySelectorWrapper--minicart-quantity{height: 32px;}
+.removeButton {
+    padding: 0;
+    height: 16px;
+    width: 20px;
+    background-image: url(/arquivos/icon__remove-item-minicart.svg);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+    outline: none;
+    display:block;
+}
+.deleteIcon{display:none;}
+.productImage{
+    width: 96px;
+    height: 144px;
+}
+@media screen and (max-width: 1025px){
+    .productImageContainer{width: 96px!important;}
+    .quantitySelectorButton{padding: 0 8px;}
+}

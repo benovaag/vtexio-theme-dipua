@@ -1,0 +1,45 @@
+.container{
+    background-color: transparent;
+}
+.homeIcon,
+.caretIcon{display:none;}
+.homeLink{
+    margin:0;
+    padding:0;
+    line-height:1;
+}
+.homeLink::before{
+    content:"Página Inicial";
+    display:inline-block;
+    font:300 15px/18px "alternative";
+    color: #848d9c;
+    padding-top: 1px;
+}
+.arrow{padding-right:0;}
+.arrow::before{
+    content:" > ";
+    display:inline-block;
+    vertical-align:top;
+    font:300 15px/18px "alternative";
+    color:#848d9c;
+}
+.termArrow{
+    padding-left:0;
+    padding-right:0;
+}
+.link, .term{
+    font:300 15px/18px "alternative";
+    color: #848d9c;
+    vertical-align: baseline;
+    padding-top: 0;
+    padding-bottom:0;
+}
+.link:hover{color: #848d9c;}
+.term{color: #466d5b;} /* <= Página Ativa -- breadcrum */
+
+/* MOBILE */
+@media screen and (max-width: 1025px) {
+    .container{
+        padding:0;
+    }
+}

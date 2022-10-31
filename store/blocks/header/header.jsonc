@@ -1,0 +1,266 @@
+{
+  "header": {
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+  },
+  "header.full": {
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+  },
+
+  // HEADER DESKTOP
+  "header-layout.desktop": {
+    "children": [
+      "flex-layout.row#whatsapp",
+      "flex-layout.row#notification",
+      "sticky-layout#header-desktop"
+    ],
+    "title":"Topo - Desktop"
+  },
+
+  "flex-layout.row#whatsapp":{
+    "children": [
+      "link#whatsapp",
+      "image#whatsapp"
+    ],
+    "props": {
+      "blockClass": "whatsapp",
+      "colSizing": "auto"
+    },
+    "title":"WhatsApp"
+  },
+  "link#whatsapp":{
+    "props": {
+      "label":"Precisando de ajuda?",
+      "href":"https://api.whatsapp.com/send?phone=5521970024245",
+      "target":"_blank",
+      "blockClass": "whatsapp"
+    },
+    "title":"WhatsApp"
+  },
+  "image#whatsapp":{
+    "props": {
+      "src": "assets/svgs/zap.svg",
+      "alt": "WhatsApp",
+      "link": {
+        "url": "https://api.whatsapp.com/send?phone=5521970024245",
+        "openNewTab": true
+      },
+      "blockClass":"image-whatsapp"
+    },
+    "title": "WhatsApp Link"
+  },
+ 
+  "flex-layout.row#notification": {
+    "children": ["rich-text#notification"],
+    "props": {
+      "blockClass":"notification",
+      "fullWidth": "true"
+    },
+    "title": "Notificação"
+  },
+  "rich-text#notification": {
+    "props": {
+      "blockClass":"notification",
+      "text": "![Promoção](assets/svgs/truck.svg) Frete grátis acima R$ 350 + 5% de desconto c/ PIX"
+    },
+    "title": "Notificação"
+  },
+  
+  "sticky-layout#header-desktop": {
+    "props": {
+      "blockClass": "sticky-header"
+    },
+    "children": ["flex-layout.row#header-desktop"],
+    "title": "Topo"
+  },
+  "flex-layout.row#header-desktop": {
+    "props": {
+      "blockClass": "main-header",
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": false,
+      "colSizing": "equal"
+    },
+    "children": [
+      "flex-layout.col#category-menu",
+      "flex-layout.col#spacer",
+      "flex-layout.col#logo",
+      "flex-layout.col#spacer",
+      "flex-layout.col#spacer",
+      "flex-layout.col#search-and-icons"
+    ],
+    "title": "Topo"
+  },
+  "flex-layout.col#category-menu": {
+    "props": {
+      "verticalAlign": "middle"
+    },
+    "children": ["vtex.menu@2.x:menu#category-menu"],
+    "title": "Menu"
+  },
+  "flex-layout.col#logo": {
+    "props": {
+      "verticalAlign": "middle",
+      "blockClass":"logo"
+    },
+    "children": ["logo"],
+    "title": "Logo"
+  },
+  "logo": {
+    "props": {
+      "href": "/",
+      "url": "assets/imgs/logo.png",
+      "width": "150",
+      "mobileWidth": "120",
+      "title": "Dipua"
+    },
+    "title": "Logo"
+  },
+  "flex-layout.col#search-and-icons": {
+    "props": {
+      "verticalAlign": "middle",
+      "blockClass":"search-and-icons"
+    },
+    "children": [
+      "flex-layout.row#search-and-icons"
+    ],
+    "title": "Search and Icons"
+  },
+  "flex-layout.row#search-and-icons":{
+    "props": {
+      "verticalAlign": "middle",
+      "blockClass":"search-and-icons",
+      "colSizing": "auto"
+    },
+    "children": [
+      "search-bar",
+      "login",
+      "minicart.v2"      
+    ],
+    "title": "Search and Icons"
+  },
+  "search-bar": {
+    "blocks": ["autocomplete-result-list.v2"],
+    "props": {
+      "openAutocompleteOnFocus": true,
+      "placeholder": "Digite sua busca"
+    },
+    "title": "Busca"
+  },
+  "autocomplete-result-list.v2": {
+    "props":{
+      "maxSuggestedProducts":4,
+      "autocompleteWidth":100,
+      "blockClass":"search-suggestions"
+    },
+    "blocks": [
+      "product-summary"
+    ],
+    "title": "Sugestões da busca"
+  },
+  "login":{
+    "props":{
+      "hideIconLabel": true,
+      "showIconProfile":true,
+      "optionsTitle":"Acesse sua conta:",
+      "emailAndPasswordTitle": "Login",
+      "accessCodeTitle": "Receba sua chave por e-mail",
+      "emailPlaceholder": "E-mail",
+      "passwordPlaceholder": "Senha",
+      "showPasswordVerificationIntoTooltip": true
+    },
+    "title": "Login"
+  },
+  "flex-layout.col#spacer": {
+    "props": {
+      "width": "grow"
+    },
+    "title": "Espaçamento"
+  },
+
+  // HEADER MOBILE
+  "header-layout.mobile": {
+    "children": [
+      "flex-layout.row#whatsapp",
+      "flex-layout.row#notification",
+      "sticky-layout#header-mobile"
+    ],
+    "title": "Topo Mobile"
+  },
+
+  "sticky-layout#header-mobile": {
+    "props": {
+      "blockClass":"main-header-mobile"
+    },
+    "children": [
+      "flex-layout.row#header-mobile-1",
+      "flex-layout.row#header-mobile-2"
+    ],
+    "title": "Topo - Mobile"
+  },
+
+  "flex-layout.row#header-mobile-1": {
+    "children": [
+      "drawer#menu-mobile",
+      "flex-layout.col#spacer",
+      "flex-layout.col#spacer",
+      "logo",
+      "flex-layout.col#spacer",
+      "flex-layout.row#login-and-cart"
+    ],
+    "props": {
+      "blockClass": "main-header-mobile-1",
+      "preventHorizontalStretch": true,
+      "preserveLayoutOnMobile": true,
+      "fullWidth": true
+    },
+    "title": "Topo - Mobile"
+  },
+  "drawer#menu-mobile": {
+    "props":{
+      "orientation": "vertical"
+    },
+    "blocks":[
+      "drawer-header#my-drawer"
+    ],
+    "children": [
+      "vtex.menu@2.x:menu#category-menu-mobile"
+    ]
+  },
+  "drawer-header#my-drawer":{
+    "children":[
+      "drawer-close-button"
+    ]
+  },
+  "drawer-close-button":{
+    "props":{
+      "type":"filled",
+      "text": "X"
+    }
+  },
+  "flex-layout.row#login-and-cart":{
+    "children":[
+      "login",
+      "minicart.v2"
+    ],
+    "props":{
+      "blockClass": "login-and-cart"
+    },
+    "title": "Login e Carrinho - Mobile"
+  },
+
+  "flex-layout.row#header-mobile-2": {
+    "children": [
+      "search-bar"
+    ],
+    "props": {
+      "blockClass": "main-header-mobile-2",
+      "preventHorizontalStretch": true,
+      "preserveLayoutOnMobile": true,
+      "fullWidth": true,
+      "colSizing": "equal"
+    },
+    "title": "Busca - Mobile"
+  }
+}

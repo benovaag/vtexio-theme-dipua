@@ -1,0 +1,12 @@
+.buttonText{
+    text-decoration: underline;
+    color: #466d5b;
+    font:500 16px "alternative";
+    text-transform:none;
+}
+:global(.vtex-flex-layout-0-x-flexRowContent--buy-button) .buttonText{
+    text-decoration: none;
+    color: #fff;
+    font:500 16px "alternative";
+    text-transform:uppercase;
+}

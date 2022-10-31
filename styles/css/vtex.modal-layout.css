@@ -1,0 +1,57 @@
+.hiddenContainer{
+  overflow:scroll;
+  padding-right: 0 !important;
+}
+.actionsContentWrapper {
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-top-color: #aaa;
+  padding-top: 1.5rem;
+}
+.triggerContainer {
+  outline: none;
+}
+.closeButton {
+  padding-right: 1rem;
+}
+.paper--product-gifts {
+  padding: 1.5rem;
+}
+.paper--guia-de-tamanhos{width:50%;}
+.paper--text-aviso .closeButton--bt-aviso{
+  padding-right: 0;
+  border-radius:30px;
+  background-color: #466d5b;
+  color:#fff;
+  border:0;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: none;
+}
+.paper--text-aviso .closeButton--bt-aviso-close{
+  padding-right: 0.5rem;
+}
+.headerContainer--bt-aviso-close{
+  border:0;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.paper--text-aviso{
+  padding:20px;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  margin:0;
+  max-height:auto;
+}
+.modal--text-aviso{
+  inset:unset !important;
+  bottom:10px !important;
+  left:10px !important;
+}
+
+/* MOBILE */
+@media screen and (max-width: 1025px) {
+  .paper--guia-de-tamanhos{width:100%;}
+}

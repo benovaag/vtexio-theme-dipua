@@ -1,0 +1,180 @@
+{
+  "rich-text#menu-institucional-1":{
+    "props":{
+      "blockClass":["menu-institucional","menu-institucional-1"],
+      "text":"[Nossas Lojas](/nossas-lojas)"
+    },
+    "title": "Item 1"
+  },
+  "rich-text#menu-institucional-2":{
+    "props":{
+      "blockClass":["menu-institucional","menu-institucional-2"],
+      "text":"[Sobre a Dipua](/sobre-dipua)"
+    },
+    "title": "Item 2"
+  },
+  "rich-text#menu-institucional-3":{
+    "props":{
+      "blockClass":["menu-institucional","menu-institucional-3"],
+      "text":"[Processo Criativo](/processo-criativo)"
+    },
+    "title": "Item 3"
+  },
+  "rich-text#menu-institucional-4":{
+    "props":{
+      "blockClass":["menu-institucional","menu-institucional-4"],
+      "text":"[Cuidados e Materiais](/cuidados-e-materiais)"
+    },
+    "title": "Item 4"
+  },
+  "rich-text#menu-institucional-5":{
+    "props":{
+      "blockClass":["menu-institucional","menu-institucional-5"],
+      "text":"[Campanhas](/campanhas)"
+    },
+    "title": "Item 5"
+  },
+  "rich-text#menu-institucional-6":{
+    "props":{
+      "blockClass":["menu-institucional","menu-institucional-6"],
+      "text":"[Collabs](/collabs)"
+    },
+    "title": "Item 6"
+  },
+
+  // ATIVOS
+  "rich-text#menu-institucional-1-active":{
+    "props":{
+      "blockClass":["menu-institucional","menu-institucional-1","menu-institucional-active"],
+      "text":"[Nossas Lojas](/nossas-lojas)"
+    },
+    "title": "Item 1"
+  },
+  "rich-text#menu-institucional-2-active":{
+    "props":{
+      "blockClass":["menu-institucional","menu-institucional-2", "menu-institucional-active"],
+      "text":"[Sobre a Dipua](/sobre-dipua)"
+    },
+    "title": "Item 2"
+  },
+  "rich-text#menu-institucional-3-active":{
+    "props":{
+      "blockClass":["menu-institucional","menu-institucional-3", "menu-institucional-active"],
+      "text":"[Processo Criativo](/processo-criativo)"
+    },
+    "title": "Item 3"
+  },
+  "rich-text#menu-institucional-4-active":{
+    "props":{
+      "blockClass":["menu-institucional","menu-institucional-4", "menu-institucional-active"],
+      "text":"[Cuidados e Materiais](/cuidados-e-materiais)"
+    },
+    "title": "Item 4"
+  },
+  "rich-text#menu-institucional-5-active":{
+    "props":{
+      "blockClass":["menu-institucional","menu-institucional-5", "menu-institucional-active"],
+      "text":"[Campanhas](/campanhas)"
+    },
+    "title": "Item 5"
+  },
+  "rich-text#menu-institucional-6-active":{
+    "props":{
+      "blockClass":["menu-institucional","menu-institucional-6", "menu-institucional-active"],
+      "text":"[Collabs](/collabs)"
+    },
+    "title": "Item 6"
+  },
+
+  "rich-text#title-menu-ajuda":{
+    "props":{
+        "blockClass":"title-institucional",
+        "text":"### Ajuda"
+    },
+    "title": "Título"
+  },
+  
+  // MENU AJUDA
+  "rich-text#menu-ajuda-1":{
+    "props":{
+      "blockClass":["menu-institucional","menu-institucional-1"],
+      "text":"[Fale Conosco](/atendimento)"
+    },
+    "title": "Item 1"
+  },
+  
+  "rich-text#menu-ajuda-2":{
+    "props":{
+      "blockClass":["menu-institucional","menu-institucional-2"],
+      "text":"[Troque fácil](/troque-facil)"
+    },
+    "title": "Item 2"
+  },
+  
+  "rich-text#menu-ajuda-3":{
+    "props":{
+      "blockClass":["menu-institucional","menu-institucional-3"],
+      "text":"[Trocas e Devoluções](/trocas-e-devolucoes)"
+    },
+    "title": "Item 3"
+  },
+  
+  "rich-text#menu-ajuda-4":{
+    "props":{
+      "blockClass":["menu-institucional","menu-institucional-4"],
+      "text":"[Entrega](/entrega)"
+    },
+    "title": "Item 4"
+  },
+  
+  "rich-text#menu-ajuda-5":{
+    "props":{
+      "blockClass":["menu-institucional","menu-institucional-2"],
+      "text":"[Trabalhe Aqui](/trabalhe-aqui)"
+    },
+    "title": "Item 2"
+  },
+  
+  // ATIVO
+  "rich-text#menu-ajuda-1-active":{
+    "props":{
+      "blockClass":["menu-institucional","menu-institucional-1","menu-institucional-active"],
+      "text":"[Fale Conosco](/atendimento)"
+    },
+    "title": "Item 1"
+  },
+  
+  "rich-text#menu-ajuda-2-active":{
+    "props":{
+      "blockClass":["menu-institucional","menu-institucional-2","menu-institucional-active"],
+      "text":"[Troque fácil](/troque-facil)"
+    },
+    "title": "Item 2"
+  },
+  
+  "rich-text#menu-ajuda-3-active":{
+    "props":{
+      "blockClass":["menu-institucional","menu-institucional-3","menu-institucional-active"],
+      "text":"[Trocas e Devoluções](/trocas-e-devolucoes)"
+    },
+    "title": "Item 3"
+  },
+  
+  "rich-text#menu-ajuda-4-active":{
+    "props":{
+      "blockClass":["menu-institucional","menu-institucional-4","menu-institucional-active"],
+      "text":"[Entrega](/entrega)"
+    },
+    "title": "Item 4"
+  },
+
+  "rich-text#menu-ajuda-5-active":{
+    "props":{
+      "blockClass":["menu-institucional","menu-institucional-2", "menu-institucional-active"],
+      "text":"[Trabalhe Aqui](/trabalhe-aqui)"
+    },
+    "title": "Item 5 Ativo"
+  }
+
+}
+    

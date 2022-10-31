@@ -1,0 +1,2818 @@
+{
+  // Menu Mobile
+  "vtex.menu@2.x:menu#category-menu-mobile": {
+    "children": [
+      "menu-item#mobile-1",
+      "menu-item#mobile-2",
+      "menu-item#mobile-3",
+      "menu-item#mobile-4",
+      "menu-item#mobile-5"
+    ],
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "category-menu-mobile"
+    },
+    "title": "Menu Mobile"
+  },
+
+  "menu-item#mobile-1": {
+    "props": {
+      "id": "menu-item-mobile-1",
+      "type": "custom",
+      "highlight": false,
+      "blockClass": "menu-mobile-first-level",
+      "itemProps": {
+        "type": "internal",
+        "href": "/new-in",
+        "noFollow": false,
+        "tagTitle": "New in",
+        "text": "New in"
+      }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu.accordion#mobile-1"
+    ],
+    "title": "Menu Mobile 1"
+  },
+  "vtex.menu@2.x:submenu.accordion#mobile-1": {
+    "props": {
+      "width": "100%"
+    },
+    "children": [
+      "vtex.menu@2.x:menu#submenu-mobile-1"
+    ],
+    "title": "Submenu Mobile 1"
+  },
+  "vtex.menu@2.x:menu#submenu-mobile-1":{
+    "children":["flex-layout.row#mobile-1"]
+  },
+  "flex-layout.row#mobile-1":{
+    "props": {
+      "blockClass": "menu-mobile"
+    },
+    "children": [
+      "flex-layout.col#mobile-1"
+    ],
+    "title": "Submenu Mobile 1"
+  },
+  "flex-layout.col#mobile-1":{
+    "props": {
+      "width": "100%"
+    },
+    "children": [
+      "menu-item#mobile-1-1",
+      "menu-item#mobile-1-2",
+      "menu-item#mobile-1-3"
+    ],
+    "title": "Submenu Mobile 1"
+  },
+  "menu-item#mobile-1-1": {
+    "props": {
+      "id": "menu-item-mobile-1-1",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/colecao-prisma",
+        "noFollow": false,
+        "tagTitle": "Coleção Prisma",
+        "text": "Coleção Prisma"
+      }
+    },
+    "title": "Submenu Mobile 1 1"
+  },  
+  "menu-item#mobile-1-2": {
+    "props": {
+      "id": "menu-item-mobile-1-2",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/colecao-flume",
+        "noFollow": false,
+        "tagTitle": "Coleção Flume",
+        "text": "Coleção Flume"
+      }
+    },
+    "title": "Submenu Mobile 1 2"
+  },
+  "menu-item#mobile-1-3": {
+    "props": {
+      "id": "menu-item-mobile-1-3",
+      "type": "custom",
+      "highlight": true,
+      "itemProps": {
+        "type": "internal",
+        "href": "/new-in",
+        "noFollow": false,
+        "tagTitle": "Ver Todos",
+        "text": "Ver Todos"
+      }
+    },
+    "title": "Submenu Mobile 1 3"
+  },
+  
+  "menu-item#mobile-2": {
+    "props": {
+      "id": "menu-item-mobile-2",
+      "type": "custom",
+      "highlight": false,
+      "blockClass": "menu-mobile-first-level",
+      "itemProps": {
+        "type": "internal",
+        "href": "/shop",
+        "noFollow": false,
+        "tagTitle": "Shop",
+        "text": "Shop"
+      }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu.accordion#mobile-2"
+    ],
+    "title": "Menu Mobile 2"
+  },
+  "vtex.menu@2.x:submenu.accordion#mobile-2": {
+    "props": {
+      "width": "100%"
+    },
+    "children": [
+      "vtex.menu@2.x:menu#submenu-mobile-2"
+    ],
+    "title": "Submenu Mobile 2"
+  },
+  "vtex.menu@2.x:menu#submenu-mobile-2":{
+    "children":["flex-layout.row#mobile-2"]
+  },
+  "flex-layout.row#mobile-2":{
+    "props": {
+      "blockClass": "menu-mobile"
+    },
+    "children": [
+      "flex-layout.col#mobile-2"
+    ],
+    "title": "Submenu Mobile 2"
+  },
+  "flex-layout.col#mobile-2":{
+    "props": {
+      "width": "100%"
+    },
+    "children": [
+      "menu-item#mobile-2-1",
+      "menu-item#mobile-2-2",
+      "menu-item#mobile-2-3",
+      "menu-item#mobile-2-4",
+      "menu-item#mobile-2-5",
+      "menu-item#mobile-2-6"
+    ],
+    "title": "Submenu Mobile 2"
+  },
+  "menu-item#mobile-2-1": {
+    "props": {
+      "id": "menu-item-mobile-2-1",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/shop/aneis",
+        "noFollow": false,
+        "tagTitle": "Anéis",
+        "text": "Anéis"
+      }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu.accordion#mobile-2-1"
+    ],
+    "title": "Submenu Mobile 2 1"
+  },
+  "vtex.menu@2.x:submenu.accordion#mobile-2-1": {
+    "props": {
+      "width": "100%"
+    },
+    "children": [
+      "vtex.menu@2.x:menu#submenu-mobile-2-1"
+    ],
+    "title": "Submenu Mobile 2 1"
+  },
+  "vtex.menu@2.x:menu#submenu-mobile-2-1":{
+    "children":["flex-layout.row#mobile-2-1"]
+  },
+  "flex-layout.row#mobile-2-1":{
+    "props": {
+      "blockClass": "menu-mobile"
+    },
+    "children": [
+      "flex-layout.col#mobile-2-1"
+    ],
+    "title": "Submenu Mobile 2 1"
+  },
+  "flex-layout.col#mobile-2-1":{
+    "props": {
+      "width": "100%"
+    },
+    "children": [
+      "menu-item#mobile-2-1-1",
+      "menu-item#mobile-2-1-2",
+      "menu-item#mobile-2-1-3"
+    ],
+    "title": "Submenu Mobile 2 1"
+  },
+  "menu-item#mobile-2-1-1": {
+    "props": {
+      "id": "menu-item-mobile-2-1-1",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/shop/aneis/banho-ouro?initialMap=c,c&initialQuery=shop/aneis&map=category-1,category-2,material",
+        "noFollow": false,
+        "tagTitle": "Ouro",
+        "text": "Ouro"
+      }
+    },
+    "title": "Submenu Mobile 2 1 1"
+  },
+  "menu-item#mobile-2-1-2": {
+    "props": {
+      "id": "menu-item-mobile-2-1-2",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/shop/aneis/banho-prata?initialMap=c,c&initialQuery=shop/aneis&map=category-1,category-2,material",
+        "noFollow": false,
+        "tagTitle": "Prata",
+        "text": "Prata"
+      }
+    },
+    "title": "Submenu Mobile 2 1 2"
+  },
+  "menu-item#mobile-2-1-3": {
+    "props": {
+      "id": "menu-item-mobile-2-1-3",
+      "type": "custom",
+      "highlight": true,
+      "itemProps": {
+        "type": "internal",
+        "href": "/shop/aneis",
+        "noFollow": false,
+        "tagTitle": "Ver Todos",
+        "text": "Ver Todos"
+      }
+    },
+    "title": "Submenu Mobile 2 1 3"
+  },
+  "menu-item#mobile-2-2": {
+    "props": {
+      "id": "menu-item-mobile-2-2",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/shop/brincos",
+        "noFollow": false,
+        "tagTitle": "Brincos",
+        "text": "Brincos"
+      }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu.accordion#mobile-2-2"
+    ],
+    "title": "Submenu Mobile 2 2"
+  },
+  "vtex.menu@2.x:submenu.accordion#mobile-2-2": {
+    "props": {
+      "width": "100%"
+    },
+    "children": [
+      "vtex.menu@2.x:menu#submenu-mobile-2-2"
+    ],
+    "title": "Submenu Mobile 2 2"
+  },
+  "vtex.menu@2.x:menu#submenu-mobile-2-2":{
+    "children":["flex-layout.row#mobile-2-2"]
+  },
+  "flex-layout.row#mobile-2-2":{
+    "props": {
+      "blockClass": "menu-mobile"
+    },
+    "children": [
+      "flex-layout.col#mobile-2-2"
+    ],
+    "title": "Submenu Mobile 2 2"
+  },
+  "flex-layout.col#mobile-2-2":{
+    "props": {
+      "width": "100%"
+    },
+    "children": [
+      "menu-item#mobile-2-2-1",
+      "menu-item#mobile-2-2-2",
+      "menu-item#mobile-2-2-3"
+    ],
+    "title": "Submenu Mobile 2 2"
+  },
+  "menu-item#mobile-2-2-1": {
+    "props": {
+      "id": "menu-item-mobile-2-2-1",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/shop/brincos/banho-ouro?initialMap=c,c&initialQuery=shop/brincos&map=category-1,category-2,material",
+        "noFollow": false,
+        "tagTitle": "Ouro",
+        "text": "Ouro"
+      }
+    },
+    "title": "Submenu Mobile 2 2 1"
+  },
+  "menu-item#mobile-2-2-2": {
+    "props": {
+      "id": "menu-item-mobile-2-2-2",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/shop/brincos/banho-prata?initialMap=c,c&initialQuery=shop/brincos&map=category-1,category-2,material",
+        "noFollow": false,
+        "tagTitle": "Prata",
+        "text": "Prata"
+      }
+    },
+    "title": "Submenu Mobile 2 2 2"
+  },
+  "menu-item#mobile-2-2-3": {
+    "props": {
+      "id": "menu-item-mobile-2-2-3",
+      "type": "custom",
+      "highlight": true,
+      "itemProps": {
+        "type": "internal",
+        "href": "/shop/brincos",
+        "noFollow": false,
+        "tagTitle": "Ver Todos",
+        "text": "Ver Todos"
+      }
+    },
+    "title": "Submenu Mobile 2 2 3"
+  },
+  "menu-item#mobile-2-3": {
+    "props": {
+      "id": "menu-item-mobile-2-3",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/shop/colares-e-gargantilhas",
+        "noFollow": false,
+        "tagTitle": "Colares e Gargantilhas",
+        "text": "Colares e Gargantilhas"
+      }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu.accordion#mobile-2-3"
+    ],
+    "title": "Submenu Mobile 2 3"
+  },
+  "vtex.menu@2.x:submenu.accordion#mobile-2-3": {
+    "props": {
+      "width": "100%"
+    },
+    "children": [
+      "vtex.menu@2.x:menu#submenu-mobile-2-3"
+    ],
+    "title": "Submenu Mobile 2 3"
+  },
+  "vtex.menu@2.x:menu#submenu-mobile-2-3":{
+    "children":["flex-layout.row#mobile-2-3"]
+  },
+  "flex-layout.row#mobile-2-3":{
+    "props": {
+      "blockClass": "menu-mobile"
+    },
+    "children": [
+      "flex-layout.col#mobile-2-3"
+    ],
+    "title": "Submenu Mobile 2 3"
+  },
+  "flex-layout.col#mobile-2-3":{
+    "props": {
+      "width": "100%"
+    },
+    "children": [
+      "menu-item#mobile-2-3-1",
+      "menu-item#mobile-2-3-2",
+      "menu-item#mobile-2-3-3"
+    ],
+    "title": "Submenu Mobile 2 3"
+  },
+  "menu-item#mobile-2-3-1": {
+    "props": {
+      "id": "menu-item-mobile-2-3-1",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/shop/colares-e-gargantilhas/banho-ouro?initialMap=c,c&initialQuery=shop/colares-e-gargantilhas&map=category-1,category-2,material",
+        "noFollow": false,
+        "tagTitle": "Ouro",
+        "text": "Ouro"
+      }
+    },
+    "title": "Submenu Mobile 2 3 1"
+  },
+  "menu-item#mobile-2-3-2": {
+    "props": {
+      "id": "menu-item-mobile-2-3-2",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/shop/colares-e-gargantilhas/banho-prata?initialMap=c,c&initialQuery=shop/colares-e-gargantilhas&map=category-1,category-2,material",
+        "noFollow": false,
+        "tagTitle": "Prata",
+        "text": "Prata"
+      }
+    },
+    "title": "Submenu Mobile 2 3 2"
+  },
+  "menu-item#mobile-2-3-3": {
+    "props": {
+      "id": "menu-item-mobile-2-3-3",
+      "type": "custom",
+      "highlight": true,
+      "itemProps": {
+        "type": "internal",
+        "href": "/shop/colares-e-gargantilhas",
+        "noFollow": false,
+        "tagTitle": "Ver Todos",
+        "text": "Ver Todos"
+      }
+    },
+    "title": "Submenu Mobile 2 3 3"
+  },
+  "menu-item#mobile-2-4": {
+    "props": {
+      "id": "menu-item-mobile-2-4",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/shop/correntes-e-pingentes",
+        "noFollow": false,
+        "tagTitle": "Correntes e Pingentes",
+        "text": "Correntes e Pingentes"
+      }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu.accordion#mobile-2-4"
+    ],
+    "title": "Submenu Mobile 2 4"
+  },
+  "vtex.menu@2.x:submenu.accordion#mobile-2-4": {
+    "props": {
+      "width": "100%"
+    },
+    "children": [
+      "vtex.menu@2.x:menu#submenu-mobile-2-4"
+    ],
+    "title": "Submenu Mobile 2 4"
+  },
+  "vtex.menu@2.x:menu#submenu-mobile-2-4":{
+    "children":["flex-layout.row#mobile-2-4"]
+  },
+  "flex-layout.row#mobile-2-4":{
+    "props": {
+      "blockClass": "menu-mobile"
+    },
+    "children": [
+      "flex-layout.col#mobile-2-4"
+    ],
+    "title": "Submenu Mobile 2 4"
+  },
+  "flex-layout.col#mobile-2-4":{
+    "props": {
+      "width": "100%"
+    },
+    "children": [
+      "menu-item#mobile-2-4-1",
+      "menu-item#mobile-2-4-2",
+      "menu-item#mobile-2-4-3"
+    ],
+    "title": "Submenu Mobile 2 4"
+  },
+  "menu-item#mobile-2-4-1": {
+    "props": {
+      "id": "menu-item-mobile-2-4-1",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/shop/correntes-e-pingentes/banho-ouro?initialMap=c,c&initialQuery=shop/correntes-e-pingentes&map=category-1,category-2,material",
+        "noFollow": false,
+        "tagTitle": "Ouro",
+        "text": "Ouro"
+      }
+    },
+    "title": "Submenu Mobile 2 4 1"
+  },
+  "menu-item#mobile-2-4-2": {
+    "props": {
+      "id": "menu-item-mobile-2-4-2",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/shop/correntes-e-pingentes/banho-prata?initialMap=c,c&initialQuery=shop/correntes-e-pingentes&map=category-1,category-2,material",
+        "noFollow": false,
+        "tagTitle": "Prata",
+        "text": "Prata"
+      }
+    },
+    "title": "Submenu Mobile 2 4 2"
+  },
+  "menu-item#mobile-2-4-3": {
+    "props": {
+      "id": "menu-item-mobile-2-4-3",
+      "type": "custom",
+      "highlight": true,
+      "itemProps": {
+        "type": "internal",
+        "href": "/shop/correntes-e-pingentes",
+        "noFollow": false,
+        "tagTitle": "Ver Todos",
+        "text": "Ver Todos"
+      }
+    },
+    "title": "Submenu Mobile 2 4 3"
+  },
+  "menu-item#mobile-2-5": {
+    "props": {
+      "id": "menu-item-mobile-2-5",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/shop/pulseiras-e-braceletes",
+        "noFollow": false,
+        "tagTitle": "Pulseiras e Braceletes",
+        "text": "Pulseiras e Braceletes"
+      }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu.accordion#mobile-2-5"
+    ],
+    "title": "Submenu Mobile 2 5"
+  },
+  "vtex.menu@2.x:submenu.accordion#mobile-2-5": {
+    "props": {
+      "width": "100%"
+    },
+    "children": [
+      "vtex.menu@2.x:menu#submenu-mobile-2-5"
+    ],
+    "title": "Submenu Mobile 2 5"
+  },
+  "vtex.menu@2.x:menu#submenu-mobile-2-5":{
+    "children":["flex-layout.row#mobile-2-5"]
+  },
+  "flex-layout.row#mobile-2-5":{
+    "props": {
+      "blockClass": "menu-mobile"
+    },
+    "children": [
+      "flex-layout.col#mobile-2-5"
+    ],
+    "title": "Submenu Mobile 2 5"
+  },
+  "flex-layout.col#mobile-2-5":{
+    "props": {
+      "width": "100%"
+    },
+    "children": [
+      "menu-item#mobile-2-5-1",
+      "menu-item#mobile-2-5-2",
+      "menu-item#mobile-2-5-3"
+    ],
+    "title": "Submenu Mobile 2 5"
+  },
+  "menu-item#mobile-2-5-1": {
+    "props": {
+      "id": "menu-item-mobile-2-5-1",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/shop/pulseiras-e-braceletes/banho-ouro?initialMap=c,c&initialQuery=shop/pulseiras-e-braceletes&map=category-1,category-2,material",
+        "noFollow": false,
+        "tagTitle": "Ouro",
+        "text": "Ouro"
+      }
+    },
+    "title": "Submenu Mobile 2 5 1"
+  },
+  "menu-item#mobile-2-5-2": {
+    "props": {
+      "id": "menu-item-mobile-2-5-2",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/shop/pulseiras-e-braceletes/banho-prata?initialMap=c,c&initialQuery=shop/pulseiras-e-braceletes&map=category-1,category-2,material",
+        "noFollow": false,
+        "tagTitle": "Prata",
+        "text": "Prata"
+      }
+    },
+    "title": "Submenu Mobile 2 5 2"
+  },
+  "menu-item#mobile-2-5-3": {
+    "props": {
+      "id": "menu-item-mobile-2-5-3",
+      "type": "custom",
+      "highlight": true,
+      "itemProps": {
+        "type": "internal",
+        "href": "/shop/pulseiras-e-braceletes",
+        "noFollow": false,
+        "tagTitle": "Ver Todos",
+        "text": "Ver Todos"
+      }
+    },
+    "title": "Submenu Mobile 2 5 3"
+  },
+  "menu-item#mobile-2-6": {
+    "props": {
+      "id": "menu-item-mobile-2-6",
+      "type": "custom",
+      "highlight": true,
+      "itemProps": {
+        "type": "internal",
+        "href": "/shop",
+        "noFollow": false,
+        "tagTitle": "Ver Todos",
+        "text": "Ver Todos"
+      }
+    },
+    "title": "Submenu Mobile 2 6"
+  },
+
+  "menu-item#mobile-3": {
+    "props": {
+      "id": "menu-item-mobile-3",
+      "type": "custom",
+      "highlight": false,
+      "blockClass": "menu-mobile-first-level",
+      "itemProps": {
+        "type": "internal",
+        "href": "/off",
+        "noFollow": false,
+        "tagTitle": "OFF",
+        "text": "OFF"
+      }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu.accordion#mobile-3"
+    ],
+    "title": "Menu Mobile 3"
+  },
+  "vtex.menu@2.x:submenu.accordion#mobile-3": {
+    "props": {
+      "width": "100%"
+    },
+    "children": [
+      "vtex.menu@2.x:menu#submenu-mobile-3"
+    ],
+    "title": "Submenu Mobile 3"
+  },
+  "vtex.menu@2.x:menu#submenu-mobile-3":{
+    "children":["flex-layout.row#mobile-3"]
+  },
+  "flex-layout.row#mobile-3":{
+    "props": {
+      "blockClass": "menu-mobile"
+    },
+    "children": [
+      "flex-layout.col#mobile-3"
+    ],
+    "title": "Submenu Mobile 3"
+  },
+  "flex-layout.col#mobile-3":{
+    "props": {
+      "width": "100%"
+    },
+    "children": [
+      "menu-item#mobile-3-1",
+      "menu-item#mobile-3-2",
+      "menu-item#mobile-3-3",
+      "menu-item#mobile-3-4",
+      "menu-item#mobile-3-5",
+      "menu-item#mobile-3-6"
+    ],
+    "title": "Submenu Mobile 3"
+  },
+  "menu-item#mobile-3-1": {
+    "props": {
+      "id": "menu-item-mobile-3-1",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/off/aneis",
+        "noFollow": false,
+        "tagTitle": "Anéis",
+        "text": "Anéis"
+      }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu.accordion#mobile-3-1"
+    ],
+    "title": "Submenu Mobile 3 1"
+  },
+  "vtex.menu@2.x:submenu.accordion#mobile-3-1": {
+    "props": {
+      "width": "100%"
+    },
+    "children": [
+      "vtex.menu@2.x:menu#submenu-mobile-3-1"
+    ],
+    "title": "Submenu Mobile 3 1"
+  },
+  "vtex.menu@2.x:menu#submenu-mobile-3-1":{
+    "children":["flex-layout.row#mobile-3-1"]
+  },
+  "flex-layout.row#mobile-3-1":{
+    "props": {
+      "blockClass": "menu-mobile"
+    },
+    "children": [
+      "flex-layout.col#mobile-3-1"
+    ],
+    "title": "Submenu Mobile 3 1"
+  },
+  "flex-layout.col#mobile-3-1":{
+    "props": {
+      "width": "100%"
+    },
+    "children": [
+      "menu-item#mobile-3-1-1",
+      "menu-item#mobile-3-1-2",
+      "menu-item#mobile-3-1-3"
+    ],
+    "title": "Submenu Mobile 3 1"
+  },
+  "menu-item#mobile-3-1-1": {
+    "props": {
+      "id": "menu-item-mobile-3-1-1",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/off/aneis/banho-ouro?initialMap=c,c&initialQuery=off/aneis&map=category-1,category-2,material",
+        "noFollow": false,
+        "tagTitle": "Ouro",
+        "text": "Ouro"
+      }
+    },
+    "title": "Submenu Mobile 3 1 1"
+  },
+  "menu-item#mobile-3-1-2": {
+    "props": {
+      "id": "menu-item-mobile-3-1-2",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/off/aneis/banho-prata?initialMap=c,c&initialQuery=off/aneis&map=category-1,category-2,material",
+        "noFollow": false,
+        "tagTitle": "Prata",
+        "text": "Prata"
+      }
+    },
+    "title": "Submenu Mobile 3 1 2"
+  },
+  "menu-item#mobile-3-1-3": {
+    "props": {
+      "id": "menu-item-mobile-3-1-3",
+      "type": "custom",
+      "highlight": true,
+      "itemProps": {
+        "type": "internal",
+        "href": "/off/aneis",
+        "noFollow": false,
+        "tagTitle": "Ver Todos",
+        "text": "Ver Todos"
+      }
+    },
+    "title": "Submenu Mobile 3 1 3"
+  },
+  "menu-item#mobile-3-2": {
+    "props": {
+      "id": "menu-item-mobile-3-2",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/off/brincos",
+        "noFollow": false,
+        "tagTitle": "Brincos",
+        "text": "Brincos"
+      }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu.accordion#mobile-3-2"
+    ],
+    "title": "Submenu Mobile 3 2"
+  },
+  "vtex.menu@2.x:submenu.accordion#mobile-3-2": {
+    "props": {
+      "width": "100%"
+    },
+    "children": [
+      "vtex.menu@2.x:menu#submenu-mobile-3-2"
+    ],
+    "title": "Submenu Mobile 3 2"
+  },
+  "vtex.menu@2.x:menu#submenu-mobile-3-2":{
+    "children":["flex-layout.row#mobile-3-2"]
+  },
+  "flex-layout.row#mobile-3-2":{
+    "props": {
+      "blockClass": "menu-mobile"
+    },
+    "children": [
+      "flex-layout.col#mobile-3-2"
+    ],
+    "title": "Submenu Mobile 3 2"
+  },
+  "flex-layout.col#mobile-3-2":{
+    "props": {
+      "width": "100%"
+    },
+    "children": [
+      "menu-item#mobile-3-2-1",
+      "menu-item#mobile-3-2-2",
+      "menu-item#mobile-3-2-3"
+    ],
+    "title": "Submenu Mobile 3 2"
+  },
+  "menu-item#mobile-3-2-1": {
+    "props": {
+      "id": "menu-item-mobile-3-2-1",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/off/brincos/banho-ouro?initialMap=c,c&initialQuery=off/brincos&map=category-1,category-2,material",
+        "noFollow": false,
+        "tagTitle": "Ouro",
+        "text": "Ouro"
+      }
+    },
+    "title": "Submenu Mobile 3 2 1"
+  },
+  "menu-item#mobile-3-2-2": {
+    "props": {
+      "id": "menu-item-mobile-3-2-2",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/off/brincos/banho-prata?initialMap=c,c&initialQuery=off/brincos&map=category-1,category-2,material",
+        "noFollow": false,
+        "tagTitle": "Prata",
+        "text": "Prata"
+      }
+    },
+    "title": "Submenu Mobile 3 2 2"
+  },
+  "menu-item#mobile-3-2-3": {
+    "props": {
+      "id": "menu-item-mobile-3-2-3",
+      "type": "custom",
+      "highlight": true,
+      "itemProps": {
+        "type": "internal",
+        "href": "/off/brincos",
+        "noFollow": false,
+        "tagTitle": "Ver Todos",
+        "text": "Ver Todos"
+      }
+    },
+    "title": "Submenu Mobile 3 2 3"
+  },
+  "menu-item#mobile-3-3": {
+    "props": {
+      "id": "menu-item-mobile-3-3",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/off/colares-e-gargantilhas",
+        "noFollow": false,
+        "tagTitle": "Colares e Gargantilhas",
+        "text": "Colares e Gargantilhas"
+      }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu.accordion#mobile-3-3"
+    ],
+    "title": "Submenu Mobile 3 3"
+  },
+  "vtex.menu@2.x:submenu.accordion#mobile-3-3": {
+    "props": {
+      "width": "100%"
+    },
+    "children": [
+      "vtex.menu@2.x:menu#submenu-mobile-3-3"
+    ],
+    "title": "Submenu Mobile 3 3"
+  },
+  "vtex.menu@2.x:menu#submenu-mobile-3-3":{
+    "children":["flex-layout.row#mobile-3-3"]
+  },
+  "flex-layout.row#mobile-3-3":{
+    "props": {
+      "blockClass": "menu-mobile"
+    },
+    "children": [
+      "flex-layout.col#mobile-3-3"
+    ],
+    "title": "Submenu Mobile 3 3"
+  },
+  "flex-layout.col#mobile-3-3":{
+    "props": {
+      "width": "100%"
+    },
+    "children": [
+      "menu-item#mobile-3-3-1",
+      "menu-item#mobile-3-3-2",
+      "menu-item#mobile-3-3-3"
+    ],
+    "title": "Submenu Mobile 3 3"
+  },
+  "menu-item#mobile-3-3-1": {
+    "props": {
+      "id": "menu-item-mobile-3-3-1",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/off/colares-e-gargantilhas/banho-ouro?initialMap=c,c&initialQuery=off/colares-e-gargantilhas&map=category-1,category-2,material",
+        "noFollow": false,
+        "tagTitle": "Ouro",
+        "text": "Ouro"
+      }
+    },
+    "title": "Submenu Mobile 3 3 1"
+  },
+  "menu-item#mobile-3-3-2": {
+    "props": {
+      "id": "menu-item-mobile-3-3-2",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/off/colares-e-gargantilhas/banho-prata?initialMap=c,c&initialQuery=off/colares-e-gargantilhas&map=category-1,category-2,material",
+        "noFollow": false,
+        "tagTitle": "Prata",
+        "text": "Prata"
+      }
+    },
+    "title": "Submenu Mobile 3 3 2"
+  },
+  "menu-item#mobile-3-3-3": {
+    "props": {
+      "id": "menu-item-mobile-3-3-3",
+      "type": "custom",
+      "highlight": true,
+      "itemProps": {
+        "type": "internal",
+        "href": "/off/colares-e-gargantilhas",
+        "noFollow": false,
+        "tagTitle": "Ver Todos",
+        "text": "Ver Todos"
+      }
+    },
+    "title": "Submenu Mobile 3 3 3"
+  },
+  "menu-item#mobile-3-4": {
+    "props": {
+      "id": "menu-item-mobile-3-4",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/off/correntes-e-pingentes",
+        "noFollow": false,
+        "tagTitle": "Correntes e Pingentes",
+        "text": "Correntes e Pingentes"
+      }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu.accordion#mobile-3-4"
+    ],
+    "title": "Submenu Mobile 3 4"
+  },
+  "vtex.menu@2.x:submenu.accordion#mobile-3-4": {
+    "props": {
+      "width": "100%"
+    },
+    "children": [
+      "vtex.menu@2.x:menu#submenu-mobile-3-4"
+    ],
+    "title": "Submenu Mobile 3 4"
+  },
+  "vtex.menu@2.x:menu#submenu-mobile-3-4":{
+    "children":["flex-layout.row#mobile-3-4"]
+  },
+  "flex-layout.row#mobile-3-4":{
+    "props": {
+      "blockClass": "menu-mobile"
+    },
+    "children": [
+      "flex-layout.col#mobile-3-4"
+    ],
+    "title": "Submenu Mobile 3 4"
+  },
+  "flex-layout.col#mobile-3-4":{
+    "props": {
+      "width": "100%"
+    },
+    "children": [
+      "menu-item#mobile-3-4-1",
+      "menu-item#mobile-3-4-2",
+      "menu-item#mobile-3-4-3"
+    ],
+    "title": "Submenu Mobile 3 4"
+  },
+  "menu-item#mobile-3-4-1": {
+    "props": {
+      "id": "menu-item-mobile-3-4-1",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/off/colares-e-correntes/banho-ouro?initialMap=c,c&initialQuery=off/pulseiras-e-braceletes&map=category-1,category-2,material",
+        "noFollow": false,
+        "tagTitle": "Ouro",
+        "text": "Ouro"
+      }
+    },
+    "title": "Submenu Mobile 3 4 1"
+  },
+  "menu-item#mobile-3-4-2": {
+    "props": {
+      "id": "menu-item-mobile-3-4-2",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/off/colares-e-correntes/banho-prata?initialMap=c,c&initialQuery=off/pulseiras-e-braceletes&map=category-1,category-2,material",
+        "noFollow": false,
+        "tagTitle": "Prata",
+        "text": "Prata"
+      }
+    },
+    "title": "Submenu Mobile 3 4 2"
+  },
+  "menu-item#mobile-3-4-3": {
+    "props": {
+      "id": "menu-item-mobile-3-4-3",
+      "type": "custom",
+      "highlight": true,
+      "itemProps": {
+        "type": "internal",
+        "href": "/off/colares-e-correntes",
+        "noFollow": false,
+        "tagTitle": "Ver Todos",
+        "text": "Ver Todos"
+      }
+    },
+    "title": "Submenu Mobile 3 4 3"
+  },
+  "menu-item#mobile-3-5": {
+    "props": {
+      "id": "menu-item-mobile-3-5",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/off/pulseiras-e-braceletes",
+        "noFollow": false,
+        "tagTitle": "Pulseiras e Braceletes",
+        "text": "Pulseiras e Braceletes"
+      }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu.accordion#mobile-3-5"
+    ],
+    "title": "Submenu Mobile 3 5"
+  },
+  "vtex.menu@2.x:submenu.accordion#mobile-3-5": {
+    "props": {
+      "width": "100%"
+    },
+    "children": [
+      "vtex.menu@2.x:menu#submenu-mobile-3-5"
+    ],
+    "title": "Submenu Mobile 3 5"
+  },
+  "vtex.menu@2.x:menu#submenu-mobile-3-5":{
+    "children":["flex-layout.row#mobile-3-5"]
+  },
+  "flex-layout.row#mobile-3-5":{
+    "props": {
+      "blockClass": "menu-mobile"
+    },
+    "children": [
+      "flex-layout.col#mobile-3-5"
+    ],
+    "title": "Submenu Mobile 3 5"
+  },
+  "flex-layout.col#mobile-3-5":{
+    "props": {
+      "width": "100%"
+    },
+    "children": [
+      "menu-item#mobile-3-5-1",
+      "menu-item#mobile-3-5-2",
+      "menu-item#mobile-3-5-3"
+    ],
+    "title": "Submenu Mobile 3 5"
+  },
+  "menu-item#mobile-3-5-1": {
+    "props": {
+      "id": "menu-item-mobile-3-5-1",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/off/colares-e-correntes/banho-ouro?initialMap=c,c&initialQuery=off/pulseiras-e-braceletes&map=category-1,category-2,material",
+        "noFollow": false,
+        "tagTitle": "Ouro",
+        "text": "Ouro"
+      }
+    },
+    "title": "Submenu Mobile 3 5 1"
+  },
+  "menu-item#mobile-3-5-2": {
+    "props": {
+      "id": "menu-item-mobile-3-5-2",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/off/colares-e-correntes/banho-prata?initialMap=c,c&initialQuery=off/pulseiras-e-braceletes&map=category-1,category-2,material",
+        "noFollow": false,
+        "tagTitle": "Prata",
+        "text": "Prata"
+      }
+    },
+    "title": "Submenu Mobile 3 5 2"
+  },
+  "menu-item#mobile-3-5-3": {
+    "props": {
+      "id": "menu-item-mobile-3-5-3",
+      "type": "custom",
+      "highlight": true,
+      "itemProps": {
+        "type": "internal",
+        "href": "/off/colares-e-correntes",
+        "noFollow": false,
+        "tagTitle": "Ver Todos",
+        "text": "Ver Todos"
+      }
+    },
+    "title": "Submenu Mobile 3 5 3"
+  },
+  "menu-item#mobile-3-6": {
+    "props": {
+      "id": "menu-item-mobile-3-6",
+      "type": "custom",
+      "highlight": true,
+      "itemProps": {
+        "type": "internal",
+        "href": "/off",
+        "noFollow": false,
+        "tagTitle": "Ver Todos",
+        "text": "Ver Todos"
+      }
+    },
+    "title": "Submenu Mobile 3 6"
+  },
+
+  "menu-item#mobile-4": {
+    "props": {
+      "id": "menu-item-mobile-4",
+      "type": "custom",
+      "highlight": false,
+      "blockClass": "menu-mobile-first-level",
+      "itemProps": {
+        "type": "internal",
+        "href": "/ouro",
+        "noFollow": false,
+        "tagTitle": "Ouro",
+        "text": "Ouro"
+      }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu.accordion#mobile-4"
+    ],
+    "title": "Menu Mobile 4"
+  },
+  "vtex.menu@2.x:submenu.accordion#mobile-4": {
+    "props": {
+      "width": "100%"
+    },
+    "children": [
+      "vtex.menu@2.x:menu#submenu-mobile-4"
+    ],
+    "title": "Submenu Mobile 4"
+  },
+  "vtex.menu@2.x:menu#submenu-mobile-4":{
+    "children":["flex-layout.row#mobile-4"]
+  },
+  "flex-layout.row#mobile-4":{
+    "props": {
+      "blockClass": "menu-mobile"
+    },
+    "children": [
+      "flex-layout.col#mobile-4"
+    ],
+    "title": "Submenu Mobile 4"
+  },
+  "flex-layout.col#mobile-4":{
+    "props": {
+      "width": "100%"
+    },
+    "children": [
+      "menu-item#mobile-4-1",
+      "menu-item#mobile-4-2",
+      "menu-item#mobile-4-3",
+      "menu-item#mobile-4-4",
+      "menu-item#mobile-4-5",
+      "menu-item#mobile-4-6",
+      "menu-item#mobile-4-7"
+    ],
+    "title": "Submenu Mobile 4"
+  },
+  "menu-item#mobile-4-1": {
+    "props": {
+      "id": "menu-item-mobile-4-1",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/aneis-dourados",
+        "noFollow": false,
+        "tagTitle": "Anéis",
+        "text": "Anéis"
+      }
+    },
+    "title": "Submenu Mobile 4 1"
+  },  
+  "menu-item#mobile-4-2": {
+    "props": {
+      "id": "menu-item-mobile-4-2",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/brincos-dourados",
+        "noFollow": false,
+        "tagTitle": "Brincos",
+        "text": "Brincos"
+      }
+    },
+    "title": "Submenu Mobile 4 2"
+  },
+  "menu-item#mobile-4-3": {
+    "props": {
+      "id": "menu-item-mobile-4-3",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/colar-dourado",
+        "noFollow": false,
+        "tagTitle": "Colares",
+        "text": "Colares"
+      }
+    },
+    "title": "Submenu Mobile 4 3"
+  },
+  "menu-item#mobile-4-4": {
+    "props": {
+      "id": "menu-item-mobile-4-4",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/correntes-douradas",
+        "noFollow": false,
+        "tagTitle": "Correntes",
+        "text": "Correntes"
+      }
+    },
+    "title": "Submenu Mobile 4 4"
+  },
+  "menu-item#mobile-4-5": {
+    "props": {
+      "id": "menu-item-mobile-4-5",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/pingentes-dourados",
+        "noFollow": false,
+        "tagTitle": "Pingentes",
+        "text": "Pingentes"
+      }
+    },
+    "title": "Submenu Mobile 4 5"
+  },
+  "menu-item#mobile-4-6": {
+    "props": {
+      "id": "menu-item-mobile-4-6",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/pulseiras-douradas",
+        "noFollow": false,
+        "tagTitle": "Pulseiras",
+        "text": "Pulseiras"
+      }
+    },
+    "title": "Submenu Mobile 4 6"
+  },
+  "menu-item#mobile-4-7": {
+    "props": {
+      "id": "menu-item-mobile-4-7",
+      "type": "custom",
+      "highlight": true,
+      "itemProps": {
+        "type": "internal",
+        "href": "/ouro",
+        "noFollow": false,
+        "tagTitle": "Ver Todos",
+        "text": "Ver Todos"
+      }
+    },
+    "title": "Submenu Mobile 4 7"
+  },
+
+  "menu-item#mobile-5": {
+    "props": {
+      "id": "menu-item-mobile-5",
+      "type": "custom",
+      "highlight": false,
+      "blockClass": "menu-mobile-first-level",
+      "itemProps": {
+        "type": "internal",
+        "href": "/prata",
+        "noFollow": false,
+        "tagTitle": "Prata",
+        "text": "Prata"
+      }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu.accordion#mobile-5"
+    ],
+    "title": "Menu Mobile 5"
+  },
+  "vtex.menu@2.x:submenu.accordion#mobile-5": {
+    "props": {
+      "width": "100%"
+    },
+    "children": [
+      "vtex.menu@2.x:menu#submenu-mobile-5"
+    ],
+    "title": "Submenu Mobile 5"
+  },
+  "vtex.menu@2.x:menu#submenu-mobile-5":{
+    "children":["flex-layout.row#mobile-5"]
+  },
+  "flex-layout.row#mobile-5":{
+    "props": {
+      "blockClass": "menu-mobile"
+    },
+    "children": [
+      "flex-layout.col#mobile-5"
+    ],
+    "title": "Submenu Mobile 5"
+  },
+  "flex-layout.col#mobile-5":{
+    "props": {
+      "width": "100%"
+    },
+    "children": [
+      "menu-item#mobile-5-1",
+      "menu-item#mobile-5-2",
+      "menu-item#mobile-5-3",
+      "menu-item#mobile-5-4",
+      "menu-item#mobile-5-5",
+      "menu-item#mobile-5-6",
+      "menu-item#mobile-5-7"
+    ],
+    "title": "Submenu Mobile 5"
+  },
+  "menu-item#mobile-5-1": {
+    "props": {
+      "id": "menu-item-mobile-5-1",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/aneis-em-prata",
+        "noFollow": false,
+        "tagTitle": "Anéis",
+        "text": "Anéis"
+      }
+    },
+    "title": "Submenu Mobile 5 1"
+  },  
+  "menu-item#mobile-5-2": {
+    "props": {
+      "id": "menu-item-mobile-5-2",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/brincos-prateados",
+        "noFollow": false,
+        "tagTitle": "Brincos",
+        "text": "Brincos"
+      }
+    },
+    "title": "Submenu Mobile 5 2"
+  },
+  "menu-item#mobile-5-3": {
+    "props": {
+      "id": "menu-item-mobile-5-3",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/colares-prateados",
+        "noFollow": false,
+        "tagTitle": "Colares",
+        "text": "Colares"
+      }
+    },
+    "title": "Submenu Mobile 5 3"
+  },
+  "menu-item#mobile-5-4": {
+    "props": {
+      "id": "menu-item-mobile-5-4",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/correntes-prateadas",
+        "noFollow": false,
+        "tagTitle": "Correntes",
+        "text": "Correntes"
+      }
+    },
+    "title": "Submenu Mobile 5 4"
+  },
+  "menu-item#mobile-5-5": {
+    "props": {
+      "id": "menu-item-mobile-5-5",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/pingentes-prateados",
+        "noFollow": false,
+        "tagTitle": "Pingentes",
+        "text": "Pingentes"
+      }
+    },
+    "title": "Submenu Mobile 5 5"
+  },
+  "menu-item#mobile-5-6": {
+    "props": {
+      "id": "menu-item-mobile-5-6",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/pulseiras-prateadas",
+        "noFollow": false,
+        "tagTitle": "Pulseiras",
+        "text": "Pulseiras"
+      }
+    },
+    "title": "Submenu Mobile 5 6"
+  },
+  "menu-item#mobile-5-7": {
+    "props": {
+      "id": "menu-item-mobile-5-7",
+      "type": "custom",
+      "highlight": true,
+      "itemProps": {
+        "type": "internal",
+        "href": "/prata",
+        "noFollow": false,
+        "tagTitle": "Ver Todos",
+        "text": "Ver Todos"
+      }
+    },
+    "title": "Submenu Mobile 5 7"
+  },
+  
+  // Menu Desktop
+  "vtex.menu@2.x:menu#category-menu": {
+    "props": {
+      "blockClass":"menu-principal",
+      "experimentalOptimizeRendering": true
+    },
+    "children": [
+      "menu-item#desktop-1",
+      "menu-item#desktop-2",
+      "menu-item#desktop-3",
+      "menu-item#desktop-4",
+      "menu-item#desktop-5"
+    ],
+    "title": "Menu Desktop"
+  },
+
+  "menu-item#desktop-1": {
+    "props": {
+      "id": "menu-item-desktop-1",
+      "type": "custom",
+      "highlight": false,
+      "blockClass": "menu-desktop-first-level",
+      "itemProps": {
+        "type": "internal",
+        "href": "/new-in",
+        "noFollow": false,
+        "tagTitle": "New in",
+        "text": "New in"
+      }
+    },
+    "blocks":["vtex.menu@2.x:submenu#desktop-1"],
+    "title": "Menu Desktop 1"
+  },
+  "vtex.menu@2.x:submenu#desktop-1":{
+    "children": ["flex-layout.row#submenu-desktop-1"],
+    "title": "Submenu Desktop 1",
+    "props":{
+      "blockClass":"submenu-principal-desktop"
+    }
+  },
+  "flex-layout.row#submenu-desktop-1":{
+    "children":[
+      "flex-layout.col#submenu-desktop-1-1",
+      "flex-layout.col#submenu-desktop-1-2"
+    ],
+    "props":{
+      "colSizing": "auto",
+      "blockClass": "submenu-desktop-principal"
+    },
+    "title": "Submenu Desktop 1"
+  },
+  "flex-layout.col#submenu-desktop-1-1":{
+    "children":[
+      "rich-text#title-submenu-desktop-1",
+      "vtex.menu@2.x:menu#submenu-desktop-1"
+    ],
+    "props":{
+      "preventVerticalStretch": "true",
+      "blockClass": "submenu-desktop-principal"
+    },
+    "title": "Submenu Desktop 1"
+  },
+  "rich-text#title-submenu-desktop-1":{
+    "props":{
+      "text": "New In",
+      "blockClass":"title-menu"
+    },
+    "title": "Title Submenu Desktop 1"
+  },
+  "vtex.menu@2.x:menu#submenu-desktop-1":{
+    "children":[
+      "menu-item#submenu-desktop-1-1",
+      "menu-item#submenu-desktop-1-2"
+    ],
+    "props":{
+      "blockClass": "submenu-row-itens",
+      "orientation":"vertical"
+    },
+    "title": "Title Submenu Desktop 1"
+  },
+  "menu-item#submenu-desktop-1-1":{
+    "props": {
+      "id": "submenu-desktop-1-1",
+      "type": "custom",
+      "blockClass": "menu-desktop-second-level",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/colecao-prisma",
+        "noFollow": false,
+        "tagTitle": "Coleção Prisma",
+        "text": "Coleção Prisma"
+      }
+    },
+    "title": "Submenu Desktop 1-1"
+  },
+  "menu-item#submenu-desktop-1-2":{
+    "props": {
+      "id": "submenu-desktop-1-2",
+      "type": "custom",
+      "blockClass": "menu-desktop-second-level",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/colecao-flume",
+        "noFollow": false,
+        "tagTitle": "Coleção Flume",
+        "text": "Coleção Flume"
+      }
+    },
+    "title": "Submenu Desktop 1-2"
+  },
+  
+  "flex-layout.col#submenu-desktop-1-2":{
+    "children":[
+      "image#desktop-1"
+    ],
+    "props":{
+      "preventVerticalStretch": "true",
+      "blockClass": "submenu-desktop-principal"
+    },
+    "title": "Imagem Submenu 1"
+  },
+  "image#desktop-1":{
+    "props":{
+      "src": "assets/imgs/menu-new-in.jpg",
+      "alt": "Menu New In",
+      "link": {
+        "url": "/colecao-prisma"
+      },
+      "blockClass": "image-menu"
+    },
+    "title": "Imagem Submenu 1"
+  },
+
+  "menu-item#desktop-2": {
+    "props": {
+      "id": "menu-item-desktop-2",
+      "type": "custom",
+      "highlight": false,
+      "blockClass": "menu-desktop-first-level",
+      "itemProps": {
+        "type": "internal",
+        "href": "/shop",
+        "noFollow": false,
+        "tagTitle": "Shop",
+        "text": "Shop"
+      }
+    },
+    "blocks":["vtex.menu@2.x:submenu#desktop-2"],
+    "title": "Menu Desktop 2"
+  },
+  "vtex.menu@2.x:submenu#desktop-2":{
+    "children": ["flex-layout.row#submenu-desktop-2"],
+    "title": "Submenu Desktop 2",
+    "props":{
+      "blockClass":"submenu-principal-desktop"
+    }
+  },
+  "flex-layout.row#submenu-desktop-2":{
+    "children":[
+      "flex-layout.col#submenu-desktop-2-1",
+      "flex-layout.col#submenu-desktop-2-2"
+    ],
+    "props":{
+      "colSizing": "auto",
+      "blockClass": "submenu-desktop-principal"
+    },
+    "title": "Submenu Desktop 2"
+  },
+  "flex-layout.col#submenu-desktop-2-1":{
+    "children":[
+      "rich-text#title-submenu-desktop-2",
+      "vtex.menu@2.x:menu#submenu-desktop-2"
+    ],
+    "props":{
+      "preventVerticalStretch": "true",
+      "blockClass": "submenu-desktop-principal"
+    },
+    "title": "Submenu Desktop 2"
+  },
+  "rich-text#title-submenu-desktop-2":{
+    "props":{
+      "text": "Shop",
+      "blockClass":"title-menu"
+    },
+    "title": "Title Submenu Desktop 2"
+  },
+  "vtex.menu@2.x:menu#submenu-desktop-2":{
+    "children":[
+      "menu-item#submenu-desktop-2-1",
+      "menu-item#submenu-desktop-2-2",
+      "menu-item#submenu-desktop-2-3",
+      "menu-item#submenu-desktop-2-4",
+      "menu-item#submenu-desktop-2-5"
+    ],
+    "props":{
+      "blockClass": "submenu-row-itens",
+      "orientation":"vertical"
+    },
+    "title": "Submenu Desktop 2"
+  },
+  "menu-item#submenu-desktop-2-1":{
+    "props": {
+      "id": "submenu-desktop-2-1",
+      "type": "custom",
+      "blockClass": "menu-desktop-second-level",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/shop/aneis",
+        "noFollow": false,
+        "tagTitle": "Anéis",
+        "text": "Anéis"
+      }
+    },
+    "blocks":["vtex.menu@2.x:submenu#desktop-2-1"],
+    "title": "Submenu Desktop 2-1"
+  },
+  "vtex.menu@2.x:submenu#desktop-2-1":{
+    "children":[
+      "menu-item#submenu-desktop-2-1-1",
+      "menu-item#submenu-desktop-2-1-2"
+    ],
+    "props":{
+      "blockClass": "submenu-third-level",
+      "orientation":"vertical"
+    },
+    "title": "Submenu Desktop 2 1"
+  },
+  "menu-item#submenu-desktop-2-1-1":{
+    "props": {
+      "id": "submenu-desktop-2-1-1",
+      "type": "custom",
+      "blockClass": "menu-desktop-third-level",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/shop/aneis/banho-ouro?initialMap=c,c&initialQuery=shop/aneis&map=category-1,category-2,material",
+        "noFollow": false,
+        "tagTitle": "Ouro",
+        "text": "Ouro"
+      }
+    },
+    "title": "Submenu Desktop 2-1-1"
+  },
+  "menu-item#submenu-desktop-2-1-2":{
+    "props": {
+      "id": "submenu-desktop-2-1-2",
+      "type": "custom",
+      "blockClass": "menu-desktop-third-level",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/shop/aneis/banho-prata?initialMap=c,c&initialQuery=shop/aneis&map=category-1,category-2,material",
+        "noFollow": false,
+        "tagTitle": "Prata",
+        "text": "Prata"
+      }
+    },
+    "title": "Submenu Desktop 2-1-2"
+  },
+  "menu-item#submenu-desktop-2-2":{
+    "props": {
+      "id": "submenu-desktop-2-2",
+      "type": "custom",
+      "blockClass": "menu-desktop-second-level",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/shop/brincos",
+        "noFollow": false,
+        "tagTitle": "Brincos",
+        "text": "Brincos"
+      }
+    },
+    "blocks":["vtex.menu@2.x:submenu#desktop-2-2"],
+    "title": "Submenu Desktop 2-2"
+  },
+  "vtex.menu@2.x:submenu#desktop-2-2":{
+    "children":[
+      "menu-item#submenu-desktop-2-2-1",
+      "menu-item#submenu-desktop-2-2-2"
+    ],
+    "props":{
+      "blockClass": "submenu-third-level",
+      "orientation":"vertical"
+    },
+    "title": "Submenu Desktop 2 2"
+  },
+  "menu-item#submenu-desktop-2-2-1":{
+    "props": {
+      "id": "submenu-desktop-2-2-1",
+      "type": "custom",
+      "blockClass": "menu-desktop-third-level",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/shop/brincos/banho-ouro?initialMap=c,c&initialQuery=shop/brincos&map=category-1,category-2,material",
+        "noFollow": false,
+        "tagTitle": "Ouro",
+        "text": "Ouro"
+      }
+    },
+    "title": "Submenu Desktop 2-2-1"
+  },
+  "menu-item#submenu-desktop-2-2-2":{
+    "props": {
+      "id": "submenu-desktop-2-2-2",
+      "type": "custom",
+      "blockClass": "menu-desktop-third-level",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/shop/brincos/banho-prata?initialMap=c,c&initialQuery=shop/brincos&map=category-1,category-2,material",
+        "noFollow": false,
+        "tagTitle": "Prata",
+        "text": "Prata"
+      }
+    },
+    "title": "Submenu Desktop 2-2-2"
+  },
+  "menu-item#submenu-desktop-2-3":{
+    "props": {
+      "id": "submenu-desktop-2-3",
+      "type": "custom",
+      "blockClass": "menu-desktop-second-level",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/shop/colares-e-gargantilhas",
+        "noFollow": false,
+        "tagTitle": "Colares e Gargantilhas",
+        "text": "Colares e Gargantilhas"
+      }
+    },
+    "blocks":["vtex.menu@2.x:submenu#desktop-2-3"],
+    "title": "Submenu Desktop 2-3"
+  },
+  "vtex.menu@2.x:submenu#desktop-2-3":{
+    "children":[
+      "menu-item#submenu-desktop-2-3-1",
+      "menu-item#submenu-desktop-2-3-2"
+    ],
+    "props":{
+      "blockClass": "submenu-third-level",
+      "orientation":"vertical"
+    },
+    "title": "Submenu Desktop 2 3"
+  },
+  "menu-item#submenu-desktop-2-3-1":{
+    "props": {
+      "id": "submenu-desktop-2-3-1",
+      "type": "custom",
+      "blockClass": "menu-desktop-third-level",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/shop/colares-e-gargantilhas/banho-ouro?initialMap=c,c&initialQuery=shop/colares-e-gargantilhas&map=category-1,category-2,material",
+        "noFollow": false,
+        "tagTitle": "Ouro",
+        "text": "Ouro"
+      }
+    },
+    "title": "Submenu Desktop 2-3-1"
+  },
+  "menu-item#submenu-desktop-2-3-2":{
+    "props": {
+      "id": "submenu-desktop-2-3-2",
+      "type": "custom",
+      "blockClass": "menu-desktop-third-level",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/shop/colares-e-gargantilhas/banho-prata?initialMap=c,c&initialQuery=shop/colares-e-gargantilhas&map=category-1,category-2,material",
+        "noFollow": false,
+        "tagTitle": "Prata",
+        "text": "Prata"
+      }
+    },
+    "title": "Submenu Desktop 2-3-2"
+  },
+  "menu-item#submenu-desktop-2-4":{
+    "props": {
+      "id": "submenu-desktop-2-4",
+      "type": "custom",
+      "blockClass": "menu-desktop-second-level",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/shop/correntes-e-pingentes",
+        "noFollow": false,
+        "tagTitle": "Correntes e Pingentes",
+        "text": "Correntes e Pingentes"
+      }
+    },
+    "blocks":["vtex.menu@2.x:submenu#desktop-2-4"],
+    "title": "Submenu Desktop 2-4"
+  },
+  "vtex.menu@2.x:submenu#desktop-2-4":{
+    "children":[
+      "menu-item#submenu-desktop-2-4-1",
+      "menu-item#submenu-desktop-2-4-2"
+    ],
+    "props":{
+      "blockClass": "submenu-third-level",
+      "orientation":"vertical"
+    },
+    "title": "Submenu Desktop 2 4"
+  },
+  "menu-item#submenu-desktop-2-4-1":{
+    "props": {
+      "id": "submenu-desktop-2-4-1",
+      "type": "custom",
+      "blockClass": "menu-desktop-third-level",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/shop/correntes-e-pingentes/banho-ouro?initialMap=c,c&initialQuery=shop/correntes-e-pingentes&map=category-1,category-2,material",
+        "noFollow": false,
+        "tagTitle": "Ouro",
+        "text": "Ouro"
+      }
+    },
+    "title": "Submenu Desktop 2-4-1"
+  },
+  "menu-item#submenu-desktop-2-4-2":{
+    "props": {
+      "id": "submenu-desktop-2-4-2",
+      "type": "custom",
+      "blockClass": "menu-desktop-third-level",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/shop/correntes-e-pingentes/banho-prata?initialMap=c,c&initialQuery=shop/correntes-e-pingentes&map=category-1,category-2,material",
+        "noFollow": false,
+        "tagTitle": "Prata",
+        "text": "Prata"
+      }
+    },
+    "title": "Submenu Desktop 2-4-2"
+  },
+  "menu-item#submenu-desktop-2-5":{
+    "props": {
+      "id": "submenu-desktop-2-5",
+      "type": "custom",
+      "blockClass": "menu-desktop-second-level",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/shop/pulseiras-e-braceletes",
+        "noFollow": false,
+        "tagTitle": "Pulseiras e Braceletes",
+        "text": "Pulseiras e Braceletes"
+      }
+    },
+    "blocks":["vtex.menu@2.x:submenu#desktop-2-5"],
+    "title": "Submenu Desktop 2-5"
+  },
+  "vtex.menu@2.x:submenu#desktop-2-5":{
+    "children":[
+      "menu-item#submenu-desktop-2-5-1",
+      "menu-item#submenu-desktop-2-5-2"
+    ],
+    "props":{
+      "blockClass": "submenu-third-level",
+      "orientation":"vertical"
+    },
+    "title": "Submenu Desktop 2 5"
+  },
+  "menu-item#submenu-desktop-2-5-1":{
+    "props": {
+      "id": "submenu-desktop-2-5-1",
+      "type": "custom",
+      "blockClass": "menu-desktop-third-level",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/shop/pulseiras-e-braceletes/banho-ouro?initialMap=c,c&initialQuery=shop/pulseiras-e-braceletes&map=category-1,category-2,material",
+        "noFollow": false,
+        "tagTitle": "Ouro",
+        "text": "Ouro"
+      }
+    },
+    "title": "Submenu Desktop 2-5-1"
+  },
+  "menu-item#submenu-desktop-2-5-2":{
+    "props": {
+      "id": "submenu-desktop-2-5-2",
+      "type": "custom",
+      "blockClass": "menu-desktop-third-level",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/shop/pulseiras-e-braceletes/banho-prata?initialMap=c,c&initialQuery=shop/pulseiras-e-braceletes&map=category-1,category-2,material",
+        "noFollow": false,
+        "tagTitle": "Prata",
+        "text": "Prata"
+      }
+    },
+    "title": "Submenu Desktop 2-5-2"
+  },
+  
+  "flex-layout.col#submenu-desktop-2-2":{
+    "children":[
+      "image#desktop-2"
+    ],
+    "props":{
+      "preventVerticalStretch": "true",
+      "blockClass": "submenu-desktop-principal"
+    },
+    "title": "Imagem Submenu 2"
+  },
+  "image#desktop-2":{
+    "props":{
+      "src": "assets/imgs/menu-shop.jpg",
+      "alt": "Menu Shop",
+      "link": {
+        "url": "/shop"
+      },
+      "blockClass": "image-menu"
+    },
+    "title": "Imagem Submenu 2"
+  },
+
+  "menu-item#desktop-3": {
+    "props": {
+      "id": "menu-item-desktop-3",
+      "type": "custom",
+      "highlight": false,
+      "blockClass": "menu-desktop-first-level",
+      "itemProps": {
+        "type": "internal",
+        "href": "/off",
+        "noFollow": false,
+        "tagTitle": "OFF",
+        "text": "OFF"
+      }
+    },
+    "blocks":["vtex.menu@2.x:submenu#desktop-3"],
+    "title": "Menu Desktop 3"
+  },
+
+  "vtex.menu@2.x:submenu#desktop-3":{
+    "children": ["flex-layout.row#submenu-desktop-3"],
+    "title": "Submenu Desktop 3",
+    "props":{
+      "blockClass":"submenu-principal-desktop"
+    }
+  },
+  "flex-layout.row#submenu-desktop-3":{
+    "children":[
+      "flex-layout.col#submenu-desktop-3-1",
+      "flex-layout.col#submenu-desktop-3-2"
+    ],
+    "props":{
+      "colSizing": "auto",
+      "blockClass": "submenu-desktop-principal"
+    },
+    "title": "Submenu Desktop 3"
+  },
+  "flex-layout.col#submenu-desktop-3-1":{
+    "children":[
+      "rich-text#title-submenu-desktop-3",
+      "vtex.menu@2.x:menu#submenu-desktop-3"
+    ],
+    "props":{
+      "preventVerticalStretch": "true",
+      "blockClass": "submenu-desktop-principal"
+    },
+    "title": "Submenu Desktop 3"
+  },
+  "rich-text#title-submenu-desktop-3":{
+    "props":{
+      "text": "OFF",
+      "blockClass":"title-menu"
+    },
+    "title": "Title Submenu Desktop 3"
+  },
+  "vtex.menu@2.x:menu#submenu-desktop-3":{
+    "children":[
+      "menu-item#submenu-desktop-3-1",
+      "menu-item#submenu-desktop-3-2",
+      "menu-item#submenu-desktop-3-3",
+      "menu-item#submenu-desktop-3-4",
+      "menu-item#submenu-desktop-3-5"
+    ],
+    "props":{
+      "blockClass": "submenu-row-itens",
+      "orientation":"vertical"
+    },
+    "title": "Submenu Desktop 3"
+  },
+  "menu-item#submenu-desktop-3-1":{
+    "props": {
+      "id": "submenu-desktop-3-1",
+      "type": "custom",
+      "blockClass": "menu-desktop-second-level",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/off/aneis",
+        "noFollow": false,
+        "tagTitle": "Anéis",
+        "text": "Anéis"
+      }
+    },
+    "blocks":["vtex.menu@2.x:submenu#desktop-3-1"],
+    "title": "Submenu Desktop 3-1"
+  },
+  "vtex.menu@2.x:submenu#desktop-3-1":{
+    "children":[
+      "menu-item#submenu-desktop-3-1-1",
+      "menu-item#submenu-desktop-3-1-2"
+    ],
+    "props":{
+      "blockClass": "submenu-third-level",
+      "orientation":"vertical"
+    },
+    "title": "Submenu Desktop 3 1"
+  },
+  "menu-item#submenu-desktop-3-1-1":{
+    "props": {
+      "id": "submenu-desktop-3-1-1",
+      "type": "custom",
+      "blockClass": "menu-desktop-third-level",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/off/aneis/banho-ouro?initialMap=c,c&initialQuery=off/aneis&map=category-1,category-2,material",
+        "noFollow": false,
+        "tagTitle": "Ouro",
+        "text": "Ouro"
+      }
+    },
+    "title": "Submenu Desktop 3-1-1"
+  },
+  "menu-item#submenu-desktop-3-1-2":{
+    "props": {
+      "id": "submenu-desktop-3-1-2",
+      "type": "custom",
+      "blockClass": "menu-desktop-third-level",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/off/aneis/banho-prata?initialMap=c,c&initialQuery=off/aneis&map=category-1,category-2,material",
+        "noFollow": false,
+        "tagTitle": "Prata",
+        "text": "Prata"
+      }
+    },
+    "title": "Submenu Desktop 3-1-2"
+  },
+  "menu-item#submenu-desktop-3-2":{
+    "props": {
+      "id": "submenu-desktop-3-2",
+      "type": "custom",
+      "blockClass": "menu-desktop-second-level",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/off/brincos",
+        "noFollow": false,
+        "tagTitle": "Brincos",
+        "text": "Brincos"
+      }
+    },
+    "blocks":["vtex.menu@2.x:submenu#desktop-3-2"],
+    "title": "Submenu Desktop 3-2"
+  },
+  "vtex.menu@2.x:submenu#desktop-3-2":{
+    "children":[
+      "menu-item#submenu-desktop-3-2-1",
+      "menu-item#submenu-desktop-3-2-2"
+    ],
+    "props":{
+      "blockClass": "submenu-third-level",
+      "orientation":"vertical"
+    },
+    "title": "Submenu Desktop 3 2"
+  },
+  "menu-item#submenu-desktop-3-2-1":{
+    "props": {
+      "id": "submenu-desktop-3-2-1",
+      "type": "custom",
+      "blockClass": "menu-desktop-third-level",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/off/brincos/banho-ouro?initialMap=c,c&initialQuery=off/brincos&map=category-1,category-2,material",
+        "noFollow": false,
+        "tagTitle": "Ouro",
+        "text": "Ouro"
+      }
+    },
+    "title": "Submenu Desktop 3-2-1"
+  },
+  "menu-item#submenu-desktop-3-2-2":{
+    "props": {
+      "id": "submenu-desktop-3-2-2",
+      "type": "custom",
+      "blockClass": "menu-desktop-third-level",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/off/brincos/banho-prata?initialMap=c,c&initialQuery=off/brincos&map=category-1,category-2,material",
+        "noFollow": false,
+        "tagTitle": "Prata",
+        "text": "Prata"
+      }
+    },
+    "title": "Submenu Desktop 3-2-2"
+  },
+  "menu-item#submenu-desktop-3-3":{
+    "props": {
+      "id": "submenu-desktop-3-3",
+      "type": "custom",
+      "blockClass": "menu-desktop-second-level",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/off/colares-e-gargantilhas",
+        "noFollow": false,
+        "tagTitle": "Colares e Gargantilhas",
+        "text": "Colares e Gargantilhas"
+      }
+    },
+    "blocks":["vtex.menu@2.x:submenu#desktop-3-3"],
+    "title": "Submenu Desktop 3-3"
+  },
+  "vtex.menu@2.x:submenu#desktop-3-3":{
+    "children":[
+      "menu-item#submenu-desktop-3-3-1",
+      "menu-item#submenu-desktop-3-3-2"
+    ],
+    "props":{
+      "blockClass": "submenu-third-level",
+      "orientation":"vertical"
+    },
+    "title": "Submenu Desktop 3 3"
+  },
+  "menu-item#submenu-desktop-3-3-1":{
+    "props": {
+      "id": "submenu-desktop-3-3-1",
+      "type": "custom",
+      "blockClass": "menu-desktop-third-level",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/off/colares-e-gargantilhas/banho-ouro?initialMap=c,c&initialQuery=off/colares-e-gargantilhas&map=category-1,category-2,material",
+        "noFollow": false,
+        "tagTitle": "Ouro",
+        "text": "Ouro"
+      }
+    },
+    "title": "Submenu Desktop 3-3-1"
+  },
+  "menu-item#submenu-desktop-3-3-2":{
+    "props": {
+      "id": "submenu-desktop-3-3-2",
+      "type": "custom",
+      "blockClass": "menu-desktop-third-level",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/off/colares-e-gargantilhas/banho-prata?initialMap=c,c&initialQuery=off/colares-e-gargantilhas&map=category-1,category-2,material",
+        "noFollow": false,
+        "tagTitle": "Prata",
+        "text": "Prata"
+      }
+    },
+    "title": "Submenu Desktop 3-3-2"
+  },
+  "menu-item#submenu-desktop-3-4":{
+    "props": {
+      "id": "submenu-desktop-3-4",
+      "type": "custom",
+      "blockClass": "menu-desktop-second-level",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/off/correntes-e-pingentes",
+        "noFollow": false,
+        "tagTitle": "Correntes e Pingentes",
+        "text": "Correntes e Pingentes"
+      }
+    },
+    "blocks":["vtex.menu@2.x:submenu#desktop-3-4"],
+    "title": "Submenu Desktop 3-4"
+  },
+  "vtex.menu@2.x:submenu#desktop-3-4":{
+    "children":[
+      "menu-item#submenu-desktop-3-4-1",
+      "menu-item#submenu-desktop-3-4-2"
+    ],
+    "props":{
+      "blockClass": "submenu-third-level",
+      "orientation":"vertical"
+    },
+    "title": "Submenu Desktop 3 4"
+  },
+  "menu-item#submenu-desktop-3-4-1":{
+    "props": {
+      "id": "submenu-desktop-3-4-1",
+      "type": "custom",
+      "blockClass": "menu-desktop-third-level",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/off/colares-e-correntes/banho-ouro?initialMap=c,c&initialQuery=off/pulseiras-e-braceletes&map=category-1,category-2,material",
+        "noFollow": false,
+        "tagTitle": "Ouro",
+        "text": "Ouro"
+      }
+    },
+    "title": "Submenu Desktop 3-4-1"
+  },
+  "menu-item#submenu-desktop-3-4-2":{
+    "props": {
+      "id": "submenu-desktop-3-4-2",
+      "type": "custom",
+      "blockClass": "menu-desktop-third-level",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/off/colares-e-correntes/banho-prata?initialMap=c,c&initialQuery=off/pulseiras-e-braceletes&map=category-1,category-2,material",
+        "noFollow": false,
+        "tagTitle": "Prata",
+        "text": "Prata"
+      }
+    },
+    "title": "Submenu Desktop 3-4-2"
+  },
+  "menu-item#submenu-desktop-3-5":{
+    "props": {
+      "id": "submenu-desktop-3-5",
+      "type": "custom",
+      "blockClass": "menu-desktop-second-level",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/off/pulseiras-e-braceletes",
+        "noFollow": false,
+        "tagTitle": "Pulseiras e Braceletes",
+        "text": "Pulseiras e Braceletes"
+      }
+    },
+    "blocks":["vtex.menu@2.x:submenu#desktop-3-5"],
+    "title": "Submenu Desktop 3-5"
+  },
+  "vtex.menu@2.x:submenu#desktop-3-5":{
+    "children":[
+      "menu-item#submenu-desktop-3-5-1",
+      "menu-item#submenu-desktop-3-5-2"
+    ],
+    "props":{
+      "blockClass": "submenu-third-level",
+      "orientation":"vertical"
+    },
+    "title": "Submenu Desktop 3 5"
+  },
+  "menu-item#submenu-desktop-3-5-1":{
+    "props": {
+      "id": "submenu-desktop-3-5-1",
+      "type": "custom",
+      "blockClass": "menu-desktop-third-level",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/off/pulseiras-e-braceletes/banho-ouro?initialMap=c,c&initialQuery=off/pulseiras-e-braceletes&map=category-1,category-2,material",
+        "noFollow": false,
+        "tagTitle": "Ouro",
+        "text": "Ouro"
+      }
+    },
+    "title": "Submenu Desktop 3-5-1"
+  },
+  "menu-item#submenu-desktop-3-5-2":{
+    "props": {
+      "id": "submenu-desktop-3-5-2",
+      "type": "custom",
+      "blockClass": "menu-desktop-third-level",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/off/pulseiras-e-braceletes/banho-prata?initialMap=c,c&initialQuery=off/pulseiras-e-braceletes&map=category-1,category-2,material",
+        "noFollow": false,
+        "tagTitle": "Prata",
+        "text": "Prata"
+      }
+    },
+    "title": "Submenu Desktop 3-5-2"
+  },
+  
+  "flex-layout.col#submenu-desktop-3-2":{
+    "children":[
+      "image#desktop-3"
+    ],
+    "props":{
+      "preventVerticalStretch": "true",
+      "blockClass": "submenu-desktop-principal"
+    },
+    "title": "Imagem Submenu 3"
+  },
+  "image#desktop-3":{
+    "props":{
+      "src": "assets/imgs/menu-off.jpg",
+      "alt": "Menu OFF",
+      "link": {
+        "url": "/off"
+      },
+      "blockClass": "image-menu"
+    },
+    "title": "Imagem Submenu 3"
+  },
+
+  "menu-item#desktop-4": {
+    "props": {
+      "id": "menu-item-desktop-4",
+      "type": "custom",
+      "highlight": false,
+      "blockClass": "menu-desktop-first-level",
+      "itemProps": {
+        "type": "internal",
+        "href": "/ouro",
+        "noFollow": false,
+        "tagTitle": "Ouro",
+        "text": "Ouro"
+      }
+    },
+    "blocks":["vtex.menu@2.x:submenu#desktop-4"],
+    "title": "Menu Desktop 4"
+  },
+  
+  "vtex.menu@2.x:submenu#desktop-4":{
+    "children": ["flex-layout.row#submenu-desktop-4"],
+    "title": "Submenu Desktop 4",
+    "props":{
+      "blockClass":"submenu-principal-desktop"
+    }
+  },
+  "flex-layout.row#submenu-desktop-4":{
+    "children":[
+      "flex-layout.col#submenu-desktop-4-1",
+      "flex-layout.col#submenu-desktop-4-2"
+    ],
+    "props":{
+      "colSizing": "auto",
+      "blockClass": "submenu-desktop-principal"
+    },
+    "title": "Submenu Desktop 4"
+  },
+  "flex-layout.col#submenu-desktop-4-1":{
+    "children":[
+      "rich-text#title-submenu-desktop-4",
+      "vtex.menu@2.x:menu#submenu-desktop-4"
+    ],
+    "props":{
+      "preventVerticalStretch": "true",
+      "blockClass": "submenu-desktop-principal"
+    },
+    "title": "Submenu Desktop 4"
+  },
+  "rich-text#title-submenu-desktop-4":{
+    "props":{
+      "text": "Ouro",
+      "blockClass":"title-menu"
+    },
+    "title": "Title Submenu Desktop 4"
+  },
+  "vtex.menu@2.x:menu#submenu-desktop-4":{
+    "children":[
+      "menu-item#submenu-desktop-4-1",
+      "menu-item#submenu-desktop-4-2",
+      "menu-item#submenu-desktop-4-3",
+      "menu-item#submenu-desktop-4-4",
+      "menu-item#submenu-desktop-4-5",
+      "menu-item#submenu-desktop-4-6"
+    ],
+    "props":{
+      "blockClass": "submenu-row-itens",
+      "orientation":"vertical"
+    },
+    "title": "Submenu Desktop 4"
+  },
+  "menu-item#submenu-desktop-4-1":{
+    "props": {
+      "id": "submenu-desktop-4-1",
+      "type": "custom",
+      "blockClass": "menu-desktop-second-level",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/aneis-dourados",
+        "noFollow": false,
+        "tagTitle": "Anéis",
+        "text": "Anéis"
+      }
+    },
+    "title": "Submenu Desktop 4-1"
+  },
+  "menu-item#submenu-desktop-4-2":{
+    "props": {
+      "id": "submenu-desktop-4-2",
+      "type": "custom",
+      "blockClass": "menu-desktop-second-level",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/brincos-dourados",
+        "noFollow": false,
+        "tagTitle": "Brincos",
+        "text": "Brincos"
+      }
+    },
+    "title": "Submenu Desktop 4-2"
+  },
+  "menu-item#submenu-desktop-4-3":{
+    "props": {
+      "id": "submenu-desktop-4-3",
+      "type": "custom",
+      "blockClass": "menu-desktop-second-level",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/colares-dourados",
+        "noFollow": false,
+        "tagTitle": "Colares",
+        "text": "Colares"
+      }
+    },
+    "title": "Submenu Desktop 4-3"
+  },
+  "menu-item#submenu-desktop-4-4":{
+    "props": {
+      "id": "submenu-desktop-4-4",
+      "type": "custom",
+      "blockClass": "menu-desktop-second-level",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/correntes-douradas",
+        "noFollow": false,
+        "tagTitle": "Correntes",
+        "text": "Correntes"
+      }
+    },
+    "title": "Submenu Desktop 4-4"
+  },
+  "menu-item#submenu-desktop-4-5":{
+    "props": {
+      "id": "submenu-desktop-4-5",
+      "type": "custom",
+      "blockClass": "menu-desktop-second-level",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/pingentes-dourados",
+        "noFollow": false,
+        "tagTitle": "Pingentes",
+        "text": "Pingentes"
+      }
+    },
+    "title": "Submenu Desktop 4-5"
+  },
+  "menu-item#submenu-desktop-4-6":{
+    "props": {
+      "id": "submenu-desktop-4-6",
+      "type": "custom",
+      "blockClass": "menu-desktop-second-level",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/pulseiras-douradas",
+        "noFollow": false,
+        "tagTitle": "Pulseiras",
+        "text": "Pulseiras"
+      }
+    },
+    "title": "Submenu Desktop 4-6"
+  },
+  
+  "flex-layout.col#submenu-desktop-4-2":{
+    "children":[
+      "image#desktop-4"
+    ],
+    "props":{
+      "preventVerticalStretch": "true",
+      "blockClass": "submenu-desktop-principal"
+    },
+    "title": "Imagem Submenu 4"
+  },
+  "image#desktop-4":{
+    "props":{
+      "src": "assets/imgs/pixel-branco.jpg",
+      "alt": "Menu Ouro",
+      "link": {
+        "url": "/ouro"
+      },
+      "blockClass": "image-menu"
+    },
+    "title": "Imagem Submenu 4"
+  },
+
+  "menu-item#desktop-5": {
+    "props": {
+      "id": "menu-item-desktop-5",
+      "type": "custom",
+      "highlight": false,
+      "blockClass": "menu-desktop-first-level",
+      "itemProps": {
+        "type": "internal",
+        "href": "/prata",
+        "noFollow": false,
+        "tagTitle": "Prata",
+        "text": "Prata"
+      }
+    },
+    "blocks":["vtex.menu@2.x:submenu#desktop-5"],
+    "title": "Menu Desktop 5"
+  },
+  
+  "vtex.menu@2.x:submenu#desktop-5":{
+    "children": ["flex-layout.row#submenu-desktop-5"],
+    "title": "Submenu Desktop 5",
+    "props":{
+      "blockClass":"submenu-principal-desktop"
+    }
+  },
+  "flex-layout.row#submenu-desktop-5":{
+    "children":[
+      "flex-layout.col#submenu-desktop-5-1",
+      "flex-layout.col#submenu-desktop-5-2"
+    ],
+    "props":{
+      "colSizing": "auto",
+      "blockClass": "submenu-desktop-principal"
+    },
+    "title": "Submenu Desktop 5"
+  },
+  "flex-layout.col#submenu-desktop-5-1":{
+    "children":[
+      "rich-text#title-submenu-desktop-5",
+      "vtex.menu@2.x:menu#submenu-desktop-5"
+    ],
+    "props":{
+      "preventVerticalStretch": "true",
+      "blockClass": "submenu-desktop-principal"
+    },
+    "title": "Submenu Desktop 5"
+  },
+  "rich-text#title-submenu-desktop-5":{
+    "props":{
+      "text": "Prata",
+      "blockClass":"title-menu"
+    },
+    "title": "Title Submenu Desktop 5"
+  },
+  "vtex.menu@2.x:menu#submenu-desktop-5":{
+    "children":[
+      "menu-item#submenu-desktop-5-1",
+      "menu-item#submenu-desktop-5-2",
+      "menu-item#submenu-desktop-5-3",
+      "menu-item#submenu-desktop-5-4",
+      "menu-item#submenu-desktop-5-5",
+      "menu-item#submenu-desktop-5-6"
+    ],
+    "props":{
+      "blockClass": "submenu-row-itens",
+      "orientation":"vertical"
+    },
+    "title": "Submenu Desktop 5"
+  },
+  "menu-item#submenu-desktop-5-1":{
+    "props": {
+      "id": "submenu-desktop-5-1",
+      "type": "custom",
+      "blockClass": "menu-desktop-second-level",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/aneis-prateados",
+        "noFollow": false,
+        "tagTitle": "Anéis",
+        "text": "Anéis"
+      }
+    },
+    "title": "Submenu Desktop 5-1"
+  },
+  "menu-item#submenu-desktop-5-2":{
+    "props": {
+      "id": "submenu-desktop-5-2",
+      "type": "custom",
+      "blockClass": "menu-desktop-second-level",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/brincos-prateados",
+        "noFollow": false,
+        "tagTitle": "Brincos",
+        "text": "Brincos"
+      }
+    },
+    "title": "Submenu Desktop 5-2"
+  },
+  "menu-item#submenu-desktop-5-3":{
+    "props": {
+      "id": "submenu-desktop-5-3",
+      "type": "custom",
+      "blockClass": "menu-desktop-second-level",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/colares-prateados",
+        "noFollow": false,
+        "tagTitle": "Colares",
+        "text": "Colares"
+      }
+    },
+    "title": "Submenu Desktop 5-3"
+  },
+  "menu-item#submenu-desktop-5-4":{
+    "props": {
+      "id": "submenu-desktop-5-4",
+      "type": "custom",
+      "blockClass": "menu-desktop-second-level",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/correntes-prateadas",
+        "noFollow": false,
+        "tagTitle": "Correntes",
+        "text": "Correntes"
+      }
+    },
+    "title": "Submenu Desktop 5-4"
+  },
+  "menu-item#submenu-desktop-5-5":{
+    "props": {
+      "id": "submenu-desktop-5-5",
+      "type": "custom",
+      "blockClass": "menu-desktop-second-level",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/pingentes-prateados",
+        "noFollow": false,
+        "tagTitle": "Pingentes",
+        "text": "Pingentes"
+      }
+    },
+    "title": "Submenu Desktop 5-5"
+  },
+  "menu-item#submenu-desktop-5-6":{
+    "props": {
+      "id": "submenu-desktop-5-6",
+      "type": "custom",
+      "blockClass": "menu-desktop-second-level",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/pulseiras-prateadas",
+        "noFollow": false,
+        "tagTitle": "Pulseiras",
+        "text": "Pulseiras"
+      }
+    },
+    "title": "Submenu Desktop 5-6"
+  },
+  
+  "flex-layout.col#submenu-desktop-5-2":{
+    "children":[
+      "image#desktop-5"
+    ],
+    "props":{
+      "preventVerticalStretch": "true",
+      "blockClass": "submenu-desktop-principal"
+    },
+    "title": "Imagem Submenu 5"
+  },
+  "image#desktop-5":{
+    "props":{
+      "src": "assets/imgs/pixel-branco.jpg",
+      "alt": "Menu Prata",
+      "link": {
+        "url": "/prata"
+      },
+      "blockClass": "image-menu"
+    },
+    "title": "Imagem Submenu 5"
+  }
+}

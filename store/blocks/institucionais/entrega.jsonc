@@ -1,0 +1,84 @@
+{
+  "store.custom#entrega": {
+    "blocks": [
+      "flex-layout.row#banner-institucional-entrega",
+      "flex-layout.row#entrega",
+      "flex-layout.row#footer-1-desktop",
+      "flex-layout.row#footer-2-desktop-pdp-inst"
+    ]
+  },
+  "flex-layout.row#banner-institucional-entrega":{
+    "children":[
+      "flex-layout.col#image-banner",
+      "flex-layout.col#breadcrumb-banner-entrega"
+    ],
+    "props":{
+      "blockClass": "row-banner-inst",
+      "fullWidth": true,
+      "colSizing": "auto"
+    }
+  },
+  "flex-layout.col#breadcrumb-banner-entrega":{
+    "children":[
+      "rich-text#breadcrumb-institucional-entrega"
+    ],
+    "props":{
+      "blockClass": "col-text-banner-inst"
+    }
+  },
+  "rich-text#breadcrumb-institucional-entrega":{
+    "props":{
+      "text":"[Página inicial](/)  **Entrega**",
+      "blockClass": "breadcrumb-institucionais"
+    }
+  },
+  "flex-layout.row#entrega": {
+    "props":{
+      "blockClass":"content-institucional"
+    },
+    "children": [
+      "flex-layout.col#entrega-1",
+      "flex-layout.col#entrega-2"
+    ],
+    "title": "Página entrega"
+  },
+  "flex-layout.col#entrega-1":{
+  "props":{
+      "width":"27%",
+      "blockClass":"menu-institucional"
+    },
+    "children":[
+      "rich-text#menu-ajuda-1",
+      "rich-text#menu-ajuda-2",
+      "rich-text#menu-ajuda-3",
+      "rich-text#menu-ajuda-4-active",
+      "rich-text#menu-ajuda-5"
+    ],
+    "title": "Menu"
+  },
+  "flex-layout.col#entrega-2":{
+    "props":{
+      "width":"73%",
+      "blockClass":"content-institucional"
+    },
+    "children":[
+      "rich-text#titulo-entrega",
+      "rich-text#conteudo-entrega"
+    ],
+    "title": "Conteúdo"
+  },
+  "rich-text#titulo-entrega":{
+    "props":{
+      "blockClass":"title-content-institucional",
+      "text":"## Entrega"
+    },
+    "title":"Título"
+  },
+  "rich-text#conteudo-entrega":{
+    "props":{
+      "blockClass":"content-institucional",
+      "text":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus in ipsum neque. Cras ut ante sed neque euismod elementum. Etiam sit amet elit venenatis, auctor libero a, volutpat diam. Nam non eros vel diam condimentum dictum. Integer ut sem vel nisi efficitur condimentum. Praesent vitae sem non enim dignissim pellentesque. Pellentesque sagittis sed ipsum vel tristique. Nunc imperdiet, mi non blandit consequat, mauris massa mollis quam, sed ultrices eros ante ut ipsum. Vestibulum lacinia nisl mattis libero consectetur ultrices. Donec fringilla libero quis eleifend luctus. Quisque efficitur accumsan nisl, sodales dapibus nulla tempor quis. Phasellus ultricies mi libero, non commodo elit dictum at. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque ac arcu fringilla, pellentesque lacus sit amet, eleifend libero. Vestibulum non suscipit metus.Aenean congue tincidunt nulla. In in ex ac dui tincidunt maximus id nec tortor. Aliquam sed elementum sem, vel faucibus lorem. Vestibulum vel mi purus. In urna diam, commodo vitae lacinia vitae, pulvinar et orci. Curabitur ultricies auctor lorem convallis cursus. Morbi sodales, sapien eget venenatis suscipit, diam sem cursus neque, vel mollis lectus velit non lorem. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum ut purus id velit dignissim pulvinar porttitor vitae lorem. Nulla facilisi. Pellentesque hendrerit vulputate varius.Fusce tempus eleifend augue, a mattis ipsum hendrerit id. Praesent tincidunt diam nec convallis gravida. Cras id auctor quam. Integer vitae tristique elit, ac pharetra ligula. Suspendisse a scelerisque nisi. Nulla tellus eros, lacinia non purus vel, egestas accumsan ex. Curabitur vitae molestie quam, nec ullamcorper orci. Maecenas sed erat finibus tellus sodales lobortis. Nullam consectetur, nulla et viverra convallis, orci tellus cursus lacus, rhoncus bibendum arcu nisl nec tellus. Nullam gravida odio sed eros blandit, non blandit est tempus. Aenean aliquet tellus ut purus laoreet dignissim. Aliquam ultrices et massa ut aliquam. Ut tempor, nunc blandit pharetra fringilla, ipsum elit vulputate risus, non cursus mauris purus a nunc. Proin magna urna, blandit ut massa sed, volutpat semper lectus. In a interdum justo. Sed nec lectus dignissim, interdum leo hendrerit, hendrerit ligula.Mauris ut dolor egestas, ullamcorper tellus id, aliquam lectus. Curabitur cursus libero eros, quis fringilla felis vestibulum a. Maecenas porta et diam vel faucibus. Suspendisse ac felis porttitor, euismod tellus ut, viverra sem. Mauris convallis purus id auctor pharetra. Praesent molestie, velit quis rhoncus blandit, libero ante dapibus libero, ut lobortis massa ex congue sapien. Etiam nec libero nec lacus blandit ornare."
+    },
+    "title": "Texto"
+  }
+}

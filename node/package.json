@@ -1,0 +1,38 @@
+{
+  "dependencies": {
+    "@types/axios": "^0.14.0",
+    "@vtex/clients": "^2.7.1",
+    "axios": "^0.21.1",
+    "co-body": "^6.0.0",
+    "form-data": "^4.0.0",
+    "ramda": "^0.25.0"
+  },
+  "devDependencies": {
+    "@types/co-body": "^6.1.0",
+    "@types/jest": "24.0.18",
+    "@types/node": "12.0.0",
+    "@types/ramda": "types/npm-ramda#dist",
+    "@vtex/api": "6.45.12",
+    "@vtex/test-tools": "3.4.3",
+    "typescript": "3.9.7",
+    "vtex.add-to-cart-button": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.add-to-cart-button@0.26.13/public/@types/vtex.add-to-cart-button",
+    "vtex.catalog-graphql": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.catalog-graphql@1.96.0/public/@types/vtex.catalog-graphql",
+    "vtex.checkout-graphql": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.checkout-graphql@0.63.0/public/@types/vtex.checkout-graphql",
+    "vtex.css-handles": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.css-handles@0.4.4/public/@types/vtex.css-handles",
+    "vtex.device-detector": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.device-detector@0.2.6/public/@types/vtex.device-detector",
+    "vtex.login": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.login@2.47.1/public/@types/vtex.login",
+    "vtex.order-manager": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.order-manager@0.11.1/public/@types/vtex.order-manager",
+    "vtex.product-context": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-context@0.10.0/public/@types/vtex.product-context",
+    "vtex.product-list": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-list@0.33.1/public/@types/vtex.product-list",
+    "vtex.product-quantity": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-quantity@1.7.1/public/@types/vtex.product-quantity",
+    "vtex.react-vtexid": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.react-vtexid@4.47.0/public/@types/vtex.react-vtexid",
+    "vtex.search-graphql": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.search-graphql@0.47.1/public/@types/vtex.search-graphql",
+    "vtex.slider-layout": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.slider-layout@0.22.0/public/@types/vtex.slider-layout",
+    "vtex.store-graphql": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store-graphql@2.147.1/public/@types/vtex.store-graphql",
+    "vtex.styleguide": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.styleguide@9.145.0/public/@types/vtex.styleguide"
+  },
+  "scripts": {
+    "lint": "tsc --noEmit --pretty"
+  },
+  "version": "0.2.0"
+}
