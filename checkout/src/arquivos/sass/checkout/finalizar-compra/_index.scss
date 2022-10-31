@@ -1,0 +1,155 @@
+@import "./mixins";
+
+.body-order-form .container-order-form {
+
+    .shipping-summary-info {
+        @include font__medium;
+        color: $color__gray-400;
+    }
+
+    &>h1 {
+        @include font__title--medium;
+        margin: 56px 0 28px;
+
+        @media (max-width: $breakpoint__mobile--max) {
+            margin: 0 0 20px;
+        }
+    }
+
+    .checkout-container .orderform-template {
+
+        * {
+            box-shadow: none !important;
+            outline: none !important;
+        }
+
+        .link-box-edit {
+            height: 20px;
+            width: 20px;
+            background-color: transparent;
+            border: none;
+            background-image: url("/arquivos/icon__edit-data.svg");
+            background-size: contain;
+            text-transform: capitalize;
+
+            i {
+                display: none;
+            }
+        }
+
+        //Container do  Dados pessoais e Entrega
+        .orderform-template-holder {
+
+            width: 66.6666%;
+
+            @media (max-width: $breakpoint__tablet--max) {
+                width: 100%;
+                float: none;
+            }
+
+            .row-fluid {
+
+                &>div {
+                    width: calc(50% - 10px);
+
+                    @media (max-width: $breakpoint__tablet--med) {
+                        width: 100%;
+                    }
+
+                    &.pull-right {
+                        margin-left: 20px;
+                    }
+                }
+
+                .accordion-group {
+                    @include container;
+
+                    @media (min-width: $breakpoint__tablet--med) {
+                        min-height: 170px;
+
+                    }
+
+                    .accordion-heading {
+
+
+                        margin-bottom: 16px;
+
+                        .accordion-toggle {
+                            padding: 0;
+                            display: flex;
+                            align-items: center;
+                            @include title;
+
+                            .icon-home,
+                            .icon-user,
+                            .icon-credit-card {
+                                @include icon__container;
+                            }
+                        }
+                    }
+
+                    .accordion-inner {
+                        padding: 0;
+
+                        .input {
+                            width: calc(50% - 10px);
+                            margin: 0 0 20px;
+
+                            @media (max-width: $breakpoint__mobile--med) {
+                                width: 100%;
+                                margin: 0 0 15px 0 !important;
+                            }
+
+                            label {
+                                @include font__medium;
+                                margin-bottom: 7px;
+                            }
+
+                            input,
+                            select {
+                                @include input;
+                                width: 100% !important;
+                                max-width: none !important;
+                                border-color: #BDBDBD ;
+
+                                &.success:not([invalid="true"]) {
+                                    background-image: none;
+
+                                }
+                            }
+
+                            select {
+                                padding: 0 0 0 8px;
+                            }
+                        }
+
+                        .box-info {
+                            p {
+                                margin: 0;
+                            }
+
+                            span {
+                                @include font__medium;
+                                color: $color__gray-400;
+                                font-weight: 300;
+                            }
+
+                            .link-logout {
+                                color: $color__green-400;
+                                font-weight: 600;
+                            }
+                        }
+                    }
+                }
+
+                @import "./dados-pessoais";
+                @import "./entrega";
+                @import "./pagamento";
+            }
+        }
+
+        //Container do  Dados pessoais e Entrega
+        @import "./resumo-pedido";
+
+    }
+}

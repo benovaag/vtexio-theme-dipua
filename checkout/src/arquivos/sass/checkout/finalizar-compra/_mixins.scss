@@ -1,0 +1,52 @@
+@mixin container {
+    border-radius: 2px;
+    border: 1px solid $color__gray-800;
+    padding: 24px 20px 20px;
+    background: $color__white-900;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+@mixin icon__container {
+    font-size: 30px;
+    color: $color__black-100;
+    width: 41px;
+    display: block;
+}
+
+@mixin icon__edit {
+    font-size: 30px;
+    color: $color__black-100;
+}
+
+@mixin title {
+    font-family: $font__primary;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: $color__black-100;
+}
+
+
+
+@mixin input {
+    height: $button__height--medium;
+    padding: 10px 12px;
+    @include font__medium;
+    color: $color__gray-400;
+    border-radius: 0;
+    border: 1px solid $color__black-100;
+    width: 100%;
+
+    &:focus-visible {
+        outline: none;
+    }
+
+    &:focus {
+        outline: none;
+        box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%), 0 0 8px rgba(70, 109, 91, 0.6)
+    }
+}
+
+

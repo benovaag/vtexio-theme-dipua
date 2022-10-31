@@ -1,0 +1,106 @@
+.body-order-form
+.client-pre-email {
+
+    // Botao voltar para carrinho
+    .link-cart {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 16px 16px 0 0;
+        z-index: $z-index-level-1;
+
+        a {
+            @include font__small;
+        }
+    }
+
+
+    .pre-email {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        padding: 138px 16px;
+        @include border__primary;
+
+        @media (max-width: $breakpoint__mobile--max) {
+            padding: 50px 16px 16px;
+        }
+
+        // Titulo do input de email
+        .client-pre-email-h {
+            margin: 0 0 $margin__generic--medium;
+
+            label {
+                margin: 0;
+
+                span {
+                    @include font__title--small;
+
+                }
+
+                small {
+                    display: none;
+                }
+            }
+        }
+
+        // Input de email
+        .client-email {
+            max-width: 600px;
+            width: 100%;
+            margin: 0 auto;
+
+            #client-pre-email {
+                height: $button__height--large;
+                @include border__primary;
+                @include font__large;
+                padding: 0 16px;
+
+                @media (max-width: $breakpoint__mobile--max) {
+                    margin-bottom: $margin__generic--small;
+                }
+
+                &:focus {
+                    box-shadow: none;
+                }
+            }
+
+            #btn-client-pre-email {
+                @include button__primary;
+                top: 0;
+                right: 0;
+                @include font__large;
+                color: $color__white-900;
+                font-weight: 600;
+                height: $button__height--large;
+
+                @media (max-width: $breakpoint__mobile--max) {
+                    position: relative;
+                    width: 100%;
+                }
+            }
+
+            & > .help  {
+                position: absolute;
+                text-align: left;
+                width: 100%;
+                margin-top: $margin__generic--small;
+                @include font__small;
+                color: $color__red-400;
+                font-weight: 600;
+
+                @media (max-width: $breakpoint__mobile--max) {
+                    margin-top: ($margin__generic--small + 16px);
+                    text-align: center;
+
+                }
+            }
+        }
+    }
+
+    // Container segurando do email
+    .emailInfo {
+        display: none;
+    }
+}

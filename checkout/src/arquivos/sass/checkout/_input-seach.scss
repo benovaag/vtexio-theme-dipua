@@ -1,0 +1,52 @@
+.input-seach__container {
+    height: 28px;
+    width: 100%;
+    max-width: 209px;
+    position: relative;
+    margin: 0 auto 48px;
+
+    & > * {
+        position: absolute;
+    }
+
+    .input-seach__input {
+        height: 100%;
+        border: none;
+        border-bottom: 1px solid #848D9C;
+        width: 100%;
+        font-size: 12px;
+        font-family: "rubrik-new", sans-serif;
+        color: rgba(132, 141, 156, 1);
+        height: 100%;
+        box-shadow: none;
+        border-radius: 0;
+        padding: 0;
+        left: 0;
+        top: 0;
+
+        &:focus-visible {
+            outline: none;
+        }
+
+        &:focus {
+            box-shadow: none !important;
+
+        }
+      }
+
+
+      .input-seach__button {
+        right: 0;
+        top: 0;
+        height: 24px;
+        width: 24px;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        background-image: url("/arquivos/icon__magnifying-glass.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+}
+
+

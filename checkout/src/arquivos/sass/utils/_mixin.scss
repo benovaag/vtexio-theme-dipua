@@ -1,0 +1,191 @@
+@mixin beforeCentralizer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+// Border
+@mixin border__primary {
+    border: 1px solid $color__green-400;
+    border-radius: 0;
+}
+
+@mixin border__primary--gray {
+    border: 1px solid $color__gray-400;
+    border-radius: 0;
+}
+
+@mixin border__reset {
+    border: none;
+    border-radius: 0;
+}
+
+// Fonts
+
+@mixin font__small {
+    font-family: $font__primary;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 15.28px;
+    color: $color__black-100;
+}
+
+@mixin font__small--2 {
+    font-family: $font__primary;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 13px;
+    line-height: 16.55px;
+    color: $color__black-100;
+    letter-spacing: 5%;
+}
+
+@mixin font__medium {
+    font-family: $font__primary;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 17.82px;
+    color: $color__black-100;
+}
+
+@mixin font__medium--2 {
+    font-family: $font__primary;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 20.37px;
+    color: $color__black-100;
+}
+
+@mixin font__large {
+    font-family: $font__primary;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 22.91px;
+    color: $color__black-100;
+}
+
+@mixin font__xlarge {
+    font-family: $font__primary;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 30.38px;
+    color: $color__black-100;
+}
+
+@mixin font__title--xxsmall {
+    font-family: $font__primary;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 14px;
+    color: $color__black-100;
+}
+
+@mixin font__title--xsmall {
+    font-family: $font__secondary;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: $color__black-100;
+}
+
+@mixin font__title--small {
+    font-family: $font__secondary;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 25px;
+    color: $color__black-100;
+}
+
+@mixin font__title--medium {
+    font-family: $font__secondary;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 30px;
+    color: $color__black-100;
+
+
+    @media (max-width: $breakpoint__mobile--max) {
+        font-size: 20px;
+        line-height: 25px;
+    }
+}
+
+@mixin font__title--large {
+    font-family: $font__secondary;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 40px;
+    color: $color__black-100;
+}
+
+
+
+// Botoes
+
+@mixin button__primary {
+    background: $color__green-400;
+    @include font__medium;
+    color: $color__white-900;
+    border-radius: 0;
+    margin: 0;
+    border: 0;
+    padding: 10px;
+    text-transform: uppercase;
+    text-shadow: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+@mixin button__secondary {
+    background: transparent;
+    @include font__medium;
+    color: $color__black-100;
+    margin: 0;
+    padding: 10px;
+    text-transform: uppercase;
+    text-shadow: none;
+    @include border__primary;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+@mixin button__error {
+    background: $color__red-400;
+    @include font__medium;
+    color: $color__white-900;
+    margin: 0;
+    padding: 10px;
+    text-transform: uppercase;
+    text-shadow: none;
+    border: none;
+    border-radius: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+/* Adicionar */

@@ -1,0 +1,332 @@
+.vtex-order-placed-2-x-orderPlacedWrapper {
+    max-width: $max-container-width;
+    margin: 80px auto 88px;
+    padding: 0 $side-padding-container;
+
+    .vtex-order-placed-2-x-orderPlacedHeader {
+        margin-bottom: 30px;
+
+        .vtex-order-placed-2-x-section--confirmation {
+            margin-bottom: 39px;
+
+            // icone de confirmar
+            .vtex-order-placed-2-x-confirmationIconWrapper {
+                margin-bottom: 16px;
+
+                svg {
+                    height: 41px;
+                    width: 41px;
+                    background-image:  url("/arquivos/icon__check.svg");
+
+                    path {
+                        fill: transparent;
+                        color: transparent;
+                    }
+                }
+            }
+
+            // titulo
+            .vtex-order-placed-2-x-confirmationTitle {
+                margin: 0;
+                @include font__title--medium;
+            }
+        }
+
+        .vtex-order-placed-2-x-section--notices {
+            margin:0;
+
+            li {
+                padding: 0;
+                margin: 0;
+                border: none;
+                @include font__medium;
+                width: 100%;
+            }
+
+            li + li {
+                margin-top: 17px;
+            }
+        }
+    }
+
+    .vtex-order-placed-2-x-orderPlacedMainWrapper {
+        margin: 0;
+        width: 100%;
+        position: relative;
+
+        .vtex-order-placed-2-x-orderWrapper > .vtex-flex-layout-0-x-flexRow {
+            margin-bottom: 20px;
+
+            & > .vtex-flex-layout-0-x-flexRowContent {
+                margin: 0;
+            }
+        }
+
+        .vtex-order-placed-2-x-orderNumber {
+            @include font__xlarge;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+        }
+
+        .vtex-order-placed-2-x-orderDatetime {
+            @include font__small--2;
+            font-weight: 400;
+        }
+
+        .vtex-order-placed-2-x-orderSoldBy {
+            @include font__small--2;
+            font-weight: 400;
+
+        }
+
+        .vtex-order-placed-2-x-customerInfoListContainer {
+            margin-bottom: 8px;
+
+            li {
+                padding: 0;
+                @include font__small--2;
+
+            }
+        }
+
+        .vtex-order-placed-2-x-section--paymentMethods {
+            border-bottom: 1px solid $color__gray-400;
+
+            .vtex-order-placed-2-x-orderPaymentWrapper {
+                margin-bottom: 12px;
+
+                @media (min-width: 1026px) {
+                    margin-bottom: 76px ;
+
+                }
+                .vtex-order-placed-2-x-orderPaymentItem {
+                    padding: 0;
+                    margin: 0;
+
+                    .vtex-order-placed-2-x-paymentGroup {
+                        margin: 0 0 8px;
+                        @include font__small--2;
+
+                    }
+
+                    .vtex-order-placed-2-x-paymentValue {
+                        @include font__small--2;
+
+                    }
+
+                    .ml4 {
+                        display: none;
+                    }
+                }
+
+            }
+
+            .vtex-order-placed-2-x-orderPaymentItem {
+                margin: 0
+            }
+        }
+
+        .vtex-order-placed-2-x-orderOptionsWrapper {
+            margin-bottom: 28px;
+            justify-content: start;
+
+            @media (max-width: $breakpoint__mobile--max) {
+                flex-direction: column;
+            }
+
+
+            @media (min-width: 1026px) {
+                position: absolute;
+                left: 0;
+                transform: translateY(224px);
+            }
+
+            & > div {
+                max-width: 202px;
+                width: 100%;
+
+                @media (max-width: $breakpoint__mobile--max) {
+                    max-width: none;
+                }
+                height: $button__height--large;
+                margin: 0;
+
+                & + div {
+                    margin-left: 8px;
+
+                    @media (max-width: $breakpoint__mobile--max) {
+                        margin: 8px 0 0;
+                    }
+                }
+
+                a {
+                    text-decoration: none;
+                    height: 100%;
+                }
+
+                button{
+                    background: none;
+                    border: none;
+
+                    div {
+
+                    }
+                };
+            }
+
+
+            .vtex-order-placed-2-x-updateOrderButton a{
+                @include button__secondary;
+
+                div {
+                    color: $color__black-100;
+                }
+            }
+
+            .vtex-order-placed-2-x-myOrdersButton a{
+                @include button__primary;
+
+                div {
+                    color: $color__white-900;
+                }
+
+            }
+
+            .vtex-order-placed-2-x-cancelOrderButton a{
+                @include button__error;
+
+                div {
+                    color: $color__white-900;
+                }
+            }
+
+        }
+
+        .vtex-order-placed-2-x-section--deliveryPackages {
+
+            border-bottom: 1px solid $color__gray-400;
+
+            .vtex-order-placed-2-x-package--delivery {
+                margin: 24px 0 48px;
+
+
+                .vtex-order-placed-2-x-packageHeaderColumn {
+                    margin-bottom: 24px;
+
+                    .vtex-order-placed-2-x-packageHeader--delivery {
+                        margin-bottom: 20px;
+
+                        span, small {
+                            display: block;
+                            @include font__small--2;
+                        }
+
+                        br {
+                            display: none;
+                        }
+
+                    }
+
+                    .vtex-order-placed-2-x-packageAddressWrapper {
+                        @include font__small--2;
+                    }
+                }
+
+                .vtex-order-placed-2-x-productList {
+
+                    li {
+                        height: 60px;
+                        padding: 0;
+                        margin: 0;
+                        border: none;
+                        position: relative;
+
+                        & > div {
+                            display: flex !important;
+                            align-items: center;
+
+                        }
+
+                        & + li {
+                            margin-top: 8px;
+                        }
+
+                        // imagem
+                        .vtex-order-placed-2-x-productImageColumn {
+                            margin: 0 16px 0 0;
+
+                            .vtex-order-placed-2-x-productImageWrapper {
+                                width: 60px;
+                                height: 60px;
+                            }
+                        }
+
+                        //nome
+                        .vtex-order-placed-2-x-productInfoColumn {
+                            justify-content: center;
+
+                            @media (max-width: $breakpoint__mobile--max) {
+                                align-self: end;
+                            }
+
+                            a {
+                                @include font__medium;
+                                font-family: $font__secondary;
+                                text-transform: none;
+
+                                @media (max-width: $breakpoint__mobile--med) {
+                                    font-size: max(0.75rem, min(0.3777rem + 2.1277vw, 0.875rem));
+                                    line-height: 1;
+                                    display: block;
+                                    text-align: left;
+                                }
+                            }
+
+                            small {
+                                display: none;
+                            }
+                        }
+
+                        // price
+                        .vtex-order-placed-2-x-productPrice {
+                            height: 20px;
+                            @include font__medium--2;
+
+                            @media (max-width: $breakpoint__mobile--max) {
+                                top: 0;
+                                position: absolute;
+                                right: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .vtex-order-placed-2-x-totalList  {
+        margin-top: 24px;
+
+        .vtex-order-placed-2-x-totalListItem--Items {
+            display: none;
+        }
+
+        .vtex-order-placed-2-x-totalListItem {
+            padding: 0;
+            @include font__medium--2;
+            justify-content: start;
+
+            strong {
+                margin-right: 21px;
+                display: block;
+
+                &:first-child {
+                    &:after {
+                        content: ':';
+                    }
+                }
+
+            }
+        }
+    }
+}

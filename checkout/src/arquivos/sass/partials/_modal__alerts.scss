@@ -1,0 +1,26 @@
+body > .vtex-front-messages-placeholder-opened {
+    background-color: $color__white-900;
+    box-shadow: $shadow__primary;
+    max-width: 500px;
+    width: calc(100% - #{$padding__container--sides} * 2);
+    margin: 0;
+    left: 50%;
+    transform: translateX(-50%) !important;
+    transition-property: transform;
+
+    .vtex-front-messages-template {
+
+        min-height: $button__height--small;
+        @include font__small;
+    }
+
+    .vtex-front-messages-type-danger,
+    .vtex-front-messages-type-error,
+    .vtex-front-messages-type-fatal {
+        border-left-color: $color__red-400;
+    }
+
+    .vtex-front-messages-type-warning {
+        border-left-color: $color__yellow-400;
+    }
+}

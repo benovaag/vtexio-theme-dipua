@@ -1,0 +1,121 @@
+/* _header.scss */
+.headerCheckout {
+    position: relative;
+    box-shadow: 0px 4px 8px rgba(70, 109, 91, 0.2);
+
+
+
+    &__wrapper {
+        max-width: $max-container-width;
+        margin: 0 auto;
+        padding: 0 $side-padding-container;
+        height: $height-header;
+        background: $color__white-900;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+
+    &__logo {
+        width: max(6.375rem, min(5.0542rem + 5.6354vw, 9.5625rem));
+        height: max(1rem, min(0.7928rem + 0.8840vw, 1.5rem));
+        object-fit: contain;
+
+    }
+
+    &__checkout-position {
+        max-width: 442px;
+        height: 35px;
+        width: 100%;
+        margin: 0 30px;
+
+        @media (max-width: $breakpoint-mobile) {
+            position: absolute;
+            top: 100%;
+            margin: 32px 0 0;
+            padding: 0 $side-padding-container;
+            left: 50%;
+            transform: translateX(-50%);
+            width: calc(95vw - #{$side-padding-container});
+        }
+
+        .checkout-position__texts {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 8px;
+            width: 100%;
+
+            .checkout-position__text {
+                font-family: "ivymode", cursive;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 12px;
+                line-height: 15px;
+                color: $color__green-400;
+            }
+        }
+
+        .checkout-position__position {
+            margin: 0 30px;
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+
+            .checkout-position__line {
+                width: 100%;
+                border-top: 1px solid $color__green-400;
+                position: absolute;
+                margin: 0;
+                z-index: $z-index-level-1;
+                top: 50%;
+                transform: translateY(-50%);
+                background-color: $color__white-900;
+            }
+
+            .checkout-position__circle {
+                border-radius: 50%;
+                border: 1px solid $color__green-400;
+                height: 12px;
+                width: 12px;
+                background-color: $color__white-900;
+                z-index: $z-index-level-2;
+
+            }
+
+            .checkout-position__circle--active {
+                background-color: $color__green-400;
+            }
+        }
+    }
+
+    &__safe-buy {
+        display: flex;
+        align-items: center;
+        min-width: 136px;
+
+        .safe-buy__img {
+            height: 24px;
+            width: 24px;
+            margin: 0 8px 0 0;
+
+        }
+
+        .safe-buy__text {
+            font-family: "rubrik-new";
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 15px;
+            text-align: center;
+            text-transform: uppercase;
+            color: $color__black-100;
+
+        }
+    }
+
+}
+/* Rectangle 1 */
+
+
+

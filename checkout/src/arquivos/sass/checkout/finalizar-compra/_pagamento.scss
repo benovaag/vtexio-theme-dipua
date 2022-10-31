@@ -1,0 +1,137 @@
+#payment-data {
+    &.span12 {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .payment-group {
+        margin: 40px 20px 0 0;
+        max-width: 230px;
+        width: 100%;
+
+        @media (max-width: $breakpoint__tablet--med) {
+            margin: 20px 0 0;
+            max-width: none;
+        }
+
+        .payment-group-list-btn {
+            margin-bottom: 16px;
+            width: 100%;
+        }
+
+        .payment-group-item {
+            @include border__primary;
+            align-items: center;
+            display: flex;
+            height: $button__height--large;
+            margin: 0 0 8px;
+
+            .payment-group-item-text {
+                @include font__medium;
+                font-weight: 600;
+                width: 100%;
+            }
+
+            &:nth-child(2) .payment-group-item-text {
+                font-size: 0;
+
+                &:before {
+                    content: "Transferência Bancária";
+                    font-size: 14px;
+                }
+            }
+
+            &.active {
+                background-color: $color__gray-800;
+            }
+        }
+    }
+
+    .steps-view {
+        background-color: transparent;
+        border-radius: 0;
+        min-height: auto;
+        min-width: auto;
+        padding: 32px 16px 0;
+        width: calc(100% - 250px);
+
+        @media (max-width: $breakpoint__tablet--med) {
+            width: 100%;
+        }
+
+        .box-payment-group2 {
+            @include font__medium;
+            background-color: transparent;
+            margin: 0;
+
+            & > div {
+                margin: 0;
+            }
+        }
+
+        .sight {
+            font-weight: 600;
+            margin: 0;
+        }
+
+        .payment-pix-info {
+            margin: 0;
+            padding: 0;
+        }
+
+        .payment-pix-header-image {
+            margin-top: 0;
+        }
+    }
+
+    .link-gift-card {
+        width: fit-content;
+
+        @media (min-width: $breakpoint__tablet--med) {
+            left: 50px;
+        }
+    }
+
+    .link-payment-discounts-cod {
+        font-size: 0;
+
+        &::after {
+            content: "Adicionar vale-troca";
+            font-size: 13px;
+        }
+    }
+}
+
+.gift-card-provider-default .payment-discounts-options label {
+    font-size: 0 !important;
+}
+.gift-card-provider-default .payment-discounts-options label::after {
+    font-size: 14px;
+    content: "Vale-troca";
+}
+
+//Botão de remover lista de cartões salvos
+#app-container .CardForm .SavedCards .SavedCardsList {
+    position: relative !important;
+}
+
+#app-container
+    .CardForm
+    .SavedCards
+    .SavedCardsList
+    .SavedCard:hover
+    .link-delete {
+    display: block !important;
+}
+
+#app-container
+    .CardForm
+    .SavedCards
+    .SavedCardsList
+    .SavedCard
+    .link-delete.btn {
+    position: absolute !important;
+    padding: 0 4px !important;
+    right: -12px !important;
+    top: -8px !important;
+}

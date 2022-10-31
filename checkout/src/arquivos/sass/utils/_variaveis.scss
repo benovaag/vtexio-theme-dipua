@@ -1,0 +1,66 @@
+/* fonts */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+$font-family: "Roboto", sans-serif;
+
+/* Colors */
+$color__black-100: #000000;
+$color__gray-400: #848D9C;
+$color__gray-800: #E8E7E2;
+$color__gray-900: #E0E0E0;
+$color__white-900: #FFFFFF;
+$color__green-400: #466D5B;
+$color__green-800: #C6CAAF;
+$color__red-400: #D1381D;
+$color__yellow-400: #FFF3A4;
+
+/* Fonts Family */
+$font__primary: "rubrik-new", sans-serif;
+$font__secondary: "ivymode", sans-serif;
+
+/* Breakpoints */
+$breakpoint__mobile--min: 280px;
+$breakpoint__mobile--med: 374px;
+$breakpoint__mobile--max: 640px;
+$breakpoint__tablet--min: 640px;
+$breakpoint__tablet--med: 767px;
+$breakpoint__tablet--max: 979px;
+$breakpoint__desktop--med: 1280px;
+
+$breakpoint-mobile: 640px;
+$breakpoint-tablet: 1025px;
+$breakpoint-desktop: 1280px;
+
+// sizes
+$max-container-width: $breakpoint-desktop;
+$side-padding-container: max(1rem, min(0.3785rem + 2.6519vw, 2.5rem));
+
+$height-header: 6rem;
+$height-footer: 283px;
+
+$button__height--small: 32px;
+$button__height--medium: 36px;
+$button__height--large: 48px;
+$button__height--xlarge: 56px;
+
+//z-index:
+$z-index-level-1: 5;
+$z-index-level-2: 10;
+$z-index-level-3: 15;
+$z-index-level-4: 20;
+$z-index-level-5: 25;
+
+// Margins
+$margin__generic--small: 8px;
+// 10
+// 16
+// 20
+$margin__generic--medium: 24px;
+// 32
+
+
+// paddings
+$padding__container--sides: max(1rem, min(0.3785rem + 2.6519vw, 2.5rem));
+
+
+// Shadows
+$shadow__primary: 0px 4px 8px rgb(70 109 91 / 20%);

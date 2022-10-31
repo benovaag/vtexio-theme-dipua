@@ -1,0 +1,64 @@
+#removeConfirmationModal {
+    @include border__primary;
+    box-shadow: none;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 500px;
+    width: calc(100% - 20px);
+
+    & > div { border: none; }
+
+    .modal-header {
+        border-bottom: 1px solid $color__gray-800;
+
+        span {
+            @include font__large;
+            color: $color__black-100;
+            font-weight: 600;
+        }
+    }
+
+    .modal-body {
+        span {
+            @include font__medium;
+            color: $color__black-100;
+        }
+    }
+
+    .modal-footer {
+        display: flex;
+        justify-content: flex-end;
+        background-color: transparent;
+
+        a {
+            height: $button__height--small;
+            width: 96px;
+        }
+
+        .vtex-shipping-preview-0-x-modalCancelButton {
+            @include button__secondary;
+            margin-right: $margin__generic--small;
+        }
+
+        .vtex-shipping-preview-0-x-modalConfirmButton {
+            @include button__error;
+        }
+    }
+}
+
+.VTEX-PIX__button {
+    color: red;
+}
+
+.VTEX-PIX__dry-button {
+    font-size: 0;
+
+    &::before {
+        content: "Copiar código pix";
+        font-size: 1em;
+    }
+}
+
+.VTEX-PIX__modal-container {
+    background: green;
+}

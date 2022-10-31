@@ -1,0 +1,29 @@
+@forward "./checkout/checkout-pagamento";
+
+/* Utils */
+@import "./utils/all";
+
+/* Checkout */
+@import "./checkout/checkout";
+@import "./checkout/checkout-vazio";
+@import "./checkout/carrinho/checkout-carrinho";
+@import "./checkout/page-email";
+@import "./checkout/finalizar-compra/index.scss";
+@import "./checkout/pedidoConfirmado";
+@import "./checkout/input-seach";
+@import "./checkout/seller-code-form";
+@import "./checkout/buttonContinueShopping/index.scss";
+@import "./checkout/embalarParaPresente/index";
+@import "./checkout/mensagemDoPresente/index";
+
+/* Partials */
+@import "./partials/header";
+@import "./partials/footer";
+@import "./partials/modal__alerts";
+
+.hidden {
+    display: none !important;
+}
+* {
+    outline: none !important;
+}

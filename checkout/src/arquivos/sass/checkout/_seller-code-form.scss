@@ -1,0 +1,64 @@
+.sellerCodeForm {
+    &__container {
+        display: grid;
+        grid-template:
+            "label label"
+            "input button" 36px
+            / 1fr 96px;
+        ;
+        gap: 11px 10px;
+        max-width: 266px;
+        margin: 0 auto 20px;
+
+        &--result {
+            gap: 11px 0;
+            max-width: none;
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+    &__label {
+        grid-area: label;
+        @include font__small;
+        text-align: center;
+
+    }
+
+    &__container .sellerCodeForm__input,
+    &__result {
+        grid-area: input;
+        height: 100%;
+        width: 100%;
+        padding: 12px 10px;
+
+        &--hidden {
+            display: none;
+        }
+    }
+
+    &__container .sellerCodeForm__input {
+        @include border__primary--gray;
+        @include font__small;
+
+        &::focus-visible {
+            outline: none;
+        }
+
+        &:focus {
+            border: 1px solid $color__gray-400;
+            box-shadow: none;
+        }
+    }
+
+    &__result {
+        @include font__medium;
+        text-transform: uppercase;
+        background-color: $color__gray-800;
+
+    }
+
+    &__button {
+        grid-area: button;
+        @include button__primary;
+    }
+}

@@ -1,0 +1,86 @@
+.body-cart {
+
+    #cart-title {
+        display: none !important;
+    }
+
+    .cart-template {
+        margin: 0;
+    }
+
+    .empty-cart-content {
+
+        text-align: center;
+        margin: 120px auto 184px;
+        max-width: 375px;
+        width: 100%;
+        min-height: 187px;
+        padding: 0 24px;
+
+        @media (max-width: $breakpoint-mobile) {
+            margin-bottom: 160px;
+        }
+
+        .empty-cart-title {
+            font-size: 0;
+            margin: 0 0 32px;
+            position: relative;
+            height: 31px;
+
+            &::after {
+                content: "Sua Sacola está vazia";
+                @include beforeCentralizer;
+                font-family: "rubrik-new";
+                font-style: normal;
+                font-weight: normal;
+                font-size: 24px;
+                line-height: 31px;
+                text-align: center;
+                text-transform: uppercase;
+                color: $color__black-100;
+                width: calc(100% + 48px);
+            }
+
+        }
+
+        .empty-cart-message {
+            display: none;
+        }
+
+        .link-choose-products {
+            display: flex;
+            align-items: center;
+            margin: 0;
+            height: 48px;
+            border: 1px solid $color__black-100;
+            border-radius: 0px;
+            font-size:0;
+            background: transparent;
+            justify-content: center;
+            position: relative;
+
+            &:active, &:focus, &:hover, &:visited, &:focus-visible{
+                background: transparent;
+                outline: none;
+                border: auto;
+            }
+
+            &::before {
+                content: "Continuar comprando";
+                @include beforeCentralizer;
+                font-family: "rubrik-new";
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 18px;
+                text-align: center;
+                text-transform: uppercase;
+                color: $color__black-100;
+            }
+        }
+
+
+    }
+}
+
+

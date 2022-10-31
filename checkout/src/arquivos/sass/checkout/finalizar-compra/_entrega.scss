@@ -1,0 +1,338 @@
+#shipping-data
+.accordion-inner {
+
+
+
+    .ship-postalCode {
+        width: 100%;
+        max-width: 150px;
+        position: relative;
+
+        input {
+            max-width: 150px;
+        }
+
+        small {
+            width: 100%;
+
+            @media (min-width: $breakpoint__mobile--med) {
+                top: 50%;
+                position: absolute;
+            }
+
+            @media (max-width: $breakpoint__mobile--med) {
+                display: block;
+                padding-top: 8px;
+                margin:0;
+            }
+
+            a {
+                @include font__small;
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .vtex-omnishipping-1-x-deliveryGroup {
+        margin: 0 0 24px;
+
+        .vtex-omnishipping-1-x-leanShippingGroupList {
+            @include border__reset;
+            margin: 0;
+
+            .vtex-omnishipping-1-x-leanShippingOption {
+                height: $button__height--xlarge;
+                border: 1px solid $color__gray-800;
+                padding: 10px 16px 10px 10px;
+                align-items: center;
+
+                .shp-option-text-label-single {
+                    color: #848D9C;
+                    font-weight: 400;
+                }
+
+                .vtex-omnishipping-1-x-leanShippingIcon {
+                    margin-right: 8px;
+
+                    path {
+                        fill: $color__green-400;
+                    }
+                }
+
+                .vtex-omnishipping-1-x-leanShippingText {
+                    @include font__small;
+                    align-self: end;
+                    color: $color__gray-400;
+                    border: none;
+                }
+
+                .vtex-omnishipping-1-x-optionPrice {
+                    @include font__medium;
+                    font-weight: 600;
+                    text-align: right;
+                    padding: 0;
+                }
+            }
+
+            label + label {
+                margin-top: 8px;
+            }
+
+            .vtex-omnishipping-1-x-option:hover,
+            .vtex-omnishipping-1-x-leanShippingOptionActive {
+                background-color: $color__gray-800;
+                border-color: $color__green-400;
+                align-items: center;
+
+                .vtex-omnishipping-1-x-leanShippingText {
+                    align-self: center;
+                }
+            }
+        }
+    }
+
+    .vtex-omnishipping-1-x-addressForm {
+        margin-bottom: 20px;
+
+        .vtex-omnishipping-1-x-addressSummary {
+            position: relative;
+            margin-bottom: 15px;
+            min-height: 36px;
+            display: flex;
+            align-items: center;
+
+            .address-summary {
+                margin: 0px;
+                border-radius: 0;
+                padding: 0 48px 0 45px;
+                background-image: none;
+                border: none;
+
+
+
+                span {
+                    @include font__medium;
+                    color: $color__gray-400;
+                    font-weight: 300;
+                }
+
+                &::before {
+                    content: "\f015";
+                    font-family: FontAwesome;
+                    font-size: 29px;
+                    position: absolute;
+                    left: 0;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    color: $color__black-100;
+                }
+
+                .vtex-omnishipping-1-x-linkEdit {
+                    position: absolute;
+                    right: 0;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    @include font__small;
+                    text-decoration: underline;
+                    font-weight: 400;
+                }
+            }
+        }
+
+        .vtex-omnishipping-1-x-address {
+            margin: 0;
+
+            .input {
+                width: 100%;
+            }
+
+            .ship-number,
+            .ship-state {
+                max-width: 61px;
+                float: left;
+                margin-right: 20px;
+            }
+
+            .ship-complement {
+                label {
+                    font-size:0;
+                    line-height: 13px;
+
+                    &::before {
+                        content: "Complemento";
+                        font-size: 14px;
+                    }
+                }
+            }
+
+            .ship-complement,
+            .ship-city {
+                float: right;
+                width: calc(100% - 81px);
+
+            }
+        }
+    }
+
+    .vtex-omnishipping-1-x-submitPaymentButton {
+        margin: 0;
+
+        button {
+            @include button__primary;
+            width: 100%;
+            padding: 0 8px;
+            max-width: 177px;
+            min-height: $button__height--large;
+            margin-left: auto;
+        }
+    }
+
+    .vtex-omnishipping-1-x-shippingSectionTitle {
+        @include font__medium;
+    }
+
+    .shp-summary-group {
+        padding: 0;
+    }
+
+    .link-change-shipping.vtex-omnishipping-1-x-summaryChange {
+        display: none;
+    }
+
+    .box-info {
+
+        .shp-summary-group-info {
+            padding: 0;
+            border-right: 1px solid $color__gray-800;
+        }
+        .shp-summary-group-address {
+            margin:0;
+        }
+
+        .shp-summary-group-price {
+            @include font__medium;
+            font-weight: 600;
+            padding-right: 0;
+        }
+    }
+
+    // Botao de alternar entre receber e retirar
+    .vtex-omnishipping-1-x-deliveryChannelsWrapper {
+        box-shadow: none;
+        border-radius: 0;
+        background-color: $color__gray-800;
+        height: $button__height--medium;
+
+
+        .shipping-method-toggle {
+            border-radius: 0;
+            background-color: $color__green-400;
+            height: $button__height--medium;
+
+        }
+
+        .shp-method-option {
+            border-radius: 0;
+            height: $button__height--medium;
+            padding: 0;
+            min-height: 0;
+        }
+
+        .vtex-omnishipping-1-x-deliveryOptionInactive {
+            color: $color__green-400;
+        }
+
+        .shp-method-option-text {
+            text-transform: uppercase;
+        }
+    }
+
+    .vtex-omnishipping-1-x-geolocationTitle {
+        margin: 0 0 8px;
+        @include font__medium--2;
+    }
+
+    .vtex-omnishipping-1-x-subtitle {
+        @include font__medium;
+        color: $color__gray-400;
+    }
+
+    .btn-ask-for-geolocation-cta {
+        @include button__primary;
+        margin: 0 auto;
+        height: $button__height--medium;
+
+    }
+
+    .vtex-omnishipping-1-x-imageAsk  {
+
+        svg {
+            background-color: $color__green-400;
+
+            rect {
+                fill: $color__green-400;
+            }
+        }
+
+
+    }
+
+    .vtex-omnishipping-1-x-warning {
+        @include border__primary;
+
+        .shp-alert-disclaimer  {
+            margin-bottom: 16px;
+        }
+
+        .shp-alert-icon {
+
+            border: 1px solid $color__green-400;
+
+
+            g {
+                fill: $color__green-400;
+            }
+        }
+
+        #unavailable-delivery-disclaimer {
+            @include font__medium;
+            color: $color__gray-400;
+
+            .btn-link {
+                text-decoration: none;
+                color: $color__green-400;
+                font-weight: 600;
+            }
+        }
+
+        .vtex-omnishipping-1-x-image {
+            margin: 0 8px;
+            padding: 0;
+            @include border__primary;
+        }
+
+        .__react_component_tooltip {
+            background-color: $color__green-400;
+            border-radius: 0;
+            @include font__medium;
+            color: $color__white-900;
+
+        }
+    }
+
+    .pkpmodal {
+
+        @media (max-width: 1023px) {
+            max-width: 895px;
+            width: calc(100% - 32px);
+            top: 50%;
+            left: 50%;
+            bottom: inherit;
+            right: inherit;
+            transform: translate(-50%, -50%);
+            max-height: 554px;
+        }
+
+    }
+
+}

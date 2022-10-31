@@ -1,0 +1,8 @@
+.buttonContinueShopping__button {
+    @include button__secondary;
+    bottom: -65px;
+    height: 48px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+}

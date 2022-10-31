@@ -1,0 +1,114 @@
+#client-profile-data {
+    .accordion-group {
+            .accordion-inner {
+                .form-step {
+                    .box-client-info {
+                        margin-bottom: 31px;
+
+                        .box-client-info-pf {
+
+                            @media (max-width: $breakpoint__tablet--med) {
+                                margin: 0;
+                                float: none;
+                            }
+                        }
+
+                        .pull-left{
+                            float: left !important;
+
+                            @media (max-width: $breakpoint__mobile--med) {
+                                float: none !important;
+                            }
+                        }
+
+
+                        .client-notice {
+                            @include font__medium;
+                            color: $color__gray-400;
+                            margin-bottom: 22px;
+                            max-width: 274px;
+                        }
+
+                        .input {
+                            &.client-email,
+                            &.client-company-name,
+                            &.client-company-nickname {
+                                width: 100%;
+                            }
+
+                            &.client-last-name,
+                            &.client-phone,
+                            &.client-company-document {
+                                margin-left: 20px;
+                            }
+
+                            &.client-phone:last-child {
+                                margin: 0;
+                            }
+                        }
+
+                        .box-client-info-pj {
+                            margin: 0 0 20px;
+                            position: relative;
+                            float: none;
+
+                            .corporate-title {
+                                @include font__small;
+                                margin: 0 0 20px;
+                            }
+
+                            .links  {
+                                margin: 0;
+                                line-height: normal;
+
+                                .corporate-hide-link {
+
+                                    #is-corporate-client {
+                                        @include font__small;
+                                    }
+
+                                    #not-corporate-client {
+                                        position: absolute;
+                                        right: 0;
+                                        top: 0;
+                                        @include font__small;
+                                        font-weight: 600;
+                                    }
+                                }
+                            }
+                        }
+
+                        .newsletter {
+                            margin: 0;
+
+                            .newsletter-text {
+                                @include font__small;
+
+                            }
+
+
+                        }
+
+
+
+
+                    }
+
+                    // botao de proximo passo
+                    .btn-submit-wrapper {
+                        margin: 0;
+
+                        button {
+                            @include button__primary;
+                            height: $button__height--large;
+                            margin-left: auto;
+
+                        }
+
+                    }
+                }
+            }
+
+
+    }
+}
