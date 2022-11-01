@@ -123,7 +123,7 @@
 
 /* HOME */
 .strong--notification{font: 700 12px "bold", sans-serif;}
-:global(.vtex-flex-layout-0-x-flexRowContent--footer-bottom) .paragraph{ 
+:global(.vtex-flex-layout-0-x-flexRowContent--footer-bottom) .paragraph{
   font:400 12px "padrao", sans-serif;
   margin: 0;
 }
@@ -258,7 +258,7 @@
 } /* <= Texto -- institucional */
 .link--text-footer{
   color: #466D5B;
-  
+
 }
 .link--content-institucional{color: #848d9c;} /* <= Links -- menu institucional */
 :global(.vtex-flex-layout-0-x-flexColChild--content-institucional-troque-facil) .container--sub-title-content-institucional,:global(.vtex-flex-layout-0-x-flexColChild--content-institucional-troque-facil) .container--title-content-institucional{justify-content: center;}
@@ -295,4 +295,16 @@
   .paragraph--breadcrumb-institucionais{margin: 4px 0;}
   .paragraph--title-text-footer{margin-left: 8px;}
   .headingLevel4--title-footer{margin:10px 0;}
+}
+
+
+/* Flae Conosco - Form */
+.container--title-contact,
+.wrapper--title-contact{
+  width: 100%;
+  text-align: center;
+}
+
+.heading--title-contact{
+  margin: 0 0 45px 0;
 }

@@ -46,7 +46,7 @@
         "blockClass": "breadcrumb-institucionais"
       }
     },
-  
+
     "flex-layout.row#atendimento": {
       "props":{
         "blockClass":"content-institucional"
@@ -74,27 +74,115 @@
     "flex-layout.col#atendimento-2":{
       "props":{
         "width":"73%",
-        "blockClass":"content-institucional"
+        "blockClass": ["content-institucional", "fale-conosco"]
       },
       "children":[
-        "rich-text#titulo-atendimento",
-        "rich-text#conteudo-atendimento"
+        "flex-layout.row#contactUs"
       ],
       "title": "Conteúdo"
     },
+
+    "flex-layout.row#contactUs": {
+      "children": [
+        "flex-layout.col#contactUs"
+      ],
+      "props": {
+        "blockClass": "contact",
+        "colSizing": "equal",
+        "preserveLayoutOnMobile": true,
+        "preventHorizontalStretch": false,
+        "preventVerticalStretch": true
+      }
+    },
+
+    "flex-layout.col#contactUs": {
+      "children": [
+        "rich-text#titulo-atendimento",
+        "form#contactUs"
+      ],
+      "props": {
+        "blockClass": "contact",
+        "colSizing": "equal",
+        "preserveLayoutOnMobile": true,
+        "preventHorizontalStretch": false,
+        "preventVerticalStretch": true
+      }
+    },
+
     "rich-text#titulo-atendimento":{
       "props":{
-        "blockClass":"title-content-institucional",
-        "text":"## Fale conosco"
+        "blockClass": ["title-content-institucional", "title-contact"],
+        "text":"## Central de Atendimento"
       },
       "title":"Título"
     },
-    "rich-text#conteudo-atendimento":{
-      "props":{
-        "blockClass":"content-institucional",
-        "text":"E-mail: <sac@dipua.com.br>"
-      },
-      "title": "Texto"
+
+    "form#contactUs": {
+      "children": [
+        "form-input.text#name",
+        "form-input.text#email",
+        "form-input.text#phone",
+        "form-input.textarea#message",
+        "form-submit#contact"
+      ],
+      "blocks": ["form-success#contactUs"],
+      "props": {
+        "blockClass": "contact",
+        "entity": "FL",
+        "schema": "faleconosco"
+      }
+    },
+
+    "form-success#contactUs": {
+      "children": [
+        "rich-text#success-submit"
+      ],
+      "props": {
+        "blockClass": "contact"
+      }
+    },
+
+    "rich-text#success-submit": {
+      "props": {
+        "text": "Agradecemos seu contato! Voltaremos em breve.",
+        "blockClass": "contact-success-submit",
+        "textAlignment": "CENTER",
+        "textPosition": "CENTER"
+      }
+    },
+
+    "form-input.text#name": {
+      "props": {
+        "pointer": "#/properties/name",
+        "placeholder": "Ex: João da Silva"
+      }
+    },
+
+    "form-input.text#email": {
+      "props": {
+        "pointer": "#/properties/email",
+        "placeholder": "Ex: joao@mail.com"
+      }
+    },
+
+    "form-input.text#phone": {
+      "props": {
+        "pointer": "#/properties/phone",
+        "placeholder": "Ex: (99) 99999-9999"
+      }
+    },
+
+    "form-input.textarea#message": {
+      "props": {
+        "pointer": "#/properties/message",
+        "placeholder": "Digite sua mensagem"
+      }
+    },
+
+    "form-submit#contact": {
+      "props": {
+        "label": "Enviar",
+        "blockClass": "submit"
+      }
     }
   }
-  

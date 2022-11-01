@@ -1,0 +1,15 @@
+/* Fale Conosco - Form */
+
+.formSubmitButton--submit{
+    text-align: center;
+}
+
+.formSubmitButton--submit :global(.vtex-button){
+    border-radius: 0;
+    background-color: #466d5b;
+    color: #FFFFFF;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 145px;
+    height: 3rem;
+}
