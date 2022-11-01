@@ -133,7 +133,10 @@
     "title": "Produto - Nome - Mobile"
   },
   "flex-layout.row#similars":{
-    "children": [ "shelf.relatedProducts#similars"],
+    "children": [
+      "similar-products-variants#pdp"
+      // "shelf.relatedProducts#similars"
+    ],
     "props":{
       "blockClass":"product-similars-mobile"
     },
@@ -153,6 +156,12 @@
     },
     "title": "Produtos - Similares"
   },
+  "similar-products-variants#pdp": {
+    "props": {
+        "imageLabel": "similar",
+        "blockClass": "pdp"
+    }
+  },
   "sku-selector": {
     "props": {
       "variationsSpacing": 3,
@@ -169,7 +178,7 @@
     ],
     "title": "Produto - Botão Comprar"
   },
-  
+
   "flex-layout.row#description": {
     "props":{
       "blockClass":"product-accordion"
@@ -212,7 +221,7 @@
     },
     "title": "Descrição"
   },
-  
+
   "flex-layout.row#product-availability": {
     "props": {
       "width": "50%",

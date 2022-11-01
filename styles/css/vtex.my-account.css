@@ -13,9 +13,9 @@ html{scroll-behavior:smooth;}
 :global(input):focus-visible{outline:0;}
 
 body,
-:global(.t-body), 
-:global(.t-heading-6), 
-:global(.t-action), 
+:global(.t-body),
+:global(.t-heading-6),
+:global(.t-action),
 :global(.t-action--small){font-family: "padrao", sans-serif;}
 
 /* MINHA CONTA */
@@ -289,9 +289,9 @@ body,
 :global(.vtex-store-newsletter-1-x-nameInputContainer--invalid) :global(.vtex-input__error),:global(.vtex-store-newsletter-1-x-emailInputContainer) :global(.vtex-input__error){
     padding-left: 8px;
 }
-:global(.vtex-similar-products-variants-0-x-var-wrap) > a{
+/* :global(.vtex-similar-products-variants-0-x-var-wrap) > a{
     display:block;
-}
+} */
 
 /* PRODUTO */
 :global(.vtex-store-components-3-x-productDescriptionText) p{margin:0;}
@@ -329,7 +329,7 @@ body,
     border:0;
 }
 .freebirdFormviewerViewCenteredContent{margin: initial;}
-:global(.vtex-store-components-3-x-portalWrapper)>div{margin-top: 5px;} 
+:global(.vtex-store-components-3-x-portalWrapper)>div{margin-top: 5px;}
 
 /* INSTITUCIONAL */
 :global(.vtex-flex-layout-0-x-flexRowContent--row-banner-inst) > :global(.vtex-flex-layout-0-x-stretchChildrenWidth):first-child{width: 100% !important;}

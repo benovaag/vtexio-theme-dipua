@@ -1,9 +1,23 @@
 .title{display:none;}
-.var-wrap{
-        display:flex;
-        justify-content:center;
-        height:34px;
+
+.variants--summary{
+        margin: 0;
 }
+
+.variants--pdp{
+        margin-bottom: 30px;
+}
+
+.var-wrap--summary{
+        display: flex;
+        justify-content: center;
+}
+
+.var-wrap--pdp{
+        display: flex;
+        justify-content: flex-start;
+}
+
 .img{
         margin:0;
         width:30px;
