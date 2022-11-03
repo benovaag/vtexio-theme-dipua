@@ -59,7 +59,10 @@ export const FreeShippingStatus = ({
         }
     }, [value]);
 
-    const percent = (value * 100) / valueForFreeShippingSelected;
+    var percent = (value * 100) / valueForFreeShippingSelected;
+    if(percent > 100){
+        percent = 100
+    }
 
     const dinheiroFaltaParaFreteGratis = valueForFreeShippingSelected - value;
     const dinheiroFaltaParaFreteGratisFormatted = dinheiroFaltaParaFreteGratis/100;
