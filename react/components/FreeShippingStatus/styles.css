@@ -2,7 +2,7 @@
     height: 82px;
     width: calc(100% - 32px);
     position: relative;
-    margin: 0 16px;
+    margin: 16px 16px 0 16px;
 }
 
 .freeShippingStatus__gratters {
