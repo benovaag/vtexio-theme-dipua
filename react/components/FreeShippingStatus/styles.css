@@ -1,0 +1,75 @@
+.freeShippingStatus__container {
+    height: 82px;
+    width: 100%;
+    position: relative;
+}
+
+.freeShippingStatus__gratters {
+    position: absolute;
+    top: 4px;
+    display: block;
+    color: #000000;
+    font-size: 12px;
+    font-family: "alternative", sans-serif;
+    line-height: 14px;
+    margin:0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.freeShippingStatus__icon {
+    position: absolute;
+    top:0;
+    left: 0;
+    height: 24px;
+    width: 24px;
+    object-fit: cover;
+    transform: translateX(-100%);
+    transition: .3s;
+}
+
+.freeShippingStatus__progressBar {
+    width: 100%;
+    margin: 26px 0 6px;
+    height: 6px;
+    border-radius: 0;
+    transition: width 0.3s ease-in-out;
+}
+
+progress::-webkit-progress-bar,
+progress {
+    background-color: #E8E7E2;
+}
+
+progress[value]::-moz-progress-bar,
+progress[value]::-webkit-progress-value {
+    background-color: #466D5B !important;
+}
+
+progress::-webkit-progress-value{
+    transition: .3s;
+}
+
+progress::-webkit-progress-value,
+progress::-moz-progress-bar {
+    background-color: #466D5B !important;
+}
+
+.freeShippingStatus__text {
+    color: #848D9C;
+    font-size: 13px;
+    font-family: "alternative", sans-serif;
+    line-height: 16px;
+    max-width: 141px;
+    font-weight: 400;
+    margin: 0 auto;
+
+}
+
+.freeShippingStatus__text--value {
+    color: #000000;
+}
+
+.freeShippingStatus__text--freeShipping {
+    color: #466D5B;
+}

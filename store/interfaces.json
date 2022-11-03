@@ -1,0 +1,8 @@
+{
+    "free-shipping-status": {
+        "component": "FreeShippingStatus",
+        "content": {
+          "$ref": "app:dipua.tema#/definitions/FreeShippingStatus"
+        }
+    }
+}
