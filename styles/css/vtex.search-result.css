@@ -78,11 +78,14 @@
   height: 48px;
   padding: 15px 0;
 }
-.filterPopupTitle{font-size:0;}
+
 .orderByText{
-  font: 14px "alternative";
+  font: 12px "alternative";
   color: #979899;
   text-transform: uppercase;
+  display: block;
+  margin: 0 0 3px 0;
+  min-width: 130px;
 }
 .filters--layout{
   padding: 30px 10px 30px 0;
@@ -135,7 +138,7 @@
 }
 .filterBreadcrumbsItem{padding:0;}
 .searchNotFoundInfo{color: #000;}
-.searchNotFoundOops, 
+.searchNotFoundOops,
 .searchNotFoundWhatDoIDo,
 .searchNotFoundWhatToDoDotsContainer{color: #466d5b;}
 .filter__container--selectedFilters{display:none;}
@@ -179,7 +182,7 @@
   .filter__container--priceRange{padding: 20px;}
   .galleryItem--grid{padding:10px 5px;}
   .galleryItem--grid :global(.vtex-product-summary-2-x-container){max-width:100% !important;}
-  .gallery--grid{margin-top: 19px;} 
+  .gallery--grid{margin-top: 19px;}
   .totalProducts--layout{
     padding:16px 0 16px 10px;
     text-align:left;
@@ -199,9 +202,11 @@
     margin: 0;
   }
   .orderByText{
+    font-size: 14px;
     font-weight: 400;
     color: #466d5b;
     display: inline-block;
+    min-width: 100px
   }
   .filterApplyButtonWrapper :global(.vtex-button){
     background: #466d5b;
