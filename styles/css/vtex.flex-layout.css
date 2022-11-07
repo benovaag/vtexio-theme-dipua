@@ -323,7 +323,6 @@
   margin-top:20px;
 }
 .flexRowContent--share-product{align-items:center;}
-.flexRow--product-name-mobile{display:none;}
 .flexRow--related-products{margin-top:60px;}
 
 .flexRowContent--price-and-installments{
@@ -486,8 +485,6 @@
   }
 
   /* PRODUTO */
-  .flexRow--product-name-mobile{display:block;}
-  .flexRow--product-name{display:none;}
   .flexRow--selling-price{margin-top:44px}
   .flexRowContent--shipping-simulator{display:flex;}
   .flexRowContent--shipping-simulator .stretchChildrenWidth:first-child{width:25% !important;}

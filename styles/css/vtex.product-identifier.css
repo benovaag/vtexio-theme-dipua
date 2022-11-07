@@ -6,7 +6,7 @@
 .product-identifier__separator{display:none;}
 .product-identifier__value{
   color: #848d9c;
-  font-size:18px;
+  font-size: 16px;
 }
 .product-identifier__value::before{
   content: 'Código :';

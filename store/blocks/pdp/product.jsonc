@@ -1,13 +1,47 @@
 {
   "store.product": {
     "children": [
+      "responsive-layout.desktop#pdp",
+      "responsive-layout.mobile#pdp"
+    ]
+  },
+
+  "responsive-layout.desktop#pdp": {
+    "children":[
       "flex-layout.row#breadcrumb-product",
-      "condition-layout.product#availability",
+      "condition-layout.product#pdp-renderInfoDesktop",
       "flex-layout.row#related",
       "flex-layout.row#footer-1-desktop",
       "flex-layout.row#footer-2-desktop-pdp-inst"
     ]
   },
+
+  "condition-layout.product#pdp-renderInfoDesktop": {
+    "props": {
+      "conditions": [{"subject": "isProductAvailable"}],
+      "Then": "flex-layout.row#product-main#desktop",
+      "Else": "flex-layout.row#product-availability"
+    }
+  },
+
+  "responsive-layout.mobile#pdp": {
+    "children":[
+      "flex-layout.row#breadcrumb-product",
+      "condition-layout.product#pdp-renderInfoMobile",
+      "flex-layout.row#related",
+      "flex-layout.row#footer-1-desktop",
+      "flex-layout.row#footer-2-desktop-pdp-inst"
+    ]
+  },
+
+  "condition-layout.product#pdp-renderInfoMobile": {
+    "props": {
+      "conditions": [{"subject": "isProductAvailable"}],
+      "Then": "flex-layout.row#product-main#mobile",
+      "Else": "flex-layout.row#product-availability"
+    }
+  },
+
   "flex-layout.row#breadcrumb-product": {
     "children": ["flex-layout.col#breadcrumb-product"],
     "props": {
@@ -33,22 +67,11 @@
     },
     "title": "Breadcrumb"
   },
-  "condition-layout.product#availability": {
-    "props": {
-      "conditions": [
-        {
-          "subject": "isProductAvailable"
-        }
-      ],
-      "Then": "flex-layout.row#product-main",
-      "Else": "flex-layout.row#product-availability"
-    },
-    "title": "Produto - Superior"
-  },
-  "flex-layout.row#product-main": {
+
+  "flex-layout.row#product-main#desktop": {
     "children": [
-      "flex-layout.col#stack",
-      "flex-layout.col#right-col"
+      "flex-layout.col#stack-desktop",
+      "flex-layout.col#right-col-desktop"
     ],
     "props": {
       "width": "50%",
@@ -57,16 +80,51 @@
     },
     "title": "Produto - Com Estoque"
   },
-  "flex-layout.col#stack": {
+
+  "flex-layout.row#product-main#mobile": {
     "children": [
-      "stack-layout"
+      "flex-layout.col#stack-mobile",
+      "flex-layout.col#right-col-mobile"
+    ],
+    "props": {
+      "width": "50%",
+      "colGap": 6,
+      "blockClass":"pg-produto"
+    },
+    "title": "Produto - Com Estoque"
+  },
+
+  "flex-layout.col#stack-desktop": {
+    "children": [
+      "stack-layout#pdp-desktop"
     ],
     "props": {
       "width": "57%"
     },
     "title": "Produto - Imagens"
   },
-  "stack-layout": {
+
+  "stack-layout#pdp-desktop": {
+    "props": {
+      "blockClass": "product"
+    },
+    "children": [
+      "flex-layout.row#product-image"
+    ],
+    "title": "Produto - Imagens"
+  },
+
+  "flex-layout.col#stack-mobile": {
+    "children": [
+      "stack-layout#pdp-mobile"
+    ],
+    "props": {
+      "width": "57%"
+    },
+    "title": "Produto - Imagens"
+  },
+
+  "stack-layout#pdp-mobile": {
     "props": {
       "blockClass": "product"
     },
@@ -76,6 +134,7 @@
     ],
     "title": "Produto - Imagens"
   },
+
   "flex-layout.row#product-image": {
     "children": [
       "product-images"
@@ -98,12 +157,33 @@
     },
     "title": "Produto - Imagens"
   },
-  "flex-layout.col#right-col": {
+
+
+  "flex-layout.col#right-col-desktop": {
     "props": {
       "preventVerticalStretch": true
     },
     "children": [
       "flex-layout.row#product-name",
+      "product-identifier.product",
+      "flex-layout.col#selling-price",
+      "flex-layout.row#similars",
+      "sku-selector",
+      "flex-layout.row#buy-button",
+      "availability-subscriber",
+      "flex-layout.row#description",
+      "product-specification-group#table",
+      "flex-layout.row#shipping",
+      "flex-layout.row#share-product"
+    ],
+    "title": "Produto - Informações"
+  },
+
+  "flex-layout.col#right-col-mobile": {
+    "props": {
+      "preventVerticalStretch": true
+    },
+    "children": [
       "product-identifier.product",
       "flex-layout.col#selling-price",
       "flex-layout.row#similars",
@@ -229,11 +309,13 @@
       "blockClass":"pg-produto"
     },
     "children": [
-      "flex-layout.col#stack",
+      "flex-layout.col#stack-desktop",
       "flex-layout.col#right-col-availability"
     ],
     "title": "Produto - Sem Estoque"
   },
+
+
   "flex-layout.col#right-col-availability": {
     "props": {
       "preventVerticalStretch": true,
