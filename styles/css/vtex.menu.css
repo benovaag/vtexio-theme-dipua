@@ -27,7 +27,7 @@
 .menuContainer--menu-principal .submenu{
     width: 100%;
     max-width: 1280px;
-    padding:40px max(1rem,min(.3785rem + 2.6519vw,2.5rem));
+    padding: 20px max(1rem,min(.3785rem + 2.6519vw,2.5rem)) 30px;
     margin:0 auto;
     justify-content:flex-start;
 }
