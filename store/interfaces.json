@@ -1,8 +1,15 @@
 {
-    "free-shipping-status": {
-        "component": "FreeShippingStatus",
-        "content": {
-          "$ref": "app:dipua.tema#/definitions/FreeShippingStatus"
-        }
+  "free-shipping-status": {
+    "component": "FreeShippingStatus",
+    "content": {
+      "$ref": "app:dipua.tema#/definitions/FreeShippingStatus"
     }
+  },
+
+  "notify-cookies": {
+    "component": "NotifyCookies",
+    "content": {
+      "$ref": "app:dipua.tema#/definitions/NotifyCookies"
+    }
+  }
 }
