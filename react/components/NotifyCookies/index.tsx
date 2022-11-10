@@ -4,28 +4,21 @@ import styles from "./styles.css";
 import { canUseDOM } from "vtex.render-runtime";
 
 interface NotifyCookiesProps {
-    diasParaCookieSumir: number;
-    cookieName: string;
-    text: string;
-    labelText: string;
+
 }
 
 const NotifyCookies = ({
-    diasParaCookieSumir = 365,
-    cookieName = "cookiesWasAccepted",
-    text = "Dipua usa cookies para personalizar a comunicação e melhorar a sua experiência no site. Ao continuar navegando, você concorda com a nossa Política de privacidade.",
-    labelText = "Continuar e Fechar",
 }: NotifyCookiesProps) => {
     if (!canUseDOM) return null;
 
     const [cookiesIsOpened, setCookiesIsOpened] = useState(false);
     const handleAcceptCookies = () => {
-        Cookies.set(cookieName, "true", { expires: diasParaCookieSumir });
+        Cookies.set("cookiesWasAccepted", "true", { expires: 365 });
         setCookiesIsOpened(false);
     };
 
     useEffect(() => {
-        const cookiesWasAccepted = Cookies.get(cookieName);
+        const cookiesWasAccepted = Cookies.get("cookiesWasAccepted");
 
         if (!cookiesWasAccepted) {
             setCookiesIsOpened(true);
@@ -42,12 +35,12 @@ const NotifyCookies = ({
                 }`}
             >
                 <div className={styles["notify-cookies-wrapper"]}>
-                    <p className={styles["notify-cookies-text"]}>{text}</p>
+                    <p className={styles["notify-cookies-text"]}>Dipua usa cookies para personalizar a comunicação e melhorar a sua experiência no site. Ao continuar navegando, você concorda com a nossa Política de privacidade.</p>
                     <button
                         onClick={handleAcceptCookies}
                         className={styles["notify-cookies-button"]}
                     >
-                        {labelText}
+                        Continuar e Fechar
                     </button>
                 </div>
             </div>

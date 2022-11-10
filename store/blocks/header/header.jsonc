@@ -70,8 +70,8 @@
       "blockClass": "sticky-header"
     },
     "children": [
-      "flex-layout.row#header-desktop",
-      "notify-cookies"
+      "flex-layout.row#header-desktop"
+      // "notify-cookies"
     ],
     "title": "Topo"
   },
@@ -187,8 +187,8 @@
     "children": [
       "flex-layout.row#whatsapp",
       "flex-layout.row#notification",
-      "sticky-layout#header-mobile",
-      "notify-cookies"
+      "sticky-layout#header-mobile"
+      // "notify-cookies"
     ],
     "title": "Topo Mobile"
   },
