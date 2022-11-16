@@ -100,10 +100,10 @@
   },
   "image#banner-dpto":{
     "props":{
-      "src":"assets/banner-dpto.png",
-      "alt": "Banner Departamento",
+      "src":"",
+      "alt": "",
       "blockClass":"img-dpto",
-      "title": "Banner Departamento"
+      "title": ""
     },
     "title":"Banner Departamento"
   },
@@ -277,7 +277,7 @@
     "flex-layout.col#filter-mobile": {
       "children": [
         "order-by.v2",
-        "filter-navigator.v3#mobile" 
+        "filter-navigator.v3#mobile"
       ],
       "props": {
         "blockClass": "filterCol"
@@ -306,7 +306,7 @@
 
   "search-not-found-layout": {
     "children": [
-      
+
       "flex-layout.row#notfound"
     ],
     "title":"Listagem - Não encontrado"
