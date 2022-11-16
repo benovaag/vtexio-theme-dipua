@@ -4,11 +4,11 @@
                 "search-result-layout.customQuery#colecao"
             ]
         },
-    
+
         "search-result-layout.customQuery#colecao": {
             "props": {
                 "querySchema": {
-                    "orderByField": "OrderByReleaseDateDESC",
+                    "orderByField": "OrderByScoreDESC",
                     "hideUnavailableItems": false,
                     "maxItemsPerPage": 24,
                     "skusFilter": "ALL_AVAILABLE",
