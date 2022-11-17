@@ -214,11 +214,16 @@
   },
   "flex-layout.row#similars":{
     "children": [
-      "similar-products-variants#pdp"
+      "similar-products-variants#pdp",
+      "product-measurement-chart"
       // "shelf.relatedProducts#similars"
     ],
     "props":{
-      "blockClass":"product-similars-mobile"
+      "blockClass":"product-similars-mobile",
+      "colSizing": "auto",
+      "preserveLayoutOnMobile": true,
+      "preventVerticalStretch": true,
+      "preventHorizontalStretch": false
     },
     "title": "Produto - Similares  - Mobile"
   },

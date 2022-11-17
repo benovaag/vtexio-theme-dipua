@@ -63,6 +63,10 @@ export class sellerCodeForm {
         } else {
             this.handleRemoveCoupon();
         }
+
+        setTimeout(() => {
+            vtexjs.checkout.getOrderForm()
+        }, 1000)
     }
 
     inputIsValid() {

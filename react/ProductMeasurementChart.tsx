@@ -1,0 +1,2 @@
+import ProductMeasurementChart from './components/ProductMeasurementChart/index'
+export default ProductMeasurementChart

@@ -5,5 +5,9 @@
 
   "notify-cookies": {
     "component": "NotifyCookies"
+  },
+
+  "product-measurement-chart": {
+    "component": "ProductMeasurementChart"
   }
 }

@@ -57,18 +57,8 @@
   },
   "free-shipping-status#minicart": {
     "props": {
-        "showFreeShippingComponent": true,
-        "valueForFreeShipping": "25000",
-        "regionsAndValueToFreeShipping": [
-            {
-                "region": "MG",
-                "valueForFreeShipping": "25000"
-            },
-            {
-                "region": "SP",
-                "valueForFreeShipping": "25000"
-            }
-        ]
+      "showFreeShippingComponent": true,
+      "valueForFreeShipping": "25000"
     }
   },
   "drawer-close-button#continue-buy":{

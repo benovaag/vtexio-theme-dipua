@@ -5,15 +5,15 @@ import { canUseDOM } from "vtex.render-runtime";
 import { FormattedCurrency } from 'vtex.format-currency'
 
 interface FreeShippingStatusProps {
-
+    valueForFreeShipping: number;
+    showFreeShippingComponent: boolean,
 }
 
 export const FreeShippingStatus = ({
-
+    valueForFreeShipping,
+    showFreeShippingComponent
 }:FreeShippingStatusProps)=> {
     if (!canUseDOM) return null;
-
-    // const [distanceLeftTruck, setDistanceLeftTruck] = useState<number>(0);
     const [isFreeShipping, setIsFreeShipping] = useState<boolean>(false);
     const { useOrderForm } = OrderForm;
     const { orderForm }: OrderFormContext = useOrderForm();
@@ -29,7 +29,7 @@ export const FreeShippingStatus = ({
     }
 
     const { value } = orderForm;
-    const valueForFreeShippingSelected = 25000;
+    const valueForFreeShippingSelected = valueForFreeShipping;
 
     useEffect(() => {
         if (value >= valueForFreeShippingSelected) {
@@ -49,46 +49,63 @@ export const FreeShippingStatus = ({
 
     return (
         <>
-           <div
-                className={styles.freeShippingStatus__container}
-            >
-                {isFreeShipping && (
-                    <strong className={styles.freeShippingStatus__gratters}>
-                        Parabéns!!!
-                    </strong>
-                )}
-                <img
-                    src="/arquivos/icon__truck-minicart.svg"
-                    alt="icone de um caminhão"
-                    className={styles.freeShippingStatus__icon}
-                    style={{
-                        left: `${percent}%`
-                    }}
-                />
-                <progress
-                    className={styles.freeShippingStatus__progressBar}
-                    max={valueForFreeShippingSelected}
-                    value={value}
-                />
-                {(isFreeShipping) ? (
-                    <p
-                        className={styles.freeShippingStatus__text}
-                        style={{maxWidth: "121px"}}
+            {
+                showFreeShippingComponent &&
+                <div
+                        className={styles.freeShippingStatus__container}
                     >
-                        Você ganhou <span className={styles["freeShippingStatus__text--freeShipping"]}> frete grátis </span>
-                    </p>
-                ) : (
-                    <p className={styles.freeShippingStatus__text}>
-                        Com mais <span className={styles["freeShippingStatus__text--value"]}>
-                        <FormattedCurrency value={dinheiroFaltaParaFreteGratisFormatted} />
-                        </span> você ganha <span className={styles["freeShippingStatus__text--freeShipping"]}> frete grátis </span>
-                    </p>
-                )}
-            </div>
+                    {isFreeShipping && (
+                        <strong className={styles.freeShippingStatus__gratters}>
+                            Parabéns!!!
+                        </strong>
+                    )}
+                    <img
+                        src="/arquivos/icon__truck-minicart.svg"
+                        alt="icone de um caminhão"
+                        className={styles.freeShippingStatus__icon}
+                        style={{
+                            left: `${percent}%`
+                        }}
+                    />
+                    <progress
+                        className={styles.freeShippingStatus__progressBar}
+                        max={valueForFreeShippingSelected}
+                        value={value}
+                    />
+                    {(isFreeShipping) ? (
+                        <p
+                            className={styles.freeShippingStatus__text}
+                            style={{maxWidth: "121px"}}
+                        >
+                            Você ganhou <span className={styles["freeShippingStatus__text--freeShipping"]}> frete grátis </span>
+                        </p>
+                    ) : (
+                        <p className={styles.freeShippingStatus__text}>
+                            Com mais <span className={styles["freeShippingStatus__text--value"]}>
+                            <FormattedCurrency value={dinheiroFaltaParaFreteGratisFormatted} />
+                            </span> você ganha <span className={styles["freeShippingStatus__text--freeShipping"]}> frete grátis </span>
+                        </p>
+                    )}
+                </div>
+            }
         </>
     );
 };
 
 FreeShippingStatus.schema = {
     title: "Progresso de Frete Grátis",
+    description: 'Progresso de Frete Grátis',
+    type: 'object',
+    properties: {
+        showFreeShippingComponent: {
+          title: "Mostrar componente de frete grátis",
+          type: "boolean",
+          default: true
+        },
+        valueForFreeShipping: {
+          title: "Valor minimo para o cliente receber frete Gratis",
+          type: "number",
+          default: 25000
+        }
+    }
 };
