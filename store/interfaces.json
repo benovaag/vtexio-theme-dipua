@@ -9,5 +9,15 @@
 
   "product-measurement-chart": {
     "component": "ProductMeasurementChart"
+  },
+
+  "similar-colors-shelf": {
+    "component": "SimilarProductsVariantsCustom",
+    "composition": "children"
+  },
+
+  "similar-colors-choose": {
+    "component": "SimilarColorsChoose",
+    "composition": "children"
   }
 }

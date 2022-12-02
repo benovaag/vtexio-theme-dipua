@@ -243,7 +243,30 @@
 .flexRowContent--buy-button .stretchChildrenWidth{align-items: center;}
 .flexCol--product-name-and-price{
   text-align:center;
-} /* <= Alinhamento das informações -- shelf de produtos */
+}
+
+/* <= Alinhamento das informações -- shelf de produtos */
+.flexRowContent--similar-colors-choose-summary{
+  margin: 7.5px 0 10px 7.5px;
+}
+
+.flexRow--product-similars-mobile{
+  padding: 10px 0 22px;
+}
+
+@media screen and (min-width: 1026px){
+  .flexRow--product-similars-mobile{
+    padding: 0 0 22px;
+  }
+}
+
+
+.flexRowContent--similar-colors-choose-pdp{
+  margin: 0;
+}
+
+
+
 /* .flexRowContent--imagens-produtos .stretchChildrenWidth:last-child{display: none;} */
 .flexColChild--product-name-and-price{
   height: auto !important;

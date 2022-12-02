@@ -1,0 +1,35 @@
+.similarColorsChoose__selectorContainer {
+    margin: 0 8px;
+}
+
+.similarColorsChoose__selector {
+    display: block;
+    height: 22px;
+    width: 22px;
+    border-radius: 50%;
+    outline-offset: 3px;
+    z-index: 5;
+    transition: .3s;
+}
+
+.similarColorsChoose__selector--ouro {
+    background-color: #C8AB6E;
+}
+
+.similarColorsChoose__selector--ouro.similarColorsChoose__selectorActive {
+    box-shadow: 0 0 0px 3px white, 0 0 0 4px #c8ab6e;
+}
+
+.similarColorsChoose__selector--prata {
+    background-color: #C8C8C8;
+}
+
+.similarColorsChoose__selector--prata.similarColorsChoose__selectorActive {
+    box-shadow: 0 0 0px 3px white, 0 0 0 4px #C8C8C8;
+}
+
+.similarColorsChoose__selectorActive {
+    outline-style: solid;
+    border-radius: 50%;
+    outline: none !important;
+}

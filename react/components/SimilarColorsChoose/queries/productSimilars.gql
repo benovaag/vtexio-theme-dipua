@@ -1,0 +1,19 @@
+query PRODUCT_SIMILARS($productId: ID!) {
+    product(identifier: { field: id, value: $productId })
+        @context(provider: "vtex.search-graphql") {
+        recommendations {
+            similars {
+                link
+                linkText
+                productId
+                titleTag
+                items {
+                    images {
+                        imageUrl
+                        imageLabel
+                    }
+                }
+            }
+        }
+    }
+}

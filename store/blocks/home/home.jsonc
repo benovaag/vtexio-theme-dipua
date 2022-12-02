@@ -147,7 +147,7 @@
     "blocks": ["product-summary.shelf"],
     "children": ["slider-layout#shelf"],
     "props": {
-      "orderBy": "OrderByTopSaleDESC"
+      "orderBy": "OrderByScoreDESC"
     },
     "title": "Prateleira"
   },

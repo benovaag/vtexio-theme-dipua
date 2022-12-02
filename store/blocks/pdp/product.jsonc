@@ -214,7 +214,8 @@
   },
   "flex-layout.row#similars":{
     "children": [
-      "similar-products-variants#pdp",
+      // "similar-products-variants#pdp",
+      "flex-layout.row#similar-colors-choose-pdp",
       "product-measurement-chart"
       // "shelf.relatedProducts#similars"
     ],
@@ -245,6 +246,24 @@
     "props": {
         "imageLabel": "similar",
         "blockClass": "pdp"
+    }
+  },
+
+  "flex-layout.row#similar-colors-choose-pdp": {
+    "children": [
+      "similar-colors-choose#pdp"
+    ],
+    "props":{
+      "blockClass": "similar-colors-choose-pdp",
+      "colSizing": "equal",
+      "preventVerticalStretch": true,
+      "preventHorizontalStretch": false
+    }
+  },
+
+  "similar-colors-choose#pdp": {
+    "props": {
+        "imageLabel": "similar"
     }
   },
   "sku-selector": {
