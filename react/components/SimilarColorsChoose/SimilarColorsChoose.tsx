@@ -8,7 +8,7 @@
 
 import PRODUCT_SIMILARS from "./queries/productSimilars.gql";
 
-import React, { useEffect, useRef, useState } from "react";
+import React, { useState } from "react";
 import { useQuery } from "react-apollo";
 import { useProduct } from "vtex.product-context";
 import { SimilarProducts } from "./utils/SimilarProducts";
@@ -30,26 +30,7 @@ export const SimilarColorsChoose: any = ({
     ballSize,
 }: SimilarColorsChooseProps) => {
     const [showPrimaryProduct, setShowPrimaryProduct] = useState<boolean>(true);
-    const $div = useRef<HTMLDivElement>(null);
     const productContextValue = useProduct();
-
-    useEffect(() => {
-        if (!$div) return;
-
-        const $artigle = $div.current?.parentElement as HTMLElement;
-        const $a = $artigle?.parentElement as HTMLAnchorElement;
-        const $img = $a?.querySelector("img") as HTMLImageElement;
-        const $title = $a?.querySelector("h1 span") as HTMLImageElement;
-        if ($artigle?.tagName !== "ARTICLE") return;
-        if ($a?.tagName !== "A") return;
-        if ($img?.tagName !== "IMG") return;
-        if ($title?.tagName !== "SPAN") return;
-
-        $img.src =
-            (showPrimaryProduct
-                ? primaryProduct.imageUrl
-                : similarProduct.imageUrl) ?? "";
-    }, [showPrimaryProduct]);
 
     if (!productContextValue || !canUseDOM) return <></>;
 
@@ -68,7 +49,6 @@ export const SimilarColorsChoose: any = ({
     return (
         <div
             className={styles.similarColorsChoose__container}
-            ref={$div}
             style={{
                 justifyContent: justifyContent,
                 margin: margin,
@@ -81,8 +61,9 @@ export const SimilarColorsChoose: any = ({
                 imageUrl={primaryProduct.imageUrl}
                 highlight={showPrimaryProduct}
                 setHighlight={setShowPrimaryProduct}
-                primary
                 ballSize={ballSize}
+
+                primary
             />
             <Selector
                 link={similarProduct.link}

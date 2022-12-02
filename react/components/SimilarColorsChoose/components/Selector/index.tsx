@@ -2,6 +2,8 @@ import { SelectorProps } from "../../types/SelectorProps";
 import React from "react";
 import styles from "./styles.css";
 
+import { Link } from 'vtex.render-runtime'
+
 export function Selector ({
     link,
     color,
@@ -37,21 +39,23 @@ export function Selector ({
 
             className={`${styles.similarColorsChoose__selectorContainer}`}
         >
-            <a
-                href={link}
+            <Link
+                page="store.product"
+                to={link}
                 className={`
                     ${styles.similarColorsChoose__selector}
                     ${styles[`similarColorsChoose__selector--${color}`]}
-                    ${highlight && styles.similarColorsChoose__selectorActive}
+                    ${highlight ? styles.similarColorsChoose__selectorActive : ``}
                 `}
+                onClick={handleClick}
                 onMouseLeave={handleMouseLeave}
                 onMouseEnter={handleMouseEnter}
-                onClick={handleClick}
                 style={{
                     height: ballSize,
                     width: ballSize
                 }}
-            />
+            >
+            </Link>
         </div>
     );
 }
