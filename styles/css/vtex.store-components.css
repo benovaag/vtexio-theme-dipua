@@ -84,7 +84,7 @@
     width:100%;
     height: 100%;
   }
-    
+
     /* BANNER HOME 1 */
     .infoCardContainer--banner-1{
       margin-right: 32px;
@@ -146,7 +146,7 @@
       color: #466d5b;
       background: #FFF;
     } /* <= Estilo do hover do botão -- banner home 3*/
-    
+
   .infoCardHeadline-strong{
     display:block;
     font-weight:600;
@@ -571,6 +571,13 @@
   .imageElement--image-banner-inst{
     object-fit: cover;
     height: 160px;
+  }
+
+
+  /* Whatsapp Flutuante */
+  .imageElement--image-whatsapp{
+    display: block;
+    width: 30px;
   }
 
 }

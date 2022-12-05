@@ -16,12 +16,29 @@
   background-color: #fff;
   opacity: .8;
 }
+
+@media screen and (max-width: 1025px){
+  .flexRow--whatsapp{
+    width: 45px;
+    height: 45px;
+    padding: 0;
+  }
+}
+
 .flexRowContent--whatsapp,
 .flexRowContent--product-whatsapp{
   display:flex;
   align-items: center;
   gap:8px;
 }
+
+@media screen and (max-width: 1025px){
+  .flexRowContent--whatsapp,
+  .flexRowContent--product-whatsapp{
+    justify-content: center;
+  }
+}
+
 .flexRowContent--product-whatsapp{
   display: flex;
   align-items: center;
@@ -41,6 +58,14 @@
   justify-content: flex-end;
   margin:0 0 10px;
 }
+
+@media screen and (max-width: 1025px){
+  .flexRowContent--whatsapp .stretchChildrenWidth:first-child{
+    display: none;
+  }
+}
+
+
 .flexRow--whatsapp :global(.vtex-store-components-3-x-container){padding:0;}
 .flexRow--notification{background:#466d5b;} /* <= BACKGROUND da Notificação do topo*/
 :global(.vtex-sticky-layout-0-x-wrapper--sticky-header--stuck) .flexRow--main-header{
