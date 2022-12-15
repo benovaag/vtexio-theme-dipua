@@ -7,7 +7,7 @@
     -moz-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 :focus{outline:0;}
-body,html{touch-action:pan-y;}
+/* body,html{touch-action:pan-y;} */
 html{scroll-behavior:smooth;}
 :global(.vtex-spinner_circle){color:#466d5b;}
 :global(input):focus-visible{outline:0;}
