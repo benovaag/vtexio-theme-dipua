@@ -1,0 +1,27 @@
+{
+    "store.custom#compre-o-mix": {
+        "blocks": [
+            "product-mix"
+        ]
+    },
+
+    "product-mix": {
+        "props": {
+            "schemaProducts": [
+                {
+                    "__editorItemTitle": "Produto 1",
+                    "productId": "494",
+                    "coordX": "0",
+                    "coordY": "0"
+                },
+                {
+                    "__editorItemTitle": "Produto 2",
+                    "productId": "520",
+                    "coordX": "0",
+                    "coordY": "0"
+                }
+            ],
+            "schemaImage": ""
+        }
+    }
+}

@@ -3,10 +3,6 @@
     "component": "FreeShippingStatus"
   },
 
-  "notify-cookies": {
-    "component": "NotifyCookies"
-  },
-
   "product-measurement-chart": {
     "component": "ProductMeasurementChart"
   },
@@ -19,5 +15,9 @@
   "similar-colors-choose": {
     "component": "SimilarColorsChoose",
     "composition": "children"
+  },
+
+  "product-mix": {
+    "component": "ProductMix"
   }
 }

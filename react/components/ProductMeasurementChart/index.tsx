@@ -10,7 +10,7 @@ function ProductMeasurementChart({}){
   const categoryTree = productContext?.product?.categoryTree
   const showTable = categoryTree?.some((item:any) => (item?.id == 3) || (item?.id == 8))
 
-  var dptoName = ""
+  let dptoName = ""
 
   useEffect(() => {
     if(showTable){
@@ -21,7 +21,7 @@ function ProductMeasurementChart({}){
   return <>{loading ? (
     <div className={styles.productMeasurementChart}>
       <div className={styles.productMeasurementChartModal}>
-        <ModalTrigger trigger={'click'} customPixelEventId={'tabelaDeMedidas'} customPixelEventName={'tabelaDeMedidas'}>
+        <ModalTrigger trigger='click'>
             <div className={styles.productMeasurementChartTitle}>Tabela de Medidas</div>
             <Modal disableEscapeKeyDown backdrop="clickable">
                 <div className={styles.productMeasurementChartContent}>

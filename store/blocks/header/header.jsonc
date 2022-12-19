@@ -9,11 +9,39 @@
   // HEADER DESKTOP
   "header-layout.desktop": {
     "children": [
+      "flex-layout.row#header-top",
+      "flex-layout.row#header-division"
+    ],
+    "title":"Topo - Desktop"
+  },
+
+  "flex-layout.row#header-top":{
+    "children": [
+      "flex-layout.col#header-top"
+    ],
+    "props": {
+      "blockClass": "header-top",
+      "preventVerticalStretch": true,
+      "colSizing": "equal",
+      "fullWidth": true
+    },
+    "title":"Header Topo - Desktop"
+  },
+
+  "flex-layout.col#header-top":{
+    "children": [
       "flex-layout.row#whatsapp",
       "flex-layout.row#notification",
       "sticky-layout#header-desktop"
     ],
-    "title":"Topo - Desktop"
+    "props": {
+      "blockClass": "header-top",
+      "preventVerticalStretch": true,
+      "preventHorizontalStretch": true,
+      "colSizing": "auto",
+      "fullWidth": true
+    },
+    "title":"Header Topo - Desktop"
   },
 
   "flex-layout.row#whatsapp":{
@@ -95,6 +123,13 @@
     ],
     "title": "Topo"
   },
+
+  "flex-layout.row#header-division":{
+    "props": {
+        "blockClass": "header-division"
+    }
+  },
+
   "flex-layout.col#category-menu": {
     "props": {
       "verticalAlign": "middle"
@@ -185,13 +220,42 @@
   // HEADER MOBILE
   "header-layout.mobile": {
     "children": [
+      "flex-layout.row#header-top-mobile",
+      "flex-layout.row#header-division"
+    ],
+    "title": "Topo Mobile"
+  },
+
+  "flex-layout.row#header-top-mobile":{
+    "children": [
+      "flex-layout.col#header-top-mobile"
+    ],
+    "props": {
+      "blockClass": "header-top-mobile",
+      "preventVerticalStretch": true,
+      "colSizing": "equal",
+      "fullWidth": true
+    },
+    "title":"Header Topo - Mobile"
+  },
+
+  "flex-layout.col#header-top-mobile":{
+    "children": [
       "flex-layout.row#whatsapp",
       "flex-layout.row#notification",
       "sticky-layout#header-mobile"
       // "notify-cookies"
     ],
-    "title": "Topo Mobile"
+    "props": {
+      "blockClass": "header-top-mobile",
+      "preventVerticalStretch": true,
+      "preventHorizontalStretch": true,
+      "colSizing": "auto",
+      "fullWidth": true
+    },
+    "title":"Header Topo - Desktop"
   },
+
 
   "sticky-layout#header-mobile": {
     "props": {

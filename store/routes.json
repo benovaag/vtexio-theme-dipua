@@ -31,5 +31,10 @@
   },
   "store.custom#collabs": {
     "path": "/collabs"
+  },
+
+
+  "store.custom#compre-o-mix": {
+    "path": "/compre-o-mix"
   }
 }

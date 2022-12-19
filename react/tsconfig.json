@@ -7,7 +7,7 @@
     ],
     "module": "esnext",
     "moduleResolution": "node",
-    "target": "es2019"
+    "target": "es2017"
   },
   "include": [
     "./typings/*.d.ts",

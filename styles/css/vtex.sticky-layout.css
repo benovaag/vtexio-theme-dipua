@@ -6,14 +6,35 @@
     background: #FFF;
     padding: 0 max(1rem,min(0.3785rem + 2.6519vw,2.5rem));
 }
+
 .container--sticky-header{
-    background: hsla(0,0%,100%,.93)!important;
+    background: hsla(0,0%,100%,1)!important;
     box-shadow: 0 4px 8px rgb(70 109 91 / 20%);
+    position: relative !important;
 }
+
+.wrapper--sticky-header,
+.wrapper--main-header-mobile{
+    transition: .3s;
+}
+
+.wrapper--sticky-header--stuck{
+    transform: translateY(-40px);
+}
+
+
 
 /* MOBILE */
 @media screen and (max-width: 1025px) {
     .wrapper--main-header-mobile--stuck .container--main-header-mobile{
-        background: hsla(0,0%,100%,.93);
+        background: hsla(0,0%,100%,1);
+    }
+
+    .container--main-header-mobile{
+        position: relative !important;
+    }
+
+    .wrapper--main-header-mobile--stuck{
+        transform: translateY(-40px);
     }
 }
