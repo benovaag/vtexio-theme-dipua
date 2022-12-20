@@ -3,7 +3,7 @@
     align-items: flex-start;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin: 60px 0;
+    margin: 30px 0;
 }
 
 @media screen and (min-width: 1026px){
@@ -70,15 +70,17 @@
     background-position: center;
     background-size: contain;
     display: block;
-    width: 6px;
-    height: 6px;
+    width: 7px;
+    height: 7px;
     margin-right: 6px;
+    position: relative;
+    top: 1px;
 }
 
 @media screen and (min-width: 1026px){
     .imageMapperHeaderGoBack:before{
-        width: 8px;
-        height: 8px;
+        width: 9px;
+        height: 9px;
     }
 }
 
@@ -160,8 +162,8 @@
 }
 
 .imageMapperContent .imageMapperProduct.imageMapperProductHover{
-    border-color: #abc380 !important;
-    background: #abc3802e !important;
+    /* border-color: #abc380 !important;
+    background: #abc3802e !important; */
 }
 
 .imageMapperAreaItemActive{
@@ -173,16 +175,26 @@
     position: absolute;
     overflow: hidden;
 
-    display: none;
+    /* display: none; */
 }
 
 .imageMapperAreaItemOpen{
     overflow: visible;
 }
 
+.imageMapperAreaItemOpen::before{
+    content: "";
+    background: transparent;
+    height: 20px;
+    width: 150px;
+    display: block;
+    position: absolute;
+    bottom: -15px;
+    z-index: 1000;
+}
+
 .imageMapperAreaItemContainer .imageMapperProduct{
     position: absolute;
-    width: 100%;
     top: calc(100% + 10px);
     left: 0;
     right: 0;
@@ -193,19 +205,13 @@
     align-items: flex-start;
     justify-content: space-between;
     margin: 0 !important;
-    padding: 10px;
+    padding: 13px;
+    width: max-content;
 }
 
 @media screen and (min-width: 1026px){
     .imageMapperAreaItemContainer .imageMapperProduct{
-        width: 100%;
         left: 50%;
-    }
-}
-
-@media screen and (max-width: 360px){
-    .imageMapperAreaItemContainer .imageMapperProduct{
-        width: 200px;
     }
 }
 
@@ -214,7 +220,6 @@
     visibility: visible;
     box-shadow: 0px 0px 3px 6px #00000029;
 }
-
 
 .imageMapperAreaItem .imageMapperProduct:before{
     content: "";
@@ -294,37 +299,47 @@
 }
 
 .imageMapperAreaItemOpen .imageMapperProductImage{
-    width: 105px;
-    height: 105px;
-    min-width: 105px;
-    min-height: 105px;
+    width: 150px;
+    min-width: 150px;
+
+    height: 225px;
+    min-height: 225px;
+
     margin-left: 0;
 }
 
 @media screen and (min-width: 1026px){
     .imageMapperAreaItemOpen .imageMapperProductImage{
-        width: 125px;
-        height: 125px;
-        min-width: 125px;
-        min-height: 125px;
-        margin-left: 0;
+        width: 150px;
+        min-width: 150px;
+
+        height: 225px;
+        min-height: 225px;
     }
+}
+
+.imageMapperAreaItemOpen .imageMapperProductImg{
+    display: block;
+}
+
+.imageMapperAreaItemContainer .imageMapperProductContent{
+    width: 150px;
 }
 
 .imageMapperAreaItemContainer .imageMapperProductName{
     font-weight: 500;
     margin-bottom: 12px;
-    font-size: 9.5px;
-    line-height: 13px;
-    height: 28px;
-    width: calc(100% - 30px);
+    font-size: 12px;
+    line-height: 16px;
+    height: 32px;
+    width: 100%;
 }
 
 @media screen and (min-width: 1026px){
     .imageMapperAreaItemContainer .imageMapperProductName{
         font-size: 12px;
         line-height: 18px;
-        height: 35px;
+        height: 36px;
     }
 }
 
@@ -333,14 +348,14 @@
 }
 
 .imageMapperAreaItemContainer .imageMapperProductOldPrice {
-    font-size: 7px;
-    line-height: 7px;
+    font-size: 9px;
+    line-height: 9px;
 }
 
 @media screen and (min-width: 1026px){
     .imageMapperAreaItemContainer .imageMapperProductOldPrice {
-        font-size: 9px;
-        line-height: 9px;
+        font-size: 10px;
+        line-height: 10px;
     }
 }
 
@@ -351,13 +366,13 @@
 
 @media screen and (min-width: 1026px){
     .imageMapperAreaItemContainer .imageMapperProductSpotPrice{
-        font-size: 18px;
-        line-height: 18px;
+        font-size: 16px;
+        line-height: 16px;
     }
 }
 
 .imageMapperAreaItemContainer .imageMapperProductBuy{
-    padding: 3px 8px;
+    padding: 3px 0;
     font-size: 11px;
     line-height: 13px;
     min-height: 25px;
@@ -365,9 +380,9 @@
 
 @media screen and (min-width: 1026px){
     .imageMapperAreaItemContainer .imageMapperProductBuy{
-        padding: 5px 12px;
+        padding: 5px 0;
         font-size: 13px;
-        line-height: 15px;
+        line-height: 18px;
     }
 }
 
@@ -453,12 +468,25 @@
 
 
 .imageMapperProducts .sliderLeftArrow{
-    left: -40px;
+    left: -20px;
+}
+
+@media screen and (min-width: 1026px){
+    .imageMapperProducts .sliderLeftArrow{
+        left: -40px;
+    }
 }
 
 .imageMapperProducts .sliderRightArrow{
-    right: -40px;
+    right: -20px;
 }
+
+@media screen and (min-width: 1026px){
+    .imageMapperProducts .sliderRightArrow{
+        right: -40px;
+    }
+}
+
 
 .imageMapperProduct{
     display: flex;
@@ -467,7 +495,7 @@
     flex-direction: column;
     padding: 0;
     width: 100%;
-    max-width: 327.5px;
+    max-width: 285px;
     margin: 0;
     position: relative;
     background: #FFFFFF;
@@ -478,13 +506,19 @@
     margin: 0 10px;
 }
 
-.slide--firstVisible:nth-of-type(odd){
-    margin-left: 0;
+@media screen and (min-width: 1026px){
+    .slide--firstVisible:nth-of-type(odd){
+        margin-left: 0;
+    }
 }
 
-.slide--lastVisible:nth-of-type(even){
-    margin-right: 0;
+@media screen and (min-width: 1026px){
+    .slide--lastVisible:nth-of-type(even){
+        margin-right: 0;
+    }
 }
+
+
 
 .imageMapperProductLoading::before{
     content: "";
@@ -718,6 +752,8 @@
 
     font-size: 14px;
     line-height: 20px;
+
+    text-align: center;
 }
 
 @media screen and (min-width: 1026px){
@@ -759,8 +795,8 @@
 }
 
 .imageMapperAllProductsText{
-    font-size: 18px;
-    line-height: 30px;
+    font-size: 16px;
+    line-height: 28px;
     color: #466D5B;
     font-weight: 500;
     margin: 0;
@@ -819,6 +855,10 @@
 
 .imageMapperAllProductsBuy.imageMapperButtonLoading{
     justify-content: center;
+}
+
+.imageMapperAllProductsBuy :global(.vtex-spinner_circle){
+    color: #FFFFFF
 }
 
 .imageMapperAllProductsBuy:hover{

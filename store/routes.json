@@ -33,6 +33,9 @@
     "path": "/collabs"
   },
 
+  "store.custom#escolha-o-mix": {
+    "path": "/escolha-o-mix"
+  },
 
   "store.custom#compre-o-mix": {
     "path": "/compre-o-mix"

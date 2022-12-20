@@ -9,7 +9,6 @@ export default class CheckoutService {
             ORDERFORM_UPDATED: "ORDERFORM_UPDATED",
         };
         this.events = new Evento();
-        console.log("aaaaaaaaaaaaa", window.vtexjs);
         if (window.vtexjs) {
             this.checkout = window.vtexjs.checkout;
             this.orderform = window.vtexjs.checkout.orderForm;

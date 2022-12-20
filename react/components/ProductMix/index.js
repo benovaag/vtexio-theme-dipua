@@ -37,6 +37,7 @@ const ImageMapper = ({
     let listProducts = data?.productsByIdentifier
 
     listProducts = listAux?.map(object => listProducts?.find((i) => i?.productId === object));
+    listProducts = listProducts.filter(item => item);
 
     if( (schemaProducts?.length == 0) || isEmptyObject(schemaProducts[0]) ){
       return <></>
@@ -119,10 +120,12 @@ ImageMapper.schema = {
             },
             coordX: {
                 title: 'Coordenada X',
+                description: 'Caso não queira utilizar, deixar em branco.',
                 type: 'number'
             },
             coordY: {
                 title: 'Coordenada Y',
+                description: 'Caso não queira utilizar, deixar em branco.',
                 type: 'number'
             }
           }
@@ -131,7 +134,7 @@ ImageMapper.schema = {
       schemaDiscountPercent: {
         type: 'string',
         title: 'Desconto',
-        description: 'Porcentos. (Não precisa colocar %)',
+        description: 'Em Porcentagem(Não precisa colocar %)',
         default: '30',
       },
       schemaTextDiscount: {

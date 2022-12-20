@@ -9,7 +9,7 @@ const ImageMapperArea = ({
     listProducts
 }) => {
 
-    if(schemaImage == ""){
+    if( (schemaImage == "") || (schemaImage == undefined ) ){
         schemaImage = "/arquivos/imageMapperDefault.jpg"
     }
 
@@ -60,6 +60,10 @@ const ImageMapperArea = ({
         infoItem
     }) => {
 
+        if( (infoItem?.coordY == "") && (infoItem?.coordX == "") ){
+            return <></>
+        }
+
         let bulletWidth = (46*offsetWidth)/naturalWidth || 1
         let bulletHeight = (46*offsetHeight)/naturalHeight || 1
 
@@ -70,6 +74,7 @@ const ImageMapperArea = ({
         if(bulletHeight > 46){ bulletHeight = 46 }
 
         //Calculando as Coordenadas
+
         let itemCoordTop = infoItem?.coordY || 1
         let itemCoordLeft = infoItem?.coordX || 1
 

@@ -197,7 +197,7 @@ const ImageMapperProduct = ({
         <div className={styles.imageMapperProductInfo}>
           <div className={styles.imageMapperProductName}>{productName}</div>
           <div className={styles.imageMapperProductPrice}>
-            {productListPrice >= productSpotPrice && (
+            {productListPrice < productSpotPrice && (
               <del className={styles.imageMapperProductOldPrice}>
                 {productListPrice && (
                   <FormattedCurrency value={productListPrice} />
@@ -217,7 +217,7 @@ const ImageMapperProduct = ({
             onClick={(e) => handleAddToCart(e, productItemId)}
           >
             {showLoading ? (
-              <Spinner color="currentColor" size={15} />
+              <Spinner color="currentColor" size={24} />
             ) : (
               "Adicionar à sacola"
             )}
