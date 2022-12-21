@@ -19,7 +19,7 @@ import { isEmptyObject } from "./helpers/helpers"
 const ImageMapper = ({
     schemaTitle = 'Compre o Mix',
     schemaTextDiscount = 'Comprando este mix você terá:',
-    schemaDiscountPercent = "30",
+    schemaDiscountPercent = "10",
     schemaProducts = [],
     schemaImage
 }) => {
@@ -136,7 +136,7 @@ ImageMapper.schema = {
         type: 'string',
         title: 'Desconto (Em Porcentagem)',
         description: 'Não precisa colocar %',
-        default: '30',
+        default: '10',
       },
       schemaTextDiscount: {
         type: 'string',
