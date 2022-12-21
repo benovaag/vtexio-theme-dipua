@@ -8,18 +8,37 @@
     "product-mix": {
         "props": {
             "schemaDiscountPercent": "30",
+            "schemaImage": "https://dipua.vtexassets.com/assets/vtex.file-manager-graphql/images/b9f9a71e-cdbc-46fe-8eb0-5139052a6e90___6cd94939f40d5be5d9d27bbd26bbe61a.jpg",
             "schemaProducts": [
                 {
                     "__editorItemTitle": "Produto 1",
-                    "productId": "494",
-                    "coordX": "",
-                    "coordY": ""
+                    "productId": "402",
+                    "coordX": "320",
+                    "coordY": "320"
                 },
                 {
                     "__editorItemTitle": "Produto 2",
-                    "productId": "520",
-                    "coordX": "",
-                    "coordY": ""
+                    "productId": "386",
+                    "coordX": "435",
+                    "coordY": "420"
+                },
+                {
+                    "__editorItemTitle": "Produto 3",
+                    "productId": "438",
+                    "coordX": "550",
+                    "coordY": "635"
+                },
+                {
+                    "__editorItemTitle": "Produto 3",
+                    "productId": "530",
+                    "coordX": "550",
+                    "coordY": "635"
+                },
+                {
+                    "__editorItemTitle": "Produto 3",
+                    "productId": "530",
+                    "coordX": "550",
+                    "coordY": "635"
                 }
             ]
         }

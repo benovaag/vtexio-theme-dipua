@@ -35,6 +35,10 @@ const ImageMapperArea = ({
         setNaturalHeight(naturalHeight)
     }
 
+    const handleImageMapperAreaSeeInfo = () => {
+        document.getElementsByClassName(styles.imageMapperArea)[0].classList.toggle(styles.imageMapperAreaSeeMore);
+    }
+
     useEffect(() => {
         // Width
         let _offsetWidth = myRef?.current?.clientWidth || 1
@@ -64,14 +68,17 @@ const ImageMapperArea = ({
             return <></>
         }
 
-        let bulletWidth = (46*offsetWidth)/naturalWidth || 1
-        let bulletHeight = (46*offsetHeight)/naturalHeight || 1
+        // let bulletWidth = (46*offsetWidth)/naturalWidth || 1
+        // let bulletHeight = (46*offsetHeight)/naturalHeight || 1
 
-        if(bulletWidth < 30){ bulletWidth = 30 }
-        if(bulletHeight < 30){ bulletHeight = 30 }
+        // if(bulletWidth < 30){ bulletWidth = 30 }
+        // if(bulletHeight < 30){ bulletHeight = 30 }
 
-        if(bulletWidth > 46){ bulletWidth = 46 }
-        if(bulletHeight > 46){ bulletHeight = 46 }
+        // if(bulletWidth > 46){ bulletWidth = 46 }
+        // if(bulletHeight > 46){ bulletHeight = 46 }
+
+        let bulletWidth = 30
+        let bulletHeight = 30
 
         //Calculando as Coordenadas
 
@@ -179,6 +186,7 @@ const ImageMapperArea = ({
 
     return (
         <div className={styles.imageMapperArea}>
+            <div className={styles.imageMapperAreaSeeInfo} onClick={handleImageMapperAreaSeeInfo}></div>
             <img
                 onLoad={onImgLoad}
                 src={schemaImage}
