@@ -25,6 +25,8 @@ const ImageMapperArea = ({
     const [naturalWidth, setNaturalWidth] = useState(1);
     const [naturalHeight, setNaturalHeight] = useState(1);
 
+    const [showLoading, setShowLoading] = useState(false);
+
     const onImgLoad = ({ target: img }) => {
         const { naturalWidth, naturalHeight, offsetHeight, offsetWidth } = img
 
@@ -57,6 +59,10 @@ const ImageMapperArea = ({
 
         setNaturalWidth(_naturalWidth)
         setNaturalHeight(_naturalHeight)
+
+        console.log("loading")
+
+        setShowLoading(true);
     })
 
     const ImageMapperTooltip = ({
@@ -77,8 +83,14 @@ const ImageMapperArea = ({
         // if(bulletWidth > 46){ bulletWidth = 46 }
         // if(bulletHeight > 46){ bulletHeight = 46 }
 
-        let bulletWidth = 30
-        let bulletHeight = 30
+
+        let bulletWidth = 32
+        let bulletHeight = 32
+
+        if(isMobile){
+            bulletWidth = 40
+            bulletHeight = 40
+        }
 
         //Calculando as Coordenadas
 
@@ -95,7 +107,6 @@ const ImageMapperArea = ({
         if(coordLeft < 0){
             coordLeft = 0
         }
-
 
         //Setando as Coordenadas
         var styleCoords = {
@@ -149,6 +160,12 @@ const ImageMapperArea = ({
             })
         }
 
+        console.log("styleCoords", styleCoords)
+
+        if(!showLoading){
+            return <></>
+        }
+
         if(isMobile){
             return (
                 <div className={styles.imageMapperAreaItemContainer} style={styleCoords} data-id={infoItem?.productId}>
@@ -186,7 +203,10 @@ const ImageMapperArea = ({
 
     return (
         <div className={styles.imageMapperArea}>
-            <div className={styles.imageMapperAreaSeeInfo} onClick={handleImageMapperAreaSeeInfo}></div>
+            <div className={styles.imageMapperAreaSeeInfo} onClick={handleImageMapperAreaSeeInfo}>
+                <span className={styles.imageMapperAreaSeeInfoIcon}></span>
+                <span className={styles.imageMapperAreaSeeInfoText}>mostrar mix</span>
+            </div>
             <img
                 onLoad={onImgLoad}
                 src={schemaImage}

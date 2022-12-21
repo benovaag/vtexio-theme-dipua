@@ -324,7 +324,7 @@
     ],
     "props": {
       "blockClass": "main-header-mobile-2",
-      "preventHorizontalStretch": true,
+      "preventHorizontalStretch": false,
       "preserveLayoutOnMobile": true,
       "fullWidth": true,
       "colSizing": "equal"

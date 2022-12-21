@@ -7,20 +7,19 @@
 
     "product-mix": {
         "props": {
-            "schemaDiscountPercent": "10",
-            "schemaImage": "/arquivos/mix-default.jpg",
+            "schemaDiscountPercent": "30",
             "schemaProducts": [
                 {
                     "__editorItemTitle": "Produto 1",
-                    "productId": "498",
-                    "coordX": "305",
-                    "coordY": "540"
+                    "productId": "524",
+                    "coordX": "310",
+                    "coordY": "420"
                 },
                 {
                     "__editorItemTitle": "Produto 2",
                     "productId": "524",
-                    "coordX": "300",
-                    "coordY": "420"
+                    "coordX": "315",
+                    "coordY": "540"
                 }
             ]
         }
