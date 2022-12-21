@@ -1,7 +1,7 @@
 {
   "vendor": "dipua",
   "name": "tema",
-  "version": "0.0.37",
+  "version": "0.0.38",
   "builders": {
     "styles": "2.x",
     "store": "0.x",
