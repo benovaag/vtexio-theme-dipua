@@ -188,6 +188,7 @@
 	50% {
         opacity: 1;
 		transform: scale(1.5);
+        box-shadow: 0 0 0 1px #FFFFFF;
 	}
 
 	100% {
@@ -211,8 +212,15 @@
     animation: imageMapperPulse 1.5s 3;
     opacity: 0;
 
-    border: 1px solid #FFFFFF
+    /* border: 1px solid #FFFFFF */
 }
+
+@media screen and (max-width: 1025px){
+    .imageMapperAreaItem{
+        border: 1px solid #FFFFFF80
+    }
+}
+
 
 @media screen and (max-width: 1025px){
     .imageMapperAreaItem{

@@ -88,8 +88,8 @@ const ImageMapperArea = ({
         let bulletHeight = 32
 
         if(isMobile){
-            bulletWidth = 40
-            bulletHeight = 40
+            bulletWidth = 36
+            bulletHeight = 36
         }
 
         //Calculando as Coordenadas
