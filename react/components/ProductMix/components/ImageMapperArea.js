@@ -10,7 +10,7 @@ const ImageMapperArea = ({
 }) => {
 
     if( (schemaImage == "") || (schemaImage == undefined ) ){
-        schemaImage = "/arquivos/imageMapperDefault.jpg"
+        schemaImage = "/arquivos/mix-default.jpg"
     }
 
     const myRef = useRef(null)

@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from "./ImageMapper.css";
 import { useDevice } from 'vtex.device-detector'
+import { useRuntime } from 'vtex.render-runtime'
 
 import { SliderLayout } from 'vtex.slider-layout'
 
@@ -23,6 +24,7 @@ const ImageMapper = ({
     schemaProducts = [],
     schemaImage
 }) => {
+    const { route } = useRuntime()
     const { isMobile } = useDevice()
     var listAux = []
 
@@ -39,6 +41,8 @@ const ImageMapper = ({
     listProducts = listAux?.map(object => listProducts?.find((i) => i?.productId === object));
     listProducts = listProducts.filter(item => item);
 
+    var isSiteEditor = route?.queryString?.__siteEditor == "true"
+
     if( (schemaProducts?.length == 0) || isEmptyObject(schemaProducts[0]) ){
       return <></>
     }
@@ -54,7 +58,7 @@ const ImageMapper = ({
     }
 
     return (
-      <Container>
+      <Container className={(isSiteEditor) ? styles.siteEditor : ``}>
         <div className={styles.imageMapper}>
           <ImageMapperHeader
             schemaTitle={schemaTitle}
