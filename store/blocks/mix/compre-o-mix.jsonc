@@ -12,33 +12,33 @@
             "schemaProducts": [
                 {
                     "__editorItemTitle": "Produto 1",
-                    "productId": "402",
-                    "coordX": "320",
-                    "coordY": "320"
+                    "productId": "638",
+                    "coordX": "",
+                    "coordY": ""
                 },
                 {
                     "__editorItemTitle": "Produto 2",
-                    "productId": "386",
-                    "coordX": "435",
-                    "coordY": "420"
+                    "productId": "617",
+                    "coordX": "",
+                    "coordY": ""
                 },
                 {
                     "__editorItemTitle": "Produto 3",
-                    "productId": "438",
-                    "coordX": "550",
-                    "coordY": "635"
+                    "productId": "679",
+                    "coordX": "",
+                    "coordY": ""
                 },
                 {
-                    "__editorItemTitle": "Produto 3",
-                    "productId": "530",
-                    "coordX": "550",
-                    "coordY": "635"
+                    "__editorItemTitle": "Produto 4",
+                    "productId": "643",
+                    "coordX": "",
+                    "coordY": ""
                 },
                 {
-                    "__editorItemTitle": "Produto 3",
-                    "productId": "530",
-                    "coordX": "550",
-                    "coordY": "635"
+                    "__editorItemTitle": "Produto 5",
+                    "productId": "282",
+                    "coordX": "",
+                    "coordY": ""
                 }
             ]
         }
