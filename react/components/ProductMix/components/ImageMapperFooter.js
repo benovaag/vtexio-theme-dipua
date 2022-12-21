@@ -64,7 +64,7 @@ const ImageMapperFooter = ({
         }, 1500)
     }
 
-    let totalSpotPriceWithDiscount = totalSpotPrice * (Number(schemaDiscountPercent)/100)
+    let totalSpotPriceWithDiscount = totalSpotPrice - (totalSpotPrice * (Number(schemaDiscountPercent)/100))
 
     return (
         <div className={styles.imageMapperFooter}>

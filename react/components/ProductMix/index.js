@@ -111,11 +111,12 @@ ImageMapper.schema = {
           properties: {
             __editorItemTitle: {
               default: 'Item',
-              title: 'Nome do Produto(Opcional para melhor identificação)',
+              title: 'Nome do Produto',
+              description: '(Opcional para melhor identificação)',
               type: 'string'
             },
             productId: {
-              title: 'Id do Produto',
+              title: 'ID do Produto',
               type: 'string'
             },
             coordX: {
@@ -133,8 +134,8 @@ ImageMapper.schema = {
       },
       schemaDiscountPercent: {
         type: 'string',
-        title: 'Desconto',
-        description: 'Em Porcentagem(Não precisa colocar %)',
+        title: 'Desconto (Em Porcentagem)',
+        description: 'Não precisa colocar %',
         default: '30',
       },
       schemaTextDiscount: {
