@@ -204,8 +204,12 @@ const ImageMapperArea = ({
     return (
         <div className={styles.imageMapperArea}>
             <div className={styles.imageMapperAreaSeeInfo} onClick={handleImageMapperAreaSeeInfo}>
-                <span className={styles.imageMapperAreaSeeInfoIcon}></span>
-                <span className={styles.imageMapperAreaSeeInfoText}>mostrar mix</span>
+                <div className={styles.imageMapperAreaSeeInfoIcon}></div>
+                <div className={styles.imageMapperAreaSeeInfoText}>
+                    <span className={styles.imageMapperAreaSeeInfoTextPrefixSee}>mostrar </span>
+                    <span className={styles.imageMapperAreaSeeInfoTextPrefixHide}>ocultar </span>
+                    mix
+                </div>
             </div>
             <img
                 onLoad={onImgLoad}
