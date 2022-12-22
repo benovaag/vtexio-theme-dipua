@@ -1,7 +1,119 @@
 {
     "store.custom#escolha-o-mix": {
         "blocks": [
-
+            "list-context.image-list#escolha-o-mix-banner",
+            "flex-layout.row#escolha-o-mix"
         ]
+    },
+
+    "flex-layout.row#escolha-o-mix": {
+        "children": [
+            "flex-layout.col#escolha-o-mix"
+        ],
+        "props": {
+            "preserveLayoutOnMobile": true,
+            "preventHorizontalStretch": false,
+            "preventVerticalStretch": true,
+            "fullWidth": false,
+            "blockClass":"escolha-o-mix"
+        },
+        "title": "Conteúdo - Escolha seu Mix"
+    },
+
+    "flex-layout.col#escolha-o-mix": {
+        "children": [
+            "rich-text#escolha-o-mix-title",
+            "vtex.menu@2.x:menu#escolha-o-mix-grid",
+            "flex-layout.row#escolha-o-mix-grid"
+        ],
+        "props": {
+            "preserveLayoutOnMobile": true,
+            "preventHorizontalStretch": false,
+            "preventVerticalStretch": true,
+            "fullWidth": true,
+            "blockClass":"escolha-o-mix"
+        }
+    },
+
+    "rich-text#escolha-o-mix-title": {
+        "props": {
+            "text": "## Escolha seu MIX",
+            "blockClass": "escolha-o-mix-title"
+        },
+        "title": "Título - Escolha seu Mix"
+    },
+
+    "vtex.menu@2.x:menu#escolha-o-mix-grid": {
+        "children": [
+            "menu-item#escolha-o-mix-grid"
+        ],
+        "title": "Menu - Outros Mix"
+    },
+
+    "menu-item#escolha-o-mix-grid": {
+        "props": {
+            "type": "custom",
+            "highlight": false
+        }
+    },
+
+    "flex-layout.row#escolha-o-mix-grid": {
+        "children": [
+            "list-context.info-card-list#escolha-o-mix-grid"
+        ],
+        "props": {
+            "preserveLayoutOnMobile": true,
+            "preventHorizontalStretch": false,
+            "preventVerticalStretch": true,
+            "fullWidth": false,
+            "colSizing": "equal",
+            "blockClass":"escolha-o-mix-grid"
+        }
+    },
+
+    "list-context.image-list#escolha-o-mix-banner": {
+        "children": [
+            "list-context-renderer#escolha-o-mix-banner"
+        ],
+        "props": {
+            "images": [
+                {
+                    "image": "assets/imgs/escolha-o-mix-banner.jpg",
+                    "mobileImage": "assets/imgs/escolha-o-mix-banner-mobile.jpg"
+                }
+            ]
+        },
+        "title": "Banner - Escolha o Mix"
+    },
+
+    "list-context-renderer#escolha-o-mix-banner": {
+        "props": {
+            "itemElement": "div",
+            "blockClass": "escolha-o-mix-banner"
+        }
+    },
+
+    "list-context.info-card-list#escolha-o-mix-grid" :{
+        "title": "Grid - Escolha o Mix",
+        "children":[
+            "list-context-renderer#escolha-o-mix-grid"
+        ],
+        "props": {
+            "infoCards": [
+                {
+                    "imageUrl": "assets/imgs/mix-01.jpg",
+                    "imageActionUrl": "/compre-o-mix",
+                    "callToActionUrl": "/compre-o-mix",
+                    "callToActionText": "Confira o mix"
+                }
+            ]
+        }
+    },
+
+    "list-context-renderer#escolha-o-mix-grid": {
+        "props": {
+            "itemElement": "div",
+            "blockClass": "escolha-o-mix-grid"
+        }
     }
 }

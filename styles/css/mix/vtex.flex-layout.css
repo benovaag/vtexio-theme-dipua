@@ -1,0 +1,7 @@
+/* Escolha o Mix */
+.flexRowContent--escolha-o-mix-grid .stretchChildrenWidth{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}

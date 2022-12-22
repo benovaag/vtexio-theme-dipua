@@ -1,0 +1,82 @@
+/* Escolha o Mix */
+.item--escolha-o-mix-grid{
+    width: 50% !important;
+}
+
+@media screen and (min-width: 1026px){
+    .item--escolha-o-mix-grid{
+        width: 25% !important;
+    }
+}
+
+
+.infoCardContainer--escolha-o-mix-grid{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    padding: 0 7.5px 20px!important;
+}
+
+@media screen and (min-width: 1026px){
+    .infoCardContainer--escolha-o-mix-grid{
+        padding: 0 10px 30px !important;
+    }
+}
+
+
+.infoCardImageContainer--escolha-o-mix-grid,
+.infoCardTextContainer--escolha-o-mix-grid{
+    width: 100% !important;
+    padding: 0 !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (min-width: 1026px){
+    .infoCardImageContainer--escolha-o-mix-grid{
+        overflow: hidden;
+    }
+}
+
+@media screen and (min-width: 1026px){
+    .infoCardImageContainer--escolha-o-mix-grid:hover .infoCardImage--escolha-o-mix-grid{
+        transform: scale(1.1);
+    }
+}
+
+.infoCardImage--escolha-o-mix-grid{
+    display: block;
+    transition: .3s ease-in-out;
+}
+
+.infoCardCallActionContainer--escolha-o-mix-grid{
+    margin: 0 !important;
+    width: 100%;
+}
+
+.infoCardCallActionContainer--escolha-o-mix-grid :global(.vtex-button),
+.infoCardCallActionContainer--escolha-o-mix-grid :global(.vtex-button):hover,
+.infoCardCallActionContainer--escolha-o-mix-grid :global(.vtex-button):focus{
+    background: #FFFFFF;
+    border: 0;
+    outline: 0;
+}
+
+.infoCardCallActionContainer--escolha-o-mix-grid :global(.vtex-button__label){
+    text-decoration: underline;
+    color: #466d5b;
+    font-family: "alternative";
+    font-weight: 500;
+    font-size: 16px;
+    text-transform: none;
+    padding: 0 !important;
+}
+
+@media screen and (min-width: 1026px){
+    .infoCardCallActionContainer--escolha-o-mix-grid :global(.vtex-button__label){
+        font-size: 16px;
+    }
+}

@@ -6,6 +6,8 @@
       "rich-text#shelf-title",
       "flex-layout.row#shelf",
       "flex-layout.row#banner-middle-home",
+      "flex-layout.row#banner-slider-home-mix",
+      "flex-layout.row#banner-slider-home-mix-content",
       "flex-layout.row#footer-1-desktop",
       "flex-layout.row#footer-2-desktop-home"
     ]
@@ -198,6 +200,7 @@
     },
     "title": "Desktop - Banner Meio Home"
   },
+
   "image#banner-middle-home-mobile":{
     "props":{
       "src": "assets/imgs/off-mobile.jpg",
@@ -209,5 +212,205 @@
       }
     },
     "title": "Mobile - Banner Meio Home"
+  },
+
+
+  "flex-layout.row#banner-slider-home-mix-content":{
+    "children": [
+      "flex-layout.col#banner-slider-home-mix-content"
+    ],
+    "props": {
+      "horizontalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": false,
+      "blockClass": "banner-slider-home-mix-content"
+    },
+    "title": "Banner Slider Home Mix"
+  },
+
+  "flex-layout.col#banner-slider-home-mix-content":{
+    "children": [
+      "rich-text#slider-home-mix-title",
+      "list-context.image-list#banner-slider-home-mix-content"
+    ],
+    "props": {
+      "horizontalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true,
+      "blockClass": "banner-slider-home-mix"
+    },
+    "title": "Banner Slider Home Mix"
+  },
+
+  "list-context.image-list#banner-slider-home-mix-content": {
+    "children": [
+      "slider-layout#banner-slider-home-mix-content"
+    ],
+    "props": {
+      "height": 750,
+      "preload": true,
+      "fullWidth": true,
+      "images": [
+        {
+          "image": "assets/imgs/mix-01.jpg",
+          "mobileImage": "assets/imgs/mix-01.jpg"
+        },
+        {
+          "image": "assets/imgs/mix-03.jpg",
+          "mobileImage": "assets/imgs/mix-03.jpg"
+        },
+        {
+          "image": "assets/imgs/mix-04.jpg",
+          "mobileImage": "assets/imgs/mix-04.jpg"
+        },
+        {
+          "image": "assets/imgs/mix-05.jpg",
+          "mobileImage": "assets/imgs/mix-05.jpg"
+        },
+        {
+          "image": "assets/imgs/mix-07.jpg",
+          "mobileImage": "assets/imgs/mix-07.jpg"
+        },
+        {
+          "image": "assets/imgs/mix-08.jpg",
+          "mobileImage": "assets/imgs/mix-08.jpg"
+        },
+        {
+          "image": "assets/imgs/mix-09.jpg",
+          "mobileImage": "assets/imgs/mix-09.jpg"
+        },
+        {
+          "image": "assets/imgs/mix-11.jpg",
+          "mobileImage": "assets/imgs/mix-11.jpg"
+        }
+      ]
+    },
+    "title": "Banner Principal"
+  },
+
+  "slider-layout#banner-slider-home-mix-content": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 2,
+        "phone": 2
+      },
+      "infinite": true,
+      "fullWidth": true,
+      "autoplay":{
+        "timeout": "5000"
+      },
+      "showPaginationDots": "always",
+      "showNavigationArrows": "always",
+      "blockClass": "banner-slider-home-mix-content"
+    },
+    "title": "Banner Slider Home Mix"
+  },
+
+
+
+  "flex-layout.row#banner-slider-home-mix":{
+    "children": [
+      "flex-layout.col#banner-slider-home-mix"
+    ],
+    "props": {
+      "horizontalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true,
+      "blockClass": "banner-slider-home-mix"
+    },
+    "title": "Banner Slider Home Mix"
+  },
+
+  "flex-layout.col#banner-slider-home-mix":{
+    "children": [
+      "rich-text#slider-home-mix-title",
+      "list-context.image-list#banner-slider-home-mix"
+    ],
+    "props": {
+      "horizontalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true,
+      "blockClass": "banner-slider-home-mix"
+    },
+    "title": "Banner Slider Home Mix"
+  },
+
+  "rich-text#slider-home-mix-title": {
+    "props": {
+      "text": "## Compre o Mix",
+      "blockClass": "shelfTitle"
+    },
+    "title": "Compre o Mix - Título"
+  },
+
+  "list-context.image-list#banner-slider-home-mix": {
+    "children": [
+      "slider-layout#banner-slider-home-mix"
+    ],
+    "props": {
+      "height": 750,
+      "preload": true,
+      "fullWidth": true,
+      "images": [
+        {
+          "image": "assets/imgs/mix-01.jpg",
+          "mobileImage": "assets/imgs/mix-01.jpg"
+        },
+        {
+          "image": "assets/imgs/mix-03.jpg",
+          "mobileImage": "assets/imgs/mix-03.jpg"
+        },
+        {
+          "image": "assets/imgs/mix-04.jpg",
+          "mobileImage": "assets/imgs/mix-04.jpg"
+        },
+        {
+          "image": "assets/imgs/mix-05.jpg",
+          "mobileImage": "assets/imgs/mix-05.jpg"
+        },
+        {
+          "image": "assets/imgs/mix-07.jpg",
+          "mobileImage": "assets/imgs/mix-07.jpg"
+        },
+        {
+          "image": "assets/imgs/mix-08.jpg",
+          "mobileImage": "assets/imgs/mix-08.jpg"
+        },
+        {
+          "image": "assets/imgs/mix-09.jpg",
+          "mobileImage": "assets/imgs/mix-09.jpg"
+        },
+        {
+          "image": "assets/imgs/mix-11.jpg",
+          "mobileImage": "assets/imgs/mix-11.jpg"
+        }
+      ]
+    },
+    "title": "Banner Principal"
+  },
+
+  "slider-layout#banner-slider-home-mix": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 2,
+        "phone": 2
+      },
+      "infinite": true,
+      "fullWidth": true,
+      "autoplay":{
+        "timeout": "5000"
+      },
+      "showPaginationDots": "always",
+      "showNavigationArrows": "always",
+      "blockClass": "banner-slider-home-mix"
+    },
+    "title": "Banner Slider Home Mix"
   }
+
 }
