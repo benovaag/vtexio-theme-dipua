@@ -5,7 +5,7 @@ import { Link } from 'vtex.render-runtime'
 const ImageMapperHeader = ({
     schemaTitle
 }) => {
-    let link = "/escolha-o-mix"
+    let link = "/compre-o-mix"
     return (
         <div className={styles.imageMapperHeader}>
             <Link page="store.custom" to={link} className={styles.imageMapperHeaderGoBack}>voltar para os mix</Link>
