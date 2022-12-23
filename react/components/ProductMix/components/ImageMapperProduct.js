@@ -6,6 +6,8 @@ import { useDevice } from "vtex.device-detector";
 import { useOrderItems } from "vtex.order-items/OrderItems";
 import { usePixel } from "vtex.pixel-manager";
 
+import { Link } from 'vtex.render-runtime'
+
 import { getProductHasStock } from "../helpers/helpers";
 
 const ImageMapperProduct = ({
@@ -183,14 +185,16 @@ const ImageMapperProduct = ({
       )}
 
       <div className={styles.imageMapperProductImage}>
-        <img
-          src={productImageUrl}
-          alt={productImageText}
-          width={productImageWidth}
-          height={productImageHeight}
-          loading="lazy"
-          className={styles.imageMapperProductImg}
-        />
+        <Link page="store.product" to={productLink} target={"_blank"}>
+          <img
+            src={productImageUrl}
+            alt={productImageText}
+            width={productImageWidth}
+            height={productImageHeight}
+            loading="lazy"
+            className={styles.imageMapperProductImg}
+          />
+        </Link>
       </div>
 
       <div className={styles.imageMapperProductContent}>

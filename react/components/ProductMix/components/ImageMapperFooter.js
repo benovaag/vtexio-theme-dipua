@@ -11,6 +11,7 @@ import { isEmptyObject, getProductHasStock } from "../helpers/helpers"
 const ImageMapperFooter = ({
     schemaTextDiscount,
     schemaDiscountPercent,
+    schemaDiscountPercentActive,
     listProducts
 }) => {
     const [showLoading, setShowLoading] = useState(false)
@@ -64,7 +65,10 @@ const ImageMapperFooter = ({
         }, 1500)
     }
 
-    let totalSpotPriceWithDiscount = totalSpotPrice - (totalSpotPrice * (Number(schemaDiscountPercent)/100))
+    let totalSpotPriceWithDiscount = totalSpotPrice
+    if(schemaDiscountPercentActive){
+        totalSpotPriceWithDiscount = totalSpotPrice - (totalSpotPrice * (Number(schemaDiscountPercent)/100))
+    }
 
     return (
         <div className={styles.imageMapperFooter}>
@@ -72,7 +76,13 @@ const ImageMapperFooter = ({
             <div className={styles.imageMapperAllProducts}>
                 <p className={styles.imageMapperAllProductsText}>{schemaTextDiscount}</p>
 
-                <p className={styles.imageMapperAllProductsText}><span className={styles.imageMapperDiscountPercent}>{schemaDiscountPercent}% off</span> nos produtos, de <span className={styles.imageMapperDiscountFullPrice}><FormattedCurrency value={totalSpotPrice} /></span> por <span className={styles.imageMapperDiscountPrice}><FormattedCurrency value={totalSpotPriceWithDiscount} /></span></p>
+                <p className={styles.imageMapperAllProductsText}>
+                    { schemaDiscountPercentActive &&
+                        <>
+                            <span className={styles.imageMapperDiscountPercent}>{schemaDiscountPercent}% off</span> nos produtos, de <span className={styles.imageMapperDiscountFullPrice}><FormattedCurrency value= {totalSpotPrice} /></span> por
+                        </>
+                    }
+                    <span className={styles.imageMapperDiscountPrice}> <FormattedCurrency value={totalSpotPriceWithDiscount} /></span></p>
             </div>
 
             <div className={`${styles.imageMapperAllProductsBuy} ${(showLoading) ? styles.imageMapperButtonLoading : ``}`} onClick={handleAddToCart}>

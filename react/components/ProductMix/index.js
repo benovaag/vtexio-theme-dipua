@@ -19,9 +19,10 @@ import { isEmptyObject } from "./helpers/helpers"
 
 const ImageMapper = ({
     schemaTitle = 'Compre o Mix',
-    schemaTextDiscount = 'Comprando este mix você terá:',
-    schemaDiscountPercent = "10",
+    schemaTextDiscount = 'Comprando esse mix você terá:',
+    schemaDiscountPercent = "5",
     schemaProducts = [],
+    schemaDiscountPercentActive = true,
     schemaImage
 }) => {
     const { route } = useRuntime()
@@ -87,6 +88,7 @@ const ImageMapper = ({
               <ImageMapperFooter
                 schemaTextDiscount={schemaTextDiscount}
                 schemaDiscountPercent={schemaDiscountPercent}
+                schemaDiscountPercentActive={schemaDiscountPercentActive}
                 listProducts={listProducts}
               />
           </div>
@@ -136,17 +138,6 @@ ImageMapper.schema = {
           }
         }
       },
-      schemaDiscountPercent: {
-        type: 'string',
-        title: 'Desconto (Em Porcentagem)',
-        description: 'Não precisa colocar %',
-        default: '10',
-      },
-      schemaTextDiscount: {
-        type: 'string',
-        title: 'Desconto',
-        default: 'Comprando este mix você terá:',
-      },
       schemaImage: {
         type: 'string',
         title: 'Imagem Principal',
@@ -154,6 +145,36 @@ ImageMapper.schema = {
         widget: {
           'ui:widget': 'image-uploader'
         }
+      },
+      schemaTextDiscount: {
+        type: 'string',
+        title: 'Desconto',
+        default: 'Comprando esse mix você terá:',
+      },
+      schemaDiscountPercentActive: {
+        type: 'boolean',
+        title: 'Aplicar Desconto?',
+        default: true,
+        enum: [true, false]
+      }
+    },
+    dependencies: {
+      schemaDiscountPercentActive: {
+        oneOf: [
+          {
+            properties: {
+              schemaDiscountPercentActive: {
+                enum: [true]
+              },
+              schemaDiscountPercent: {
+                type: 'string',
+                title: 'Desconto (Em Porcentagem)',
+                description: 'Não precisa colocar %',
+                default: '5',
+              }
+            }
+          }
+        ]
       }
     }
   }
