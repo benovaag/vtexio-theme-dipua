@@ -101,21 +101,15 @@
 }
 
 /* Flechas -- shelf de produtos */
-.sliderLeftArrow--shelf,
-.sliderLeftArrow--banner-slider-home-mix,
-.sliderLeftArrow--banner-slider-home-mix-content{
+.sliderLeftArrow--shelf{
   left:0;
 }
 
-.sliderRightArrow--shelf,
-.sliderRightArrow--banner-slider-home-mix,
-.sliderRightArrow--banner-slider-home-mix-content{
+.sliderRightArrow--shelf{
   right:0;
 }
 
-.paginationDot--shelf,
-.paginationDots--banner-slider-home-mix,
-.paginationDots--banner-slider-home-mix-content{
+.paginationDot--shelf{
   width:10px !important;
   height:10px !important;
   background: #fff;
@@ -126,9 +120,7 @@
 }
 
 /* <= Dot de página -- shelf de produtos */
-.paginationDot--shelf--isActive,
-.paginationDot--banner-slider-home-mix--isActive,
-.paginationDot--banner-slider-home-mix-content--isActive{
+.paginationDot--shelf--isActive{
   background:#000;
   border-color:transparent;
 }
