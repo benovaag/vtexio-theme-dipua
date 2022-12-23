@@ -44,17 +44,10 @@
     },
 
     "vtex.menu@2.x:menu#escolha-o-mix-grid": {
-        "children": [
-            "menu-item#escolha-o-mix-grid"
-        ],
-        "title": "Menu - Outros Mix"
-    },
-
-    "menu-item#escolha-o-mix-grid": {
         "props": {
-            "type": "custom",
-            "highlight": false
-        }
+            "blockClass": "escolha-o-mix"
+        },
+        "title": "Menu - Outros Mix"
     },
 
     "flex-layout.row#escolha-o-mix-grid": {

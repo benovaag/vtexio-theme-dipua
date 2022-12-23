@@ -1,11 +1,13 @@
 /* Escolha o Mix */
 .item--escolha-o-mix-grid{
     width: 50% !important;
+    padding: 0 7.5px 20px !important;
 }
 
 @media screen and (min-width: 1026px){
     .item--escolha-o-mix-grid{
         width: 25% !important;
+        padding: 0 15px 30px !important;
     }
 }
 
@@ -16,15 +18,18 @@
     justify-content: center;
     flex-wrap: wrap;
     flex-direction: column-reverse;
-    padding: 0 7.5px 20px!important;
+    padding: 0 !important;
 }
 
-@media screen and (min-width: 1026px){
-    .infoCardContainer--escolha-o-mix-grid{
-        padding: 0 10px 30px !important;
+@media screen and (max-width: 1025px){
+    .item--escolha-o-mix-grid:nth-child(odd){
+        padding-left: 0 !important;
+    }
+
+    .item--escolha-o-mix-grid:nth-child(even){
+        padding-right: 0 !important;
     }
 }
-
 
 .infoCardImageContainer--escolha-o-mix-grid,
 .infoCardTextContainer--escolha-o-mix-grid{
@@ -70,7 +75,7 @@
     color: #466d5b;
     font-family: "alternative";
     font-weight: 500;
-    font-size: 16px;
+    font-size: 15px;
     text-transform: none;
     padding: 0 !important;
 }

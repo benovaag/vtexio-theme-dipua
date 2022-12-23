@@ -1,17 +1,24 @@
 /* Escolha o Mix */
 .wrapper--escolha-o-mix-title{
   width: 100%;
-  margin: 0 auto 25px;
+  margin: 0 auto 15px;
 }
+
+@media screen and (min-width: 1026px){
+  .wrapper--escolha-o-mix-title{
+    margin: 0 auto 35px;
+  }
+}
+
 
 .headingLevel2--escolha-o-mix-title{
   display: flex;
   align-items: center;
   justify-content: center;
   color: #000000;
-  font-size: 24px;
+  font-size: 23px;
   line-height: 30px;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   font-weight: 400;
   width: 100%;
   margin: 0;

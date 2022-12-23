@@ -1,0 +1,68 @@
+@media screen and (min-width: 1026px){
+    .menuContainer--escolha-o-mix{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin: 0 0 40px 0;
+    }
+}
+
+@media screen and (max-width: 1025px){
+    .menuContainerNav--escolha-o-mix{
+        width: 100%;
+        overflow-x: scroll;
+        margin: 0 auto 25px;
+        display: inline-block;
+        vertical-align: middle;
+    }
+}
+
+@media screen and (max-width: 1025px){
+    .menuContainer--escolha-o-mix,
+    .menuItem--escolha-o-mix{
+        white-space: nowrap;
+        overflow: initial;
+        display: inline-block;
+        vertical-align: middle;
+    }
+}
+
+@media screen and (max-width: 1025px){
+    .styledLinkContainer--escolha-o-mix{
+        display: inline-block;
+        vertical-align: top;
+        white-space: normal;
+        margin: 0 30px 0;
+    }
+
+    .styledLinkContainer--escolha-o-mix:first-child{
+        margin-left: 0;
+    }
+}
+
+@media screen and (min-width: 1026px){
+    .styledLinkContainer--escolha-o-mix{
+        margin: 0 15px;
+    }
+}
+
+.styledLinkContent--escolha-o-mix{
+    font-size: 16px;
+    line-height: 24px;
+    border-bottom: 1px solid transparent;
+    transition: .3s;
+    color: #000000;
+}
+
+.styledLinkContent--escolha-o-mix:hover{
+    border-color: #466d5b;
+}
+
+@media screen and (min-width: 1026px){
+    .styledLinkContent--escolha-o-mix{
+        font-size: 19px;
+        line-height: 28px;
+    }
+}

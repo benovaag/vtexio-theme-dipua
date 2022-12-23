@@ -6,8 +6,8 @@
       "rich-text#shelf-title",
       "flex-layout.row#shelf",
       "flex-layout.row#banner-middle-home",
-      "flex-layout.row#banner-slider-home-mix",
-      "flex-layout.row#banner-slider-home-mix-content",
+      // "flex-layout.row#banner-slider-home-mix",
+      // "flex-layout.row#banner-slider-home-mix-content",
       "flex-layout.row#footer-1-desktop",
       "flex-layout.row#footer-2-desktop-home"
     ]
