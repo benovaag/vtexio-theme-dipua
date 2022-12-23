@@ -8,7 +8,7 @@ const ImageMapperHeader = ({
     let link = "/compre-o-mix"
     return (
         <div className={styles.imageMapperHeader}>
-            <Link page="store.custom" to={link} className={styles.imageMapperHeaderGoBack}>voltar para os mix</Link>
+            <Link page="store.custom#escolha-o-mix" to={link} className={styles.imageMapperHeaderGoBack}>voltar para os mix</Link>
             <h3 className={styles.imageMapperHeaderTitle}>{schemaTitle}</h3>
         </div>
     )
